@@ -1,0 +1,85 @@
+## World 1
+```curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BTC\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10000}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"KMD\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10001}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"MNZ\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10002}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"REVS\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10003}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"JUMBLR\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10004}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"SUPERNET\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10005}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DEX\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10006}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BOTS\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10007}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"CRYPTO\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10008}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"HODL\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10009}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"PANGEA\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10010}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"COQUI\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10011}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BET\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10012}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"MSHARK\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10013}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"WLC\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10014}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"SIB\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10050}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BCH\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10051}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"CHIPS\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10053}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BLK\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10054}"```
+
+## World 2
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BTC\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10000}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"KMD\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10001}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"MNZ\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10002}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"REVS\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10003}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"JUMBLR\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10004}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"SUPERNET\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10005}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DEX\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10006}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BOTS\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10007}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"CRYPTO\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10008}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"HODL\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10009}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"PANGEA\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10010}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"COQUI\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10011}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BET\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10012}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"MSHARK\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10013}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"WLC\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10014}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"SIB\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10050}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BCH\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10051}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"CHIPS\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10053}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BLK\",\"ipaddr\":\"electrum2.cipig.net\",\"port\":10054}"
+
+## IPs behind electrum1 and electrum2 (DNS resolvs to one of them, depending on your location)
+Frankfurt: 35.157.30.77
+London: 35.177.149.192
+Ohio: 18.216.195.109
+Oregon: 52.41.58.116
+Sydney: 52.63.107.102
+Tokyo:  13.230.86.115
+
+
+## Germany
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"ARG\",\"ipaddr\":\"173.212.225.176\",\"port\":50081}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"ARG\",\"ipaddr\":\"136.243.45.140\",\"port\":50081}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BTG\",\"ipaddr\":\"173.212.225.176\",\"port\":10052}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BTG\",\"ipaddr\":\"94.130.224.11\",\"port\":10052}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"COQUI\",\"ipaddr\":\"78.47.146.222\",\"port\":10011}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"COQUI\",\"ipaddr\":\"94.130.173.120\",\"port\":10011}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"CRW\",\"ipaddr\":\"173.212.225.176\",\"port\":50041}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"CRW\",\"ipaddr\":\"136.243.45.140\",\"port\":50041}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DASH\",\"ipaddr\":\"173.212.225.176\",\"port\":50098}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DASH\",\"ipaddr\":\"136.243.45.140\",\"port\":50098}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DGB\",\"ipaddr\":\"136.243.45.140\",\"port\":50022}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DGB\",\"ipaddr\":\"173.212.225.176\",\"port\":50022}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DOGE\",\"ipaddr\":\"173.212.225.176\",\"port\":50015}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DOGE\",\"ipaddr\":\"136.243.45.140\",\"port\":50015}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"EMC2\",\"ipaddr\":\"173.212.225.176\",\"port\":50079}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"EMC2\",\"ipaddr\":\"136.243.45.140\",\"port\":50079}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"FAIR\",\"ipaddr\":\"173.212.225.176\",\"port\":50005}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"FAIR\",\"ipaddr\":\"136.243.45.140\",\"port\":50005}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"HUSH\",\"ipaddr\":\"173.212.225.176\",\"port\":50013}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"HUSH\",\"ipaddr\":\"136.243.45.140\",\"port\":50013}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"LTC\",\"ipaddr\":\"173.212.225.176\",\"port\":50012}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"LTC\",\"ipaddr\":\"136.243.45.140\",\"port\":50012}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"MONA\",\"ipaddr\":\"173.212.225.176\",\"port\":50002}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"MONA\",\"ipaddr\":\"136.243.45.140\",\"port\":50002}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"NMC\",\"ipaddr\":\"173.212.225.176\",\"port\":50036}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"NMC\",\"ipaddr\":\"136.243.45.140\",\"port\":50036}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"VIA\",\"ipaddr\":\"173.212.225.176\",\"port\":50033}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"VIA\",\"ipaddr\":\"136.243.45.140\",\"port\":50033}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"VTC\",\"ipaddr\":\"173.212.225.176\",\"port\":50088}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"VTC\",\"ipaddr\":\"136.243.45.140\",\"port\":50088}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"ZEC\",\"ipaddr\":\"173.212.225.176\",\"port\":50032}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"ZEC\",\"ipaddr\":\"136.243.45.140\",\"port\":50032}"
+
