@@ -22,7 +22,9 @@ Make sure you are in your home directory:
 
 `wget https://github.com/nanomsg/nanomsg/archive/1.0.0.tar.gz -O nanomsg-1.0.0.tar.gz`
 
-`tar -xzvf nanomsg-1.0.0.tar.gzcd nanomsg-1.0.0`
+`tar -xzvf nanomsg-1.0.0.tar.gz`
+
+`cd nanomsg-1.0.0`
 
 `mkdir buildcd build`
 
