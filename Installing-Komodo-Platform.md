@@ -48,6 +48,8 @@ Make sure you are in your home directory:
 Clone the Komodo Platform directory from github:
 
 `git clone https://github.com/KomodoPlatform/KomodoPlatform`
+`cd KomodoPlatform`
+`git checkout spvdex` 
 
 Run the Komodo Platform install script:
 
