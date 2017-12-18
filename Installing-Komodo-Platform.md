@@ -3,7 +3,7 @@
 **For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.7/assets/bin/win64)**
 
 Komodo Platform is now capable of working with Electrum servers. This means it is not necessary to download a coin daemon including its blockchain to your computer.
-Check the list of current Electrum servers here: http://pad.supernet.org/electrum-servers
+Check the list of current Electrum servers here: [Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list).
 
 If you however choose to use a native coin daemon, please make sure it is fully synced. 
 For a list of currently supported native coins and instructions for the coin specific configuration file, see https://support.supernet.org/support/solutions/articles/29000014808-installation-script-for-various-coins
