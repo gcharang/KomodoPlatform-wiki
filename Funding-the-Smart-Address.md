@@ -1,17 +1,17 @@
-In order to start trading, you need to fund your smartaddress (as listed on the first API call return).
+In order to start trading, you need to fund your smart address.
 
-To find out the smartaddress of only 1 coin, do the `./getcoin` api call, after editing it first:
+To find out the smartaddress of a coin, do the `./getcoin` api call, after editing it first:
 
 `nano getcoin`
 
 
-That will show you the following. Edit the coin name, save and close the file. (CTRL-O to save, CTRL-X to close)
+That will show you the following.
 
 `    curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"getcoin\",\"coin\":\"NAME_OF_COIN\"}"`
 
+Edit the coin name, save and close the file. (CTRL-O to save, CTRL-X to close)
 
-
-IMPORTANT: The smartaddress relies in the passphrase you assign. The smartaddress will not be imported to the wallet, it will stay as `watchonly`. If you lose the passphrase you lose all addresses of all coins assigned to it.
+**IMPORTANT: The smartaddress relies in the passphrase you assign. The smartaddress will not be imported to the wallet, it will stay as `watchonly`. If you lose the passphrase you lose all addresses of all coins assigned to it.**
 
 Then **send transactions in duos** to your smartaddress provided by `./getcoin` (using Hush as an example):
 
