@@ -57,7 +57,7 @@ Make sure you are in your home directory:
 
 `sudo apt-get install git libcurl4-openssl-dev build-essential`
 
-Clone the Komodo Platform directory from github:
+**Clone the Komodo Platform directory from github:**
 
 `git clone https://github.com/KomodoPlatform/KomodoPlatform`
 
@@ -65,7 +65,7 @@ Clone the Komodo Platform directory from github:
 
 `git checkout spvdex` 
 
-Run the Komodo Platform install script:
+**Run the Komodo Platform install script:**
 
 `cd ~/KomodoPlatform/iguana/exchanges`
 
@@ -73,7 +73,7 @@ Run the Komodo Platform install script:
 
 _This will copy a couple of scripts to the dexscripts folder. This folder is your working folder, containing scripts to get the current orderbook or to do a trade. These are yours to customize for trading (as you will see below)._
 
-Change directory to the dexscripts folder and edit the passphrase file:
+**Change directory to the dexscripts folder and edit the passphrase file:**
 
 `cd ../dexscripts`
 
@@ -85,7 +85,7 @@ CTRL-O to save, CTRL-X to exit.
 
 All these scripts are expecting a userpass file, which contains the definition of the $userpass variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of userpass. To find out, just run the client first (as instructed below) and then run any API script. The first line will return all the required data, the "userpass" field is first and you can copy that value and put it into ~/KomodoPlatform/iguana/dexscripts/userpass file. If you dont, all subsequent API calls will get authorization errors. 
 
-Now run client to find out the value of userpass:
+**Now run client to find out the value of userpass:**
 
 `./client` (let it load)
 
@@ -99,11 +99,11 @@ Now copy this userpass value to the userpass file in the same directory:
 CTRL-O to save, CTRL-X to exit.
 
 
-To effectuate these changes, restart marketmaker by typing:
+**To effectuate these changes, restart marketmaker by typing:**
 
 `pkill -15 marketmaker`
 
-and start ./client again, from the dexscripts folder:
+**and start ./client again, from the dexscripts folder:**
 
 `./client`
 
