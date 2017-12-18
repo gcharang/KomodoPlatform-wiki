@@ -9,7 +9,7 @@ For a list of currently supported native coins and instructions for the coin spe
 You may want to back up your system or clone it after everything is synced and running correctly BEFORE you start installing coin daemons.
 
 
-**SETTING UP BARTERDEX**
+**SETTING UP KOMODO PLATFORM**
 
 If not already installed, Nanomsg is needed:
 Make sure you are in your home directory: 
