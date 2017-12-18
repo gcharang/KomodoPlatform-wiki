@@ -26,7 +26,9 @@ Make sure you are in your home directory:
 
 `cd nanomsg-1.0.0`
 
-`mkdir buildcd build`
+`mkdir build`
+
+`cd build`
 
 `cmake .. -DCMAKE_INSTALL_PREFIX=/usr`
 
