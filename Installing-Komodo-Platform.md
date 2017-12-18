@@ -67,7 +67,7 @@ _Create a strong passphrase of your own and place it between the quotes and remo
 
 CTRL-O to save, CTRL-X to exit.
 
-All these scripts are expecting a userpass file, which contains the definition of the $userpass variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of userpass. To find out, just run the client first (as instructed below) and then run any API script. The first line will return all the required data, the "userpass" field is first and you can copy that value and put it into ~/SuperNET/iguana/dexscripts/userpass file. If you dont, all subsequent API calls will get authorization errors. 
+All these scripts are expecting a userpass file, which contains the definition of the $userpass variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of userpass. To find out, just run the client first (as instructed below) and then run any API script. The first line will return all the required data, the "userpass" field is first and you can copy that value and put it into ~/KomodoPlatform/iguana/dexscripts/userpass file. If you dont, all subsequent API calls will get authorization errors. 
 
 Now run client to find out the value of userpass:
 
