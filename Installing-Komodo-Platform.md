@@ -19,21 +19,33 @@ Make sure you are in your home directory:
 **For Ubuntu 14.04:**
 
 `cd /tmp`
+
 `wget https://github.com/nanomsg/nanomsg/archive/1.0.0.tar.gz -O nanomsg-1.0.0.tar.gz`
+
 `tar -xzvf nanomsg-1.0.0.tar.gzcd nanomsg-1.0.0`
+
 `mkdir buildcd build`
+
 `cmake .. -DCMAKE_INSTALL_PREFIX=/usr`
+
 `cmake --build .`
+
 `sudo cmake --build . --target install`
+
 `sudo ldconfig`
 
 **For Ubuntu 16.04:**
 
 `git clone https://github.com/nanomsg/nanomsg`
+
 `cd nanomsg`
+
 `cmake .`
+
 `make`
+
 `sudo make install`
+
 `sudo ldconfig`
 
 
