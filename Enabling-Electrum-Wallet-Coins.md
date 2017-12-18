@@ -15,7 +15,9 @@ To enable SPV wallets, also know as Electrum Wallets, just edit the `./electrum`
 Will show: 
 
 `#!/bin/bash
+
 source userpass
+
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BTC\",\"ipaddr\":\"173.212.225.176\",\"port\":50001}"`
 
 Add any curl command from [this list](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list) to the file.
