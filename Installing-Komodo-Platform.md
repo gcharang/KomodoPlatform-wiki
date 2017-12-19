@@ -78,7 +78,10 @@ Enter your passphrase:
 
 Press `CTRL+X` then `Y` then `ENTER` to save the file and exit
 
-Generate the `userpass` file by typing the following command in a new terminal from `~/KomodoPlatform/iguana/dexscripts` dir and copy the `userpass` displayed on the output. Leave the terminal open.
+All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of u`serpass`. To find out, just run the client first (as instructed below) and then run any API script. The first line will return all the required data, the `userpass` field is first and you can copy that value and put it into `~/KomodoPlatform/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
+
+Open a new terminal and type the following:
+
 ```shell
 cd ~/SuperNET/iguana/dexscripts
 ./client
