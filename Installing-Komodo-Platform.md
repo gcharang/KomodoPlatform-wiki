@@ -83,14 +83,14 @@ All these scripts are expecting a `userpass` file, which contains the definition
 Open a new terminal and type the following:
 
 ```shell
-cd ~/SuperNET/iguana/dexscripts
+cd ~/KomodoPlatform/iguana/dexscripts
 ./client
 ```
 
 Now copy the `userpass` example file to `~/KomodoPlatform/iguana/dexscripts` dir and edit the file to save the `userpass` you got from the command `./client`
 
 ```shell
-cd ~/SuperNET/iguana/exchanges
+cd ~/KomodoPlatform/iguana/exchanges
 cp userpass ../dexscripts/userpass
 cd ../dexscripts
 nano userpass
