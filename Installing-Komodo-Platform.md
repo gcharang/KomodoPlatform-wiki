@@ -20,99 +20,81 @@ Make sure you are in your home directory:
 
 **For Ubuntu 14.04:**
 
-`cd /tmp`
-
-`wget https://github.com/nanomsg/nanomsg/archive/1.0.0.tar.gz -O nanomsg-1.0.0.tar.gz`
-
-`tar -xzvf nanomsg-1.0.0.tar.gz`
-
-`cd nanomsg-1.0.0`
-
-`mkdir build`
-
-`cd build`
-
-`cmake .. -DCMAKE_INSTALL_PREFIX=/usr`
-
-`cmake --build .`
-
-`sudo cmake --build . --target install`
-
-`sudo ldconfig`
+```shell
+cd /tmp
+wget https://github.com/nanomsg/nanomsg/archive/1.0.0.tar.gz -O nanomsg-1.0.0.tar.gz
+tar -xzvf nanomsg-1.0.0.tar.gz
+cd nanomsg-1.0.0
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+cmake --build .
+sudo cmake --build . --target install
+sudo ldconfig
+```
 
 **For Ubuntu 16.04:**
 
-`git clone https://github.com/nanomsg/nanomsg`
-
-`cd nanomsg`
-
-`cmake .`
-
-`make`
-
-`sudo make install`
-
-`sudo ldconfig`
-
+```shell
+git clone https://github.com/nanomsg/nanomsg
+cd nanomsg
+cmake .
+make
+sudo make install
+sudo ldconfig
+```
 
 **For MacOS you'll need to install homebrew (google how to do it)**
 
-`brew install nanomsg`
+```shell
+brew install nanomsg
+```
 
 **Install the following dependency packages:**
 
-`sudo apt-get install git libcurl4-openssl-dev build-essential`
+```shell
+sudo apt-get install git libcurl4-openssl-dev build-essential
+```
 
 **Clone the Komodo Platform directory from github:**
 
-`git clone https://github.com/KomodoPlatform/KomodoPlatform`
+```shell
+git clone https://github.com/KomodoPlatform/KomodoPlatform
+cd KomodoPlatform/iguana/exchanges
+git checkout spvdex
+./install
+```
 
-`cd KomodoPlatform`
+From the same dir in terminal type the following commands to copy the `passphrase` file to `~/KomodoPlatform/iguana/dexscripts` dir and add a strong 24 words seed passphrase in between `""`. Save your passphrase properly without changing any word or space. Same passphrase will always show you the same smartaddress.
 
-`git checkout spvdex` 
+```shell
+cp passphrase ../dexscripts/passphrase
+cd ../dexscripts
+nano passphrase
+```
+Enter your passphrase:
 
-**Run the Komodo Platform install script:**
+`export passphrase="<put a very strong passphrase here>"`
 
-`cd ~/KomodoPlatform/iguana/exchanges`
+Press `CTRL+X` then `Y` then `ENTER` to save the file and exit
 
-`./install`
+Generate the `userpass` file by typing the following command in a new terminal from `~/KomodoPlatform/iguana/dexscripts` dir and copy the `userpass` displayed on the output. Leave the terminal open.
+```shell
+cd ~/SuperNET/iguana/dexscripts
+./client
+```
 
-_This will copy a couple of scripts to the dexscripts folder. This folder is your working folder, containing scripts to get the current orderbook or to do a trade. These are yours to customize for trading (as you will see below)._
+Now copy the `userpass` example file to `~/KomodoPlatform/iguana/dexscripts` dir and edit the file to save the `userpass` you got from the command `./client`
 
-**Change directory to the dexscripts folder and edit the passphrase file:**
+```shell
+cd ~/SuperNET/iguana/exchanges
+cp userpass ../dexscripts/userpass
+cd ../dexscripts
+nano userpass
+```
 
-`cd ../dexscripts`
+Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit
 
-`nano passphrase`
+Get all available api list by typing `./help` inside `~/KomodoPlatform/iguana/dexscripts` dir
 
-_Create a strong passphrase of your own and place it between the quotes and remove the < > symbols._
-
-CTRL-O to save, CTRL-X to exit.
-
-All these scripts are expecting a userpass file, which contains the definition of the $userpass variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of userpass. To find out, just run the client first (as instructed below) and then run any API script. The first line will return all the required data, the "userpass" field is first and you can copy that value and put it into ~/KomodoPlatform/iguana/dexscripts/userpass file. If you dont, all subsequent API calls will get authorization errors. 
-
-**Now run client to find out the value of userpass:**
-
-`./client` (let it load)
-
-Somewhere in the initial printout, you will find a line that looks like this: 
-
-`userpass.(xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)`
-
-Now copy this userpass value to the userpass file in the same directory:
-
-`nano userpass`
-CTRL-O to save, CTRL-X to exit.
-
-
-**To effectuate these changes, restart marketmaker by typing:**
-
-`pkill -15 marketmaker`
-
-**and start ./client again, from the dexscripts folder:**
-
-`./client`
-
-**Marketmaker is now running.**
-
-
+You also need native coin daemon of your choice running in order to test native mode. Or use electrum mode if you don't want to download blockchain.
