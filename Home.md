@@ -1,5 +1,3 @@
-Welcome to the KomodoPlatform wiki!
-
 Here you should find a list of important topics related to installing and using Komodo Platform.
 
 [1. Installing Komodo Platform](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-Komodo-Platform)
@@ -10,3 +8,6 @@ Here you should find a list of important topics related to installing and using 
 
 [- Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list)
 
+[4. Funding the Smart Adress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Funding-the-Smart-Address)Welcome to the KomodoPlatform wiki!
+
+[5. Trade]([4. Funding the Smart Adress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Funding-the-Smart-Address)Welcome to the KomodoPlatform wiki!)
