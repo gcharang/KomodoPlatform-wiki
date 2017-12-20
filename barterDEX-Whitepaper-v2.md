@@ -192,5 +192,5 @@ BitFury Group (Sep 13, 2015): Proof of Stake versus Proof of Work White Paper
 
 ## Translations
 
-| [English](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-Whitepaper-v2)  | Russian  |
+| [English](https://github.com/SuperNETorg/komodo/wiki/barterDEX-Whitepaper-v2)  | [Russian](https://github.com/SuperNETorg/komodo/wiki/barterDEX-Whitepaper-v2---Russian-Translation)  |
 |---|---|
