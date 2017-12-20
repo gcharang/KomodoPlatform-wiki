@@ -549,6 +549,8 @@ James has also added automated broadcast of any setprices, which will occur auto
 
 Using the `buy`/`sell` api is a fill or kill (except partial fills are allowed) and to put a limit order, `autoprice` needs to be used. The `autoprice` is a bit tricky to use, make sure you don't make the example backwards.
 
+Note: To fully cancel an autotrade, setprice 0` needs to be called twice, once with `base/rel` and then with `rel/base`, since there are actually 2 prices (bid and ask).
+
 #### autoprice
 `autoprice` is a very powerful API and it allows you to specify the price for a specific trading pair that is automatically updated as the marketprice of it changes. barterDEX uses external price sources (Bittrex, Cryptopia) to get up to date prices. For now, it is a relatively simple set of things you can do with the following fields:
 
