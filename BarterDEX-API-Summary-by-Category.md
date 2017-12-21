@@ -501,7 +501,7 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ```
 
 #### trust
-Make your pubkey trusted by using this `./trust` method. You need to add your pubkey after the command. If you want the pubkey to be not trusted use `\"trust\":1`. This API works immediately.
+Make your pubkey trusted by using this `./trust` method. You need to add your pubkey after the command. If you want the pubkey to be not trusted use `\"trust\":-1`. `-1` means dont trust, `1` means to trust. This API works immediately.
 
 Sample File Contents:
 ```shell
