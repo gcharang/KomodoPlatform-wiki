@@ -1,6 +1,7 @@
 Don't forget: Coins for trade pairs need to be active in the exchange, both [native](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Native-Wallet-Coins) and [electrum](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Electrum-Wallet-Coins) wallets can be used.
 
 **LOOKING AT THE ORDERBOOK**
+
 To see the order book you need to execute:
 
 `    ./orderbook`
