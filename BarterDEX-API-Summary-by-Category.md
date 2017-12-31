@@ -1802,6 +1802,31 @@ Sample Output:
 {"rawtx":"0100000001b5384fc2f0b737a17239eaf2172bf24c4f410f720e672c3f56a9b5a8e0b33a910100000000ffffffff03a0860100000000001976a914d4d2ffc812cdce0c30c5184e8ea1deb7bfeb5b3888ac400d0300000000001976a914d4d2ffc812cdce0c30c5184e8ea1deb7bfeb5b3888ac06771300000000001976a91459fdba29ea85c65ad90f6d38f7a6646476b26b1688ac7dd4e359","hex":"0100000001b5384fc2f0b737a17239eaf2172bf24c4f410f720e672c3f56a9b5a8e0b33a91010000006b483045022100df405fe4f79e66052a952968b93ed3f56b2fc75908a90c70d9d409b4da45996902200b9136063fcdb0bfdfeb09801d2fcbb0658236d69135711a20ac4aa50c8d3bf0012102ebc786cb83de8dc3922ab83c21f3f8a2f3216940c3bf9da43ce39e2a3a882c92ffffffff03a0860100000000001976a914d4d2ffc812cdce0c30c5184e8ea1deb7bfeb5b3888ac400d0300000000001976a914d4d2ffc812cdce0c30c5184e8ea1deb7bfeb5b3888ac06771300000000001976a91459fdba29ea85c65ad90f6d38f7a6646476b26b1688ac7dd4e359","txid":"f6b04d157c007bf688822a73c754934f53cf28516f64dc64372fa397789e9ce1","complete":true}
 ```
 
+If the last output is doing a withdraw to the smartaddress, it is combined with change. Here are two sample console output below. The first one is withdrawing 10 KMD to the same smartaddress. Second one is 10 & 10.0001 KMD withdraw to the same smartaddress. The last output is increased by 0.0001 & change combined in both example.
+
+```shell
+vout.0 10.00010000 -> total 10.00020000
+dustcombine.0 numpre.0 min0.(nil) min1.(nil) numutxos.172 amount 10.00020000
+minutes.381 tiptime.1514745296 locktime.1514722428
+46bbfbe93ebfc0a9262143193fe50d5c9ce5c2739da768ce8b5ec919ffaa570f/0 40.01342800 interest 0.00122360 -> sum 0.00122360
+numunspents.171 vini.0 value 40.01342800, total 40.01342800 remains -30.01322800 interest 0.00122360 sum 0.00122360 46bbfbe93ebfc0a9262143193fe50d5c9ce5c2739da768ce8b5ec919ffaa570f/v0
+set inuse until 1514746673 lag.600 for 46bbfbe93ebfc0a9262143193fe50d5c9ce5c2739da768ce8b5ec919ffaa570f/v0
+change 30.01445160 = total 40.01465160 - amount 10.00020000, adjust 0.00000000 numvouts.1
+combine last vout 10.00010000 with change 30.01445160
+LP_withdraw.KMD {"method":"withdraw","coin":"KMD","outputs":[{"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ":10.00010000}]} -> d3f32d814e20edcbc0c654eec79d0399b38b907ecc8cb9418da17a543d299e17
+```
+
+```shell
+vout.0 10.00000000 -> total 10.00010000
+vout.1 10.00010000 -> total 20.00020000
+dustcombine.0 numpre.0 min0.(nil) min1.(nil) numutxos.172 amount 20.00020000
+numunspents.171 vini.0 value 40.01455160, total 40.01455160 remains -20.01435160 interest 0.00000000 sum 0.00000000 d3f32d814e20edcbc0c654eec79d0399b38b907ecc8cb9418da17a543d299e17/v0
+set inuse until 1514747480 lag.600 for d3f32d814e20edcbc0c654eec79d0399b38b907ecc8cb9418da17a543d299e17/v0
+change 20.01435160 = total 40.01455160 - amount 20.00020000, adjust 0.00000000 numvouts.2
+combine last vout 10.00010000 with change 20.01435160
+LP_withdraw.KMD {"method":"withdraw","coin":"KMD","outputs":[{"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ":10}, {"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ":10.00010000}]} -> f24361b13b7f0188ea422572b882c0df50bef2a33bf8aed7bf0776946332cece
+```
+
 ### Statistics
 
 #### guistats
