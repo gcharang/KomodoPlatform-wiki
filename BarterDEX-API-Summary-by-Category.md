@@ -1282,7 +1282,7 @@ Sample Output:
 #### setprice
 To create a bob `utxo` (or an ask order) you need to first set the price. To set price you need to edit the `./setprice` script in the `dexscripts` folder
 
-Note: To fully cancel an autotrade, `setprice 0` needs to be called twice, once with `base/rel` and then with `rel/base`, since there are actually 2 prices (bid and ask). Doing `setprice 0` for an order made with `coinmarketcap api` call doesn't end it. It is likely as it has two `0`'s and you can only set one `0` at a time.
+Note: To fully cancel an autotrade, `setprice 0` needs to be called twice, once with `base/rel` and then with `rel/base`, since there are actually 2 prices (bid and ask). Doing `setprice 0` for an order made with `coinmarketcap api` call doesn't end it. It is likely as it has two `0`'s and you can only set one `0` at a time. The only way to stop an order made with `coinmarketcap api` is to kill `marketmaker`.
 
 Sample File Contents:
 ```shell
