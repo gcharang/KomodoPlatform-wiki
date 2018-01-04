@@ -20,12 +20,13 @@ sudo apt-get update
 sudo apt-get install git libcurl4-openssl-dev build-essential
 ```
 
+#### Install `nanomsg`
 If not already installed, Nanomsg is needed:
 Make sure you are in your home directory: 
 
 `cd ~`
 
-#### For Ubuntu 14.04:
+##### For Ubuntu 14.04:
 
 ```shell
 cd /tmp
@@ -40,7 +41,7 @@ sudo cmake --build . --target install
 sudo ldconfig
 ```
 
-#### For Ubuntu 16.04:
+##### For Ubuntu 16.04:
 
 ```shell
 git clone https://github.com/nanomsg/nanomsg
@@ -51,7 +52,7 @@ sudo make install
 sudo ldconfig
 ```
 
-#### For MacOS you'll need to install homebrew (google how to do it)
+##### For MacOS you'll need to install homebrew (Google how to do it)
 
 ```shell
 brew install nanomsg
