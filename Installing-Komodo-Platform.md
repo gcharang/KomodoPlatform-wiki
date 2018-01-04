@@ -1,4 +1,4 @@
-**INTRODUCTION:**
+### INTRODUCTION:
 
 **For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.7/assets/bin/win64)**
 
@@ -11,14 +11,21 @@ For a list of currently supported native coins and instructions for the coin spe
 You may want to back up your system or clone it after everything is synced and running correctly BEFORE you start installing coin daemons.
 
 
-**SETTING UP KOMODO PLATFORM**
+### SETTING UP KOMODO PLATFORM
+
+#### Install the following dependency packages:
+
+```shell
+sudo apt-get update
+sudo apt-get install git libcurl4-openssl-dev build-essential
+```
 
 If not already installed, Nanomsg is needed:
 Make sure you are in your home directory: 
 
 `cd ~`
 
-**For Ubuntu 14.04:**
+#### For Ubuntu 14.04:
 
 ```shell
 cd /tmp
@@ -33,7 +40,7 @@ sudo cmake --build . --target install
 sudo ldconfig
 ```
 
-**For Ubuntu 16.04:**
+#### For Ubuntu 16.04:
 
 ```shell
 git clone https://github.com/nanomsg/nanomsg
@@ -44,19 +51,13 @@ sudo make install
 sudo ldconfig
 ```
 
-**For MacOS you'll need to install homebrew (google how to do it)**
+#### For MacOS you'll need to install homebrew (google how to do it)
 
 ```shell
 brew install nanomsg
 ```
 
-**Install the following dependency packages:**
-
-```shell
-sudo apt-get install git libcurl4-openssl-dev build-essential
-```
-
-**Clone the Komodo Platform directory from github:**
+#### Clone the Komodo Platform directory from github:
 
 ```shell
 git clone https://github.com/KomodoPlatform/KomodoPlatform
