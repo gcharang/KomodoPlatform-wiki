@@ -39,7 +39,7 @@ docker run -e PASSPHRASE="secure passphrase" -p 127.0.0.1:7783:7783 lukechilds/b
 ### barterDEX Operation
 
 #### client
-The first API to run which will start barterDEX. This will generate a `userpass` on its first run which can be found above the start mainloop area of the output. Make sure to save it to the userpass file on dexscripts directory. Run `pkill -15 marketmaker` each time before you stop `./client`.
+The first API to run which will start barterDEX. This will generate a `userpass` on its first run which can be found above the start mainloop area of the output. Make sure to save it to the `userpass` file in `dexscripts` directory. Run `pkill -15 marketmaker` each time before you stop `./client`. 
 
 Sample File Contents:
 ```shell
@@ -50,6 +50,11 @@ cd ..;
 ./m_mm;
 ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
+
+Explanation:
+`gui:nogui` or `gui:SimpleUI` - to identify the CLI/GUI being used to run marketmaker.
+`client:1` - to start marketmaker as client mode.
+`passphrase:$passphrase` - is to set the passphrase to run the marketmaker with, to run and login into marketmaker using WIF (Wallet Import Format) key instead of passphrase. You need to use the WIF key as passphrase inside `passphrase` file. barterDEX supports login using WIF Key for all supported coins instead of passphrase.
 
 #### client_osx
 It is the same script as above but only for MacOS.
@@ -489,7 +494,7 @@ This method helps the GUI build to take input of the passphrase.
 
 Sample File Content:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"passphrase\",\"passphrase\":\"put the passphrase here\",\"gui\":\"buildog\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"passphrase\",\"passphrase\":\"put the passphrase here\",\"gui\":\"SimpleUI\"}"
 ```
 
 #### stop
@@ -1836,7 +1841,7 @@ LP_withdraw.KMD {"method":"withdraw","coin":"KMD","outputs":[{"RANyPgfZZLhSjQB9j
 
 Sample File Content:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"statsdisp\",\"starttime\":0,\"endtime\":0,\"gui\":\"buildog\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"statsdisp\",\"starttime\":0,\"endtime\":0,\"gui\":\"SimpleUI\"}"
 ```
 
 #### pricearray
