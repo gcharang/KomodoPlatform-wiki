@@ -100,7 +100,7 @@ nano userpass
 
 Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
-You should be running the terminal window that you run `./client` script and don't close it. Open a new terminal window to issue all other scripts/API calls.
+You should be running the terminal window that you run `./client` script and don't close it. Open a new terminal window to issue all other scripts/API calls. If you want to close KomodoPlatform, issue `pkill -15 marketmaker` first.
 
 Get all available api list by typing `./help` inside `~/KomodoPlatform/iguana/dexscripts` dir
 
