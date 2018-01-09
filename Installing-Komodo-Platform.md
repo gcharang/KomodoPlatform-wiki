@@ -1,6 +1,6 @@
 ### INTRODUCTION:
 
-**For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.7/assets/bin/win64)**
+**For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.8/assets/bin/win64)**
 
 Komodo Platform is now capable of working with Electrum servers. This means it is not necessary to download a coin daemon including its blockchain to your computer.
 Check the list of current Electrum servers here: [Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list).
@@ -98,7 +98,9 @@ cd ../dexscripts
 nano userpass
 ```
 
-Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit
+Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
+
+You should be running the terminal window that you run `./client` script and don't close it. Open a new terminal window to issue all other scripts/API calls.
 
 Get all available api list by typing `./help` inside `~/KomodoPlatform/iguana/dexscripts` dir
 
