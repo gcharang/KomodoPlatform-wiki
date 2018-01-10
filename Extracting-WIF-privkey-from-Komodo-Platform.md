@@ -14,7 +14,7 @@ You will see the `./client` script like this:
 
 `./marketmaker "{\"gui\":\"nogui\",\"client\":1,\"wif\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
 
-Once this edit is done, now restart **_MarketMaker_**:
+Once this edit is done, now start **_MarketMaker_**:
 
 `cd ~/KomodoPlatform/iguana/dexscripts`
 
