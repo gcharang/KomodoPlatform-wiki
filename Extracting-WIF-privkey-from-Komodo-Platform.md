@@ -12,7 +12,7 @@ You will see the `./client` script like this:
 
 **Now you need to add the wif: handle like this:**
 
-`./marketmaker "{\"gui\":\"nogui\",\"client\":1,**\"wif\":1**, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
+`./marketmaker "{\"gui\":\"nogui\",\"client\":1,\"wif\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
 
 Once this edit is done, now restart **Market Maker**:
 
