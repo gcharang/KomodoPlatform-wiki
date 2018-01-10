@@ -6,7 +6,7 @@ To be able to get the privkey of the Smart Address created by the Komodo Platfor
 
 `nano ./client`
 
-You will see the `./client` script like this:``
+You will see the `./client` script like this:
 
   `./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
 
@@ -14,3 +14,10 @@ You will see the `./client` script like this:``
 
 `./marketmaker "{\"gui\":\"nogui\",\"client\":1,**\"wif\":1**, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
 
+Once this edit is done, now restart **Market Maker**:
+
+`cd ~/KomodoPlatform/iguana/dexscripts`
+
+`./client`
+
+**Execute **./passphrase** API command**
