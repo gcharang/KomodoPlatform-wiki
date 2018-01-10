@@ -10,7 +10,7 @@ You will see the `./client` script like this:
 
   `./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
 
-**Now you need to add the wif: haondle like this:**
+**Now you need to add the wif: handle like this:**
 
 `./marketmaker "{\"gui\":\"nogui\",\"client\":1,**\"wif\":1**, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
 
