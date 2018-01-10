@@ -63,7 +63,7 @@ brew install nanomsg
 ```shell
 git clone https://github.com/KomodoPlatform/KomodoPlatform
 cd KomodoPlatform/iguana/exchanges
-git checkout spvdex
+git checkout dev
 ./install
 ```
 
