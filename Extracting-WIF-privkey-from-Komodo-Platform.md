@@ -4,16 +4,23 @@ To be able to get the privkey of the Smart Address created by the Komodo Platfor
 `cd ~/KomodoPlatform/iguana/dexscripts`
 
 
-```nano ./client```
+`nano ./client`
 
-``You will see the `./client` script like this:``
+You will see the `./client` script like this:``
 
- ```#!/bin/bash``
- ``source passphrase``
- ``source coins``
- ``pkill -15 marketmaker; ``
-  ``git pull``
-  ``cd ..; ``
-  ``./m_mm;``
-  ``./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &```
+` #!/bin/bash`
+
+ `source passphrase`
+
+`source coins`
+
+ `pkill -15 marketmaker; `
+
+  `git pull`
+
+  `cd ..;`
+
+  `./m_mm;`
+
+  `./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &`
 
