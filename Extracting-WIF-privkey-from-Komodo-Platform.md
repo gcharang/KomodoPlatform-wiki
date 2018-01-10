@@ -20,4 +20,6 @@ Once this edit is done, now restart **Market Maker**:
 
 `./client`
 
-**Execute **./passphrase** API command**
+**Execute **./setpassphrase** API command**
+
+With that command you will see all active coins listed with their respective WIF privkeys.
