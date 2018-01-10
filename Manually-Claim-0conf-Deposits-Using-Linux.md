@@ -21,14 +21,10 @@ Inside the DB dir you will find various files which are your 0conf deposit files
 
 ```
 -rw-rw-r-- 1 devx devx     64 Dec 12 13:32 deposits.RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ
--rw-rw-r-- 1 devx devx      0 Dec 16 20:07 deposits.RDoMmoCM5AcEH6Yf5vqKbqRjD1fLcQHuWb
--rw-rw-r-- 1 devx devx      0 Jan  7 18:13 deposits.RPigdxGMPH5UMSuTHmznLaU9aYFZM913vq
 -rw-rw-r-- 1 devx devx      0 Dec 10 12:56 deposits.RPZVpjptzfZnFZZoLnuSbfLexjtkhe6uvn
 -rw-rw-r-- 1 devx devx     69 Dec 10 11:04 instantdex.json
 -rw-rw-r-- 1 devx devx    137 Jan  9 11:59 instantdex_RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ_append.json
 -rw-rw-r-- 1 devx devx     69 Jan  9 11:59 instantdex_RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ.json
--rw-rw-r-- 1 devx devx      3 Jan  7 18:13 instantdex_RPigdxGMPH5UMSuTHmznLaU9aYFZM913vq_append.json
--rw-rw-r-- 1 devx devx      3 Jan  7 18:13 instantdex_RPigdxGMPH5UMSuTHmznLaU9aYFZM913vq.json
 -rw-rw-r-- 1 devx devx      3 Jan  9 11:58 instantdex_RPZVpjptzfZnFZZoLnuSbfLexjtkhe6uvn_append.json
 -rw-rw-r-- 1 devx devx      3 Jan  9 11:58 instantdex_RPZVpjptzfZnFZZoLnuSbfLexjtkhe6uvn.json
 ```
