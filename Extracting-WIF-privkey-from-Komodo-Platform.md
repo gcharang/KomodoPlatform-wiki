@@ -1,4 +1,4 @@
-To be able to get the privkey of the Smart Address created by the Komodo Platform Passphrase you will need to add the `wif:1` to the _**MarketMaker**_ command. The _**MarketMaker**_ execution command is in `./client`. 
+To be able to get the privkey of the Smart Address created by the Komodo Platform Passphrase you will need to add the `wif:1` handle to the _**MarketMaker**_ command. The _**MarketMaker**_ execution command is in `./client`. 
 
 
 `cd ~/KomodoPlatform/iguana/dexscripts`
