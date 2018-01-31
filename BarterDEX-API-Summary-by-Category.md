@@ -523,7 +523,7 @@ $1 ./marketmaker "{\"gui\":\"nogui\", \"profitmargin\":0.01, \"userhome\":\"/${H
 ```
 
 #### setpassphrase
-This method helps the GUI build to take input of the passphrase.
+This method helps the GUI build to take input of the passphrase and generate `userpass`. This is the second API to run in BarterDEX.
 
 Sample File Content:
 ```shell
