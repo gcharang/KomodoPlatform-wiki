@@ -80,16 +80,18 @@ Enter your passphrase:
 
 Press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
-All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of u`serpass`. To find out, just run the client first (as instructed below) and then run any API script. The first line will return all the required data, the `userpass` field is first and you can copy that value and put it into `~/KomodoPlatform/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
+All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of u`serpass`. To find out, just run the client first (as instructed below) and then run `./setpassphrase` script 2 times. 2nd call will display your `userpass` field and you can copy that value and put it into `~/KomodoPlatform/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
 
 Open a new terminal and type the following:
 
 ```shell
 cd ~/KomodoPlatform/iguana/dexscripts
-./client
+./client &
+./setpassphrase
+./setpassphrase
 ```
 
-Now copy the `userpass` example file to `~/KomodoPlatform/iguana/dexscripts` dir and edit the file to save the `userpass` you got from the command `./client`
+Now copy the `userpass` example file to `~/KomodoPlatform/iguana/dexscripts` dir and edit the file to save the `userpass` you got from the 2nd call of `./setpassphrase`
 
 ```shell
 cd ~/KomodoPlatform/iguana/exchanges
@@ -100,7 +102,7 @@ nano userpass
 
 Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
-You should be running the terminal window that you run `./client` script and don't close it. Open a new terminal window to issue all other scripts/API calls. If you want to close KomodoPlatform, issue `pkill -15 marketmaker` first.
+You should be running the terminal window that you run `./client &` script and don't close it. Open a new terminal window to issue all other scripts/API calls from next. If you want to close KomodoPlatform, issue `pkill -15 marketmaker` first.
 
 Get all available api list by typing `./help` inside `~/KomodoPlatform/iguana/dexscripts` dir
 
