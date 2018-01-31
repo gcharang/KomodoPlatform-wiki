@@ -39,7 +39,7 @@ docker run -e PASSPHRASE="secure passphrase" -p 127.0.0.1:7783:7783 lukechilds/b
 ### barterDEX Operation
 
 #### client
-The first API to run which will start barterDEX. This will generate a `userpass` on its first run which can be found above the start mainloop area of the output. Make sure to save it to the `userpass` file in `dexscripts` directory. Run `pkill -15 marketmaker` each time before you stop `./client`. 
+The first API to run which will start barterDEX in client mode. Next script to run is `setpassphrase` twice. Run `pkill -15 marketmaker` each time before you stop `client`. 
 
 Sample File Contents:
 ```shell
@@ -58,6 +58,12 @@ Fields that can be used:
 `passphrase:$passphrase` - is to set the passphrase to run the marketmaker with, to run and login into marketmaker using WIF (Wallet Import Format) key instead of passphrase. You need to use the WIF key as passphrase inside `passphrase` file. barterDEX supports login using WIF Key for all supported coins instead of passphrase.
 `wif:1` - will display the passphrase's WIF during the first api return.
 `rpcport:port` - to change the 7782 port to other open port of choice.
+
+##### netid
+For the startup JSON default is 0, max is 19240, which should be plenty of p2p networks for a while. Each `netid` will operate totally independent of the other netids. The `rpcport` field can be used to specify different ones so you can run multiple mm on the same node, but they will be on separate `netid`. This way you can broadcast the `marketmaker` prices to all the netids.
+
+Example usage:
+`./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins, \"netid\":1}"`
 
 #### client_osx
 It is the same script as above but only for MacOS.
