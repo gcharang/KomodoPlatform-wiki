@@ -523,11 +523,12 @@ $1 ./marketmaker "{\"gui\":\"nogui\", \"profitmargin\":0.01, \"userhome\":\"/${H
 ```
 
 #### setpassphrase
-This method helps the GUI build to take input of the passphrase and generate `userpass`. This is the second API to run in BarterDEX.
+This method helps the GUI build to take input of the passphrase and generate `userpass`. This is the second API to run in BarterDEX. On the first call it will display the `default` seed passphrase for smartaddresses of all supported coin. Second call will show users own passphrase & smartaddress and logs in to BarterDEX.
 
 Sample File Content:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"passphrase\",\"passphrase\":\"put the passphrase here\",\"gui\":\"SimpleUI\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"method\":\"passphrase\",\"passphrase\":\"$passphrase\",\"gui\":\"nogui\"}"
+
 ```
 
 #### stop
