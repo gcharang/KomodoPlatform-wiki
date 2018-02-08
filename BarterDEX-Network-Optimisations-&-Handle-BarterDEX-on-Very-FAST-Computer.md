@@ -31,7 +31,7 @@ net.ipv4.tcp_max_tw_buckets = 2000000
 
 You can also use a kernel module dealing with network congestion. But, there is not enough data on how much it helps. For this you need to add the following 2 lines into the previous file.
 
-```shell
+```JSON
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 ```
