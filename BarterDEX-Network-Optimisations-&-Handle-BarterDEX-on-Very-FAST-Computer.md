@@ -8,7 +8,7 @@ To create the conf file use `sudo nano /etc/sysctl.d/01-barterdex.conf` and past
 
 Contents of `01-barterdex.conf` file:
 
-```
+```shell
 net.core.rmem_max = 33554432
 net.core.wmem_max = 33554432
 net.ipv4.tcp_rmem = 4096 87380 33554432
@@ -31,14 +31,14 @@ net.ipv4.tcp_max_tw_buckets = 2000000
 
 You can also use a kernel module dealing with network congestion. But, there is not enough data on how much it helps. For this you need to add the following 2 lines into the previous file.
 
-```
+```shell
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 ```
 
 And, for the `bbr` module in the last line to be automatically loaded on boot, put the following line in `/etc/modules-load.d/modules.conf` file.
 
-```
+```shell
 tcp_bbr
 ```
 
