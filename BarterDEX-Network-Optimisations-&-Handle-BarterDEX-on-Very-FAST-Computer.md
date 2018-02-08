@@ -29,14 +29,14 @@ net.core.somaxconn = 20480
 net.ipv4.tcp_max_tw_buckets = 2000000
 ```
 
-You can also use a kernel module dealing with network congestion. But, there is not enough data on how much it helps. For this you need to add the following 2 lines into the previous file.
+You can also use a kernel module dealing with network congestion. But, there is not enough data on how much it helps. For this you need to add the following 2 lines into the previous file. Try to load the module with `sudo modprobe tcp_bbr` to see if you have it. If the terminal shows nothing, that is good. It means it could load the module.
 
 ```JSON
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 ```
 
-And, for the `bbr` module in the last line to be automatically loaded on boot, put the following line in `/etc/modules-load.d/modules.conf` file.
+And, for the `bbr` module in the last line to be automatically loaded on boot, put the following line in `/etc/modules-load.d/modules.conf` file. 
 
 ```shell
 tcp_bbr
