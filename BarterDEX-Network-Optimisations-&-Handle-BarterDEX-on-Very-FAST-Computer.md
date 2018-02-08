@@ -8,7 +8,7 @@ To create the conf file use `sudo nano /etc/sysctl.d/01-barterdex.conf` and past
 
 Contents of `01-barterdex.conf` file:
 
-```shell
+```JSON
 net.core.rmem_max = 33554432
 net.core.wmem_max = 33554432
 net.ipv4.tcp_rmem = 4096 87380 33554432
