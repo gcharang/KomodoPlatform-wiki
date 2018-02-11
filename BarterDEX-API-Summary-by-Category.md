@@ -60,7 +60,7 @@ Fields that can be used:
 `rpcport:port` - to change the 7782 port to other open port of choice.
 
 ##### netid
-For the startup JSON default is 0, max is 19240, which should be plenty of p2p networks for a while. Each `netid` will operate totally independent of the other netids. The `rpcport` field can be used to specify different ones so you can run multiple mm on the same node, but they will be on separate `netid`. This way you can broadcast the `marketmaker` prices to all the netids.
+For the startup JSON default is 0, max is 19240, which should be plenty of p2p networks for a while. Each `netid` will operate totally independent of the other netids. The `rpcport` field can be used to specify different ones so you can run multiple mm on the same node, but they will be on separate `netid`. This way you can broadcast the `marketmaker` prices to all the netids. You also need to use the same `netid` in `setpassphrase` script.
 
 Example usage:
 `./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins, \"netid\":1}"`
@@ -79,7 +79,7 @@ cd ..;
 ```
 
 #### debug
-This script will let you debug if you run into problem with `marketmaker` and coins using `gdb`. This will kill the `marketmaker` first, do a `git pull` for fresh data and build it again. To exit from this mode type `quit` and hit enter.
+This script will let you debug if you run into problem with `marketmaker` and coins using `gdb`. This will kill the `marketmaker` first, do a `git pull` for fresh data and build it again. Once ready, type `run` and hit enter to start. In case of marketmaker crash, you can use `backtrace` command to find the reason of the crash. To exit from this mode type `quit` and hit enter.
 
 Sample File Contents:
 ```shell
@@ -100,7 +100,7 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ```
 
 #### enable
-This method enables a coin by connecting to a local running coin daemon. To be eligible for trading a coin must be enabled and the daemon should be running.
+This method enables a coin by connecting to a locally running native coin daemon. To be eligible for trading a coin must be enabled and the daemon should be running.
 
 Sample File Contents:
 ```shell
@@ -128,7 +128,7 @@ Sample Output:
 ```
 
 #### getcoins
-This will display the list of coins that barterDEX supports. It will list both disabled and enabled coins. Along with the status of the coin, this function will also display your smartaddress for that given coin. This method does not need user defined inputs and will just display all the coins.
+This will display the list of all coins that barterDEX supports. It will list both disabled and enabled coins. Along with the status of the coin, this function will also display your smartaddress for that given coin. This method does not need user defined inputs and will just display all the coins.
 
 Sample File Contents:
 ```shell
@@ -335,7 +335,7 @@ Sample Output:
 ```
 
 #### help
-The `./help` api will display a list of all the available API available on barterDEX and usage options.
+The `./help` API will display a list of all the available API available on barterDEX and usage options.
 
 Sample File Contents:
 ```shell
@@ -409,7 +409,6 @@ jpg(srcfile, destfile, power2=7, password, data=, required, ind=0)
 ```
 
 #### jpg
-
 barterDEX supports password encrypting data into a .jpg. The dest image is virtually indistinguishable from the original. Best to use a raw .jpg you created with a camera and not some file from the internet. As from the internet, it can be compared as to what bits are changed and in that case the encrypted rawdata will be visible.
 
 Sample File Contents:
@@ -458,9 +457,8 @@ Sample Output:
 
 ```
 
-
 #### notarizations
-This script will display coin notarization status for a specified coin. Use the script like this `./notarizations KMD`, `./notarizations REVS`,...
+This script will display coin notarization status for a specified coin. Use the script like this `./notarizations KMD`, `./notarizations REVS`, etc.
 
 Sample File Contents:
 ```shell
@@ -504,7 +502,7 @@ Sample Output:
 ```
 
 #### run
-`./run` starts barterDEX in LPnode mode while `./clinet` is for clinet mode. After it starts (takes a tiny bit time to complete) execute your API calls from the dexscripts directory.
+`./run` starts barterDEX in LP (Liquid Provider) mode while `./client` is for client mode. After it starts (takes a tiny bit time to complete) execute your API calls from the `dexscripts` directory.
 
 Sample File Contents:
 ```shell
@@ -722,29 +720,24 @@ Sample File Content:
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"coin\":\"MNZ\"}"
 ```
 
-Sample Output:
-
-
-
 #### electrum
-This method enables a coin by connecting to the specified electrumx server. For this method running a native node is not necessary. You need to edit the file with coin name and IP address and port for the coin. For a list of electrumx server check this link `http://pad.supernet.org/electrum-servers`
+This method enables a coin by connecting to the specified electrumx server. For this method running a native node and blockchain download is not necessary. You need to edit the file with coin name and IP address and port for the coin. For a list of electrumx server check this link `http://pad.supernet.org/electrum-servers`
 
 Sample File Contents:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"ZEC\",\"ipaddr\":\"136.243.45.140\",\"port\":50032}"
-```
-
-Sample Output:
-```JSON
-{
-  "ipaddr": "136.243.45.140",
-  "port": 50032,
-  "result": "success"
-}
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"KMD\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10001}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"MNZ\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10002}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"REVS\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10003}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"JUMBLR\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10004}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"SUPERNET\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10005}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"DEX\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10006}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"BOTS\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10007}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"CRYPTO\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10008}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"electrum\",\"coin\":\"HODL\",\"ipaddr\":\"electrum1.cipig.net\",\"port\":10009}"
 ```
 
 #### getprices
-The `./getprices` api lists all currently available trading pairs and its current prices. You need to specify a base and rel coin if you need a specific pair price.
+The `./getprices` API lists all currently available trading pairs and its current prices. You need to specify a `base` and `rel` coin if you need a specific pair price.
 
 Sample File Contents:
 ```shell
