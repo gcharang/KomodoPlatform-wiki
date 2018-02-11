@@ -29,15 +29,11 @@ Make sure you are in your home directory:
 ##### For Ubuntu 14.04:
 
 ```shell
-cd /tmp
-wget https://github.com/nanomsg/nanomsg/archive/1.0.0.tar.gz -O nanomsg-1.0.0.tar.gz
-tar -xzvf nanomsg-1.0.0.tar.gz
-cd nanomsg-1.0.0
-mkdir build
-cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-cmake --build .
-sudo cmake --build . --target install
+git clone https://github.com/nanomsg/nanomsg
+cd nanomsg
+cmake . -DNN_TESTS=OFF -DNN_ENABLE_DOC=OFF
+make -j2
+sudo make install
 sudo ldconfig
 ```
 
