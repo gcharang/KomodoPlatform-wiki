@@ -138,6 +138,7 @@ Sample Output:
 
 #### getcoin
 
+
 Sample File Contents:
 ```shell
 #!/bin/bash
@@ -145,6 +146,7 @@ source userpass
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"getcoin\",\"coin\":\"LTC\"}"
 ```
 
+Sample Output:
 
 #### getcoins
 This will display the list of all coins that barterDEX supports. It will list both disabled and enabled coins. Along with the status of the coin, this function will also display your smartaddress for that given coin. This method does not need user defined inputs and will just display all the coins.
