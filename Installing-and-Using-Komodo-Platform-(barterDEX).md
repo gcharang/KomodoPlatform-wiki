@@ -100,7 +100,7 @@ cd ~/SuperNET/iguana/dexscripts
 ./setpassphrase
 ./setpassphrase
 ```
-And, don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. You can see all scripts available for you to modify, test and use. Just run them in this terminal.
+And, don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. You can see all scripts available for you to modify, test and use. Check the [barterDEX API Summary](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category) for more info. Just run them in this terminal.
 
 #### Stopping `killing marketmaker` / Close the app
 
