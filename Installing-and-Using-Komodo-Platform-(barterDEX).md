@@ -43,6 +43,7 @@ brew install nanomsg
 Clone the repo, checkout dev branch for latest and install.
 
 ```shell
+cd ~
 git clone https://github.com/jl777/SuperNET
 cd ~/SuperNET/iguana/exchanges
 git checkout dev
