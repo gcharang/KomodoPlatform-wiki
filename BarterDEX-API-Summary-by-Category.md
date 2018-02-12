@@ -109,31 +109,40 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ```
 
 #### enable
-This method enables a coin by connecting to a locally running native coin daemon. To be eligible for trading a coin must be enabled and the daemon should be running.
+This method enables a coin by connecting to a locally running native coin daemon, otherwise, known as **Native Mode**. To be eligible for trading a coin must be enabled and the daemon should be running. You can edit the sample `enable` script file to activate the native coins you want to trade. you can stop it by using the [disable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#disable) script.
 
 Sample File Contents:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"MNZ\"}"
+#!/bin/bash
+source userpass
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"BEER\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"PIZZA\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"REVS\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"KMD\"}"
+#curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"BTC\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"CHIPS\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"SUPERNET\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"CRYPTO\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"DEX\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"BOTS\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"BET\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"HODL\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"MSHARK\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"MGW\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"PANGEA\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"JUMBLR\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"HUSH\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"BTCH\"}"
 ```
 
 Sample Output:
 ```json
-[
-  {
-    "coin": "MNZ",
-    "installed": true,
-    "height": 1259,
-    "balance": 0.51983025,
-    "KMDvalue": 0.08887519,
-    "status": "active",
-    "smartaddress": "RDoMmoCM5AcEH6Yf5vqKbqRjD1fLcQHuWb",
-    "rpc": "127.0.0.1:14337",
-    "pubtype": 60,
-    "p2shtype": 85,
-    "wiftype": 188,
-    "txfee": 0
-  }
-]
+[{"coin":"KMD","installed":true,"height":706875,"balance":1231.55116115,"KMDvalue":1231.55116115,"status":"active","electrum":"electrum1.cipig.net:10001","smartaddress":"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ","rpc":"127.0.0.1:7771","pubtype":60,"p2shtype":85,"wiftype":188,"txfee":1000,"zcredits":1000,"zdebits":{"swaps":[{"iambob":1,"aliceid":14646443851645911040,"requestid":1531405035,"quoteid":668442874,"base":"KMD","satoshis":398119479,"rel":"BTCH","destsatoshis":996001000,"price":2.50176404,"finished":0,"bobneeds_dPoW":1,"bob_dPoWheight":687380,"aliceneeds_dPoW":1,"alice_dPoWheight":0,"kmdvalue":3.98119479}, {"iambob":0,"aliceid":7500808088360189952,"requestid":2426472678,"quoteid":3136038708,"base":"KMD","satoshis":170727131,"rel":"MSHARK","destsatoshis":30001000,"price":0.17572485,"finished":1518455358,"bobneeds_dPoW":706621,"bob_dPoWheight":687380,"aliceneeds_dPoW":20948,"alice_dPoWheight":14108,"kmdvalue":1.72646183}, {"iambob":0,"aliceid":10968666690691268608,"requestid":769582120,"quoteid":492899755,"base":"KMD","satoshis":57319224,"rel":"MSHARK","destsatoshis":10001000,"price":0.17447898,"finished":1518455358,"bobneeds_dPoW":706644,"bob_dPoWheight":687380,"aliceneeds_dPoW":20963,"alice_dPoWheight":14108,"kmdvalue":0.57552564}, {"iambob":0,"aliceid":3325348207487614976,"requestid":1461677939,"quoteid":3994513936,"base":"KMD","satoshis":57334419,"rel":"MSHARK","destsatoshis":10001000,"price":0.17443274,"finished":1518455358,"bobneeds_dPoW":706648,"bob_dPoWheight":687380,"aliceneeds_dPoW":20965,"alice_dPoWheight":14108,"kmdvalue":0.57552564}, {"iambob":0,"aliceid":3949043092670119936,"requestid":868202615,"quoteid":2718753539,"base":"KMD","satoshis":40174013,"rel":"MSHARK","destsatoshis":7001000,"price":0.17426688,"finished":1518455358,"bobneeds_dPoW":706662,"bob_dPoWheight":687380,"aliceneeds_dPoW":20972,"alice_dPoWheight":14108,"kmdvalue":0.40288521}, {"iambob":0,"aliceid":1187687474903711744,"requestid":1035974224,"quoteid":4214136299,"base":"KMD","satoshis":40170553,"rel":"MSHARK","destsatoshis":7001000,"price":0.17428189,"finished":1518455358,"bobneeds_dPoW":706665,"bob_dPoWheight":687380,"aliceneeds_dPoW":20975,"alice_dPoWheight":14108,"kmdvalue":0.40288521}, {"iambob":0,"aliceid":3361541373681205248,"requestid":1030751685,"quoteid":1769312982,"base":"KMD","satoshis":40197682,"rel":"MSHARK","destsatoshis":7001000,"price":0.17416427,"finished":1518455358,"bobneeds_dPoW":706665,"bob_dPoWheight":687380,"aliceneeds_dPoW":20982,"alice_dPoWheight":14108,"kmdvalue":0.40288521}, {"iambob":0,"aliceid":16301556677736726528,"requestid":1082032834,"quoteid":977860445,"base":"KMD","satoshis":40191021,"rel":"MSHARK","destsatoshis":7001000,"price":0.17419313,"finished":1518455358,"bobneeds_dPoW":706669,"bob_dPoWheight":687380,"aliceneeds_dPoW":20991,"alice_dPoWheight":14108,"kmdvalue":0.40288521}, {"iambob":0,"aliceid":12486716361556295680,"requestid":131073424,"quoteid":554811147,"base":"KMD","satoshis":57472918,"rel":"MSHARK","destsatoshis":10001000,"price":0.17401239,"finished":1518455358,"bobneeds_dPoW":706718,"bob_dPoWheight":687380,"aliceneeds_dPoW":21033,"alice_dPoWheight":14108,"kmdvalue":0.57552564}, {"iambob":0,"aliceid":13831903913886154752,"requestid":3159266235,"quoteid":2688690321,"base":"KMD","satoshis":57143474,"rel":"MSHARK","destsatoshis":10001000,"price":0.17501561,"finished":1518455358,"bobneeds_dPoW":706715,"bob_dPoWheight":687380,"aliceneeds_dPoW":21029,"alice_dPoWheight":14108,"kmdvalue":0.57552564}, {"iambob":0,"aliceid":10301729584199958528,"requestid":1213522022,"quoteid":54249754,"base":"KMD","satoshis":57528414,"rel":"MSHARK","destsatoshis":10001000,"price":0.17384453,"finished":1518455358,"bobneeds_dPoW":706719,"bob_dPoWheight":687380,"aliceneeds_dPoW":21038,"alice_dPoWheight":14108,"kmdvalue":0.57552564}, {"iambob":0,"aliceid":8232914266839056384,"requestid":4081601584,"quoteid":412356287,"base":"KMD","satoshis":57494778,"rel":"MSHARK","destsatoshis":10001000,"price":0.17394623,"finished":0,"bobneeds_dPoW":1,"bob_dPoWheight":687380,"aliceneeds_dPoW":1,"alice_dPoWheight":14108,"kmdvalue":0.57552564}, {"iambob":0,"aliceid":9209632436025032704,"requestid":3537842224,"quoteid":3725087089,"base":"KMD","satoshis":21597791,"rel":"MSHARK","destsatoshis":3747597,"price":0.17351760,"finished":1518455358,"bobneeds_dPoW":706758,"bob_dPoWheight":687380,"aliceneeds_dPoW":21082,"alice_dPoWheight":14108,"kmdvalue":0.21566225}, {"iambob":0,"aliceid":8233074053957746688,"requestid":2261166303,"quoteid":22701758,"base":"KMD","satoshis":21597177,"rel":"MSHARK","destsatoshis":3746456,"price":0.17346970,"finished":1518455358,"bobneeds_dPoW":706765,"bob_dPoWheight":687380,"aliceneeds_dPoW":21091,"alice_dPoWheight":14108,"kmdvalue":0.21559659}, {"iambob":0,"aliceid":6122187997339189248,"requestid":1197866694,"quoteid":488405108,"base":"KMD","satoshis":115069202,"rel":"MSHARK","destsatoshis":20001000,"price":0.17381714,"finished":1518455358,"bobneeds_dPoW":706766,"bob_dPoWheight":687380,"aliceneeds_dPoW":21093,"alice_dPoWheight":14108,"kmdvalue":1.15099373}, {"iambob":0,"aliceid":14721798049184415744,"requestid":739807218,"quoteid":364988835,"base":"KMD","satoshis":115164687,"rel":"MSHARK","destsatoshis":20001000,"price":0.17367303,"finished":1518455358,"bobneeds_dPoW":706773,"bob_dPoWheight":687380,"aliceneeds_dPoW":21101,"alice_dPoWheight":14108,"kmdvalue":1.15099373}, {"iambob":0,"aliceid":15764304953332531200,"requestid":2360598697,"quoteid":3777086736,"base":"KMD","satoshis":57519187,"rel":"MSHARK","destsatoshis":10001000,"price":0.17387241,"finished":0,"bobneeds_dPoW":1,"bob_dPoWheight":687380,"aliceneeds_dPoW":1,"alice_dPoWheight":14108,"kmdvalue":0.57552564}, {"iambob":0,"aliceid":15764470458444021760,"requestid":1183002364,"quoteid":2238731236,"base":"KMD","satoshis":20796927,"rel":"MSHARK","destsatoshis":3600230,"price":0.17311355,"finished":1518455358,"bobneeds_dPoW":706822,"bob_dPoWheight":687380,"aliceneeds_dPoW":21145,"alice_dPoWheight":14108,"kmdvalue":0.20718175}, {"iambob":0,"aliceid":15223997733381865472,"requestid":1894968837,"quoteid":948074537,"base":"KMD","satoshis":20806039,"rel":"MSHARK","destsatoshis":3594169,"price":0.17274642,"finished":1518456523,"bobneeds_dPoW":706844,"bob_dPoWheight":687380,"aliceneeds_dPoW":21189,"alice_dPoWheight":14108,"kmdvalue":0.20683295}],"pendingswaps":14.49513794}}]
+[{"coin":"SUPERNET","installed":true,"height":85017,"balance":0.94386703,"KMDvalue":35.77755890,"status":"active","smartaddress":"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ","rpc":"127.0.0.1:11341","pubtype":60,"p2shtype":85,"wiftype":188,"txfee":1000}]
+[{"coin":"BOTS","installed":true,"height":14118,"balance":8.61219046,"KMDvalue":95.90388479,"status":"active","electrum":"electrum1.cipig.net:10007","smartaddress":"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ","rpc":"127.0.0.1:11964","pubtype":60,"p2shtype":85,"wiftype":188,"txfee":1000}]
+[{"coin":"BET","installed":true,"height":16555,"balance":36.65094825,"KMDvalue":0,"status":"active","electrum":"electrum1.cipig.net:10012","smartaddress":"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ","rpc":"127.0.0.1:14250","pubtype":60,"p2shtype":85,"wiftype":188,"txfee":1000}]
+[{"coin":"MSHARK","installed":true,"height":21221,"balance":61.90419488,"KMDvalue":356.23889156,"status":"active","smartaddress":"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ","rpc":"127.0.0.1:8846","pubtype":60,"p2shtype":85,"wiftype":188,"txfee":1000}]
+[{"coin":"BTCH","installed":true,"height":17922,"balance":1890.26497637,"KMDvalue":1085.25152617,"status":"active","smartaddress":"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ","rpc":"127.0.0.1:8800","pubtype":60,"p2shtype":85,"wiftype":188,"txfee":1000}]
 ```
 
 #### getcoin
@@ -175,6 +184,8 @@ This will display the list of all coins that barterDEX supports. It will list bo
 
 Sample File Contents:
 ```shell
+#!/bin/bash
+source userpass
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"getcoins\"}"
 ```
 
@@ -382,6 +393,8 @@ The `./help` API will display a list of all the available API available on barte
 
 Sample File Contents:
 ```shell
+#!/bin/bash
+source userpass
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"help\"}"
 ```
 
@@ -501,6 +514,7 @@ Sample Output:
 ```
 
 #### notarizations
+
 This script will display coin notarization status for a specified coin. Use the script like this `./notarizations KMD`, `./notarizations REVS`, etc.
 
 Sample File Contents:
@@ -549,18 +563,25 @@ Sample Output:
 
 Sample File Contents:
 ```shell
-pkill -15 marketmaker; 
+#!/bin/bash
+source passphrase
+source coins
+./stop
 git pull;
 cd ..; 
 ./m_mm;
+pkill -15 marketmaker; 
  $1 ./marketmaker "{\"gui\":\"nogui\", \"profitmargin\":0.01, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
 
 #### run_osx
-Starts barterDEX on MacOS environment.
+Starts barterDEX in LP mode in MacOS environment.
 
 Sample File Contents:
 ```shell
+#!/bin/bash
+source passphrase
+source coins
 pkill -15 marketmaker; 
 git pull;
 cd ..; 
@@ -576,7 +597,7 @@ Sample File Content:
 #!/bin/bash
 source userpass
 source passphrase
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"method\":\"passphrase\",\"passphrase\":\"$passphrase\",\"netid\":0,\"gui\":\"nogui\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"method\":\"passphrase\",\"passphrase\":\"$passphrase\",\"gui\":\"nogui\"}"
 
 ```
 
@@ -585,7 +606,9 @@ This method will stop `barterDEX`.
 
 Sample File Content:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"stop\"}
+#!/bin/bash
+source userpass
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"stop\"}"
 ```
 
 #### trust
@@ -751,11 +774,14 @@ Sample Output:
 ```
 
 #### coinswaps
+
 This method uses `swapstatus` for a spcific coin.
 
 Sample File Content:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"coin\":\"MNZ\"}"
+#!/bin/bash
+source userpass
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"coin\":\"CHIPS\"}"
 ```
 
 #### electrum
@@ -837,6 +863,7 @@ Sample Output:
 ```
 
 #### goal
+
 The `./goal` command is basically the automatic trading tool of the API. When you execute this command, orders will be set until the goals are reached. The idea is that you set the goal for each coin and if you have more than the goal for a specific coin, it will allow sales of that coin. If you have less than the goal percentage, it will allow buys of that coin.
 
 Sample File Contents:
@@ -916,6 +943,7 @@ Sample Output:
 ```
 
 #### goals
+
 Displays the goal percentage for each coin and their status.
 
 Sample File Contents:
@@ -1013,6 +1041,7 @@ Sample Output:
 ```
 
 #### myprice
+
 Shows number of bids andprices you set for a given coin. Your wallet must be active to display the prices.
 
 Sample File Contents:
