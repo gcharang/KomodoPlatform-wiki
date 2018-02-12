@@ -1,15 +1,13 @@
-### INTRODUCTION:
+**This guide is intended for Unix based systems (Linux & MacOS) only. For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.8/assets/bin/win64)**
 
-**For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.8/assets/bin/win64)**
-
-Komodo Platform is now capable of working with Electrum servers. This means it is not necessary to download a coin daemon including its blockchain to your computer.
+Komodo Platform (barterDEX) is capable of working with Electrum servers. This means it is not necessary to download blockchain data in your computer. As a matter of fact, you don't need even download and run native coin wallet or daemon.
 Check the list of current Electrum servers here: [Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list).
 
-If you however choose to use a native coin daemon, please make sure it is fully synced. 
+If you however choose to use a native coin daemon, please make sure it is fully synced. For Komodo and other assetchains use the [latest Agama installer](https://artifacts.supernet.org/latest/) or use the [KomodoOcean-QT](https://github.com/DeckerSU/komodo-qt/releases).
+
 For a list of currently supported native coins and instructions for the coin specific configuration file, see https://support.supernet.org/support/solutions/articles/29000014808-installation-script-for-various-coins
 
 You may want to back up your system or clone it after everything is synced and running correctly BEFORE you start installing coin daemons.
-
 
 ### Installing Komodo Platform (barterDEX)
 
@@ -21,14 +19,11 @@ sudo apt-get install git libcurl4-openssl-dev build-essential
 ```
 
 #### Install `nanomsg`
-If not already installed, Nanomsg is needed:
-Make sure you are in your home directory: 
-
-`cd ~`
 
 ##### Linux:
 
 ```shell
+cd ~
 git clone https://github.com/nanomsg/nanomsg
 cd nanomsg
 cmake . -DNN_TESTS=OFF -DNN_ENABLE_DOC=OFF
@@ -44,6 +39,7 @@ brew install nanomsg
 ```
 
 #### Clone the SuperNET repo from github & Install:
+Clone the repo, checkout dev branch for latest and install.
 
 ```shell
 git clone https://github.com/jl777/SuperNET
@@ -51,6 +47,7 @@ cd ~/SuperNET/iguana/exchanges
 git checkout dev
 ./install
 ```
+
 #### Copy the `passphrase` file & using seed passphrase
 From the same dir in terminal type the following commands to copy the `passphrase` file to `~/SuperNET/iguana/dexscripts` dir and add a strong 24 words seed passphrase in between `""`. Save your passphrase properly without changing any word or space. Same seed **passphrase** will always show you the same **smartaddress**.
 
@@ -92,6 +89,7 @@ Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Na
 barterDEX is now installed in your system.
 
 #### Running barterDEX
+
 Every time you want to run **barterDEX** open a new terminal window and type the following:
 ```shell
 cd ~/SuperNET/iguana/dexscripts
@@ -99,7 +97,10 @@ cd ~/SuperNET/iguana/dexscripts
 ./setpassphrase
 ./setpassphrase
 ```
-And don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
+And, don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. You can see all scripts available for you to modify, test and use. Just run them in this terminal.
+
+#### Stopping `killing marketmaker` / Close the app
+If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
 
 #### Adding coins
-You can run barterDEX and add coins without downloading any blockchain data using Electrum mode. Edit the `electrum` script with the list of servers you want to use.You need to use
+You can run barterDEX and add coins without downloading any blockchain data using Electrum mode. Edit the `electrum` script with the list of servers you want to use. Native mode is faster and you need to use native wallet running with fully synced blockchain data and your barterDEX seed passphrase imported into the wallet. Edit the `enable` script and run it for adding coins native mode.
