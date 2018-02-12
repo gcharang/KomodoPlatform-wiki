@@ -11,7 +11,7 @@ For a list of currently supported native coins and instructions for the coin spe
 You may want to back up your system or clone it after everything is synced and running correctly BEFORE you start installing coin daemons.
 
 
-### SETTING UP KOMODO PLATFORM
+### Installing Komodo Platform (barterDEX)
 
 #### Install the following dependency packages:
 
@@ -43,7 +43,7 @@ sudo ldconfig
 brew install nanomsg
 ```
 
-#### Clone the Komodo Platform directory from github:
+#### Clone the SuperNET repo from github & Install:
 
 ```shell
 git clone https://github.com/jl777/SuperNET
@@ -51,7 +51,7 @@ cd ~/SuperNET/iguana/exchanges
 git checkout dev
 ./install
 ```
-
+#### Copy the `passphrase` file & using seed passphrase
 From the same dir in terminal type the following commands to copy the `passphrase` file to `~/SuperNET/iguana/dexscripts` dir and add a strong 24 words seed passphrase in between `""`. Save your passphrase properly without changing any word or space. Same seed **passphrase** will always show you the same **smartaddress**.
 
 ```shell
@@ -65,7 +65,8 @@ Enter your passphrase:
 
 Press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
-All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of u`serpass`. To find out, just run the client first (as instructed below) and then run `./setpassphrase` script 2 times. 2nd call will display your `userpass` field and you can copy that value and put it into `~/SuperNET/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
+#### Getting the `userpass` value
+All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of u`serpass`. To find out, just run the `client` script first (as instructed below) and then run `./setpassphrase` script 2 times. 2nd call will display your `userpass` field and you can copy that value and put it into `~/SuperNET/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
 
 Open a new terminal and type the following:
 
@@ -74,8 +75,9 @@ cd ~/SuperNET/iguana/dexscripts
 ./client &
 ./setpassphrase
 ./setpassphrase
+pkill -15 marketmaker
 ```
-
+#### Edit the `userpass` file
 Now copy the `userpass` example file to `~/SuperNET/iguana/dexscripts` dir and edit the file to save the `userpass` you got from the 2nd call of `./setpassphrase`
 
 ```shell
@@ -87,7 +89,16 @@ nano userpass
 
 Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
-Open a new terminal window and type the following: and don't close it. Open a new terminal window to issue all other scripts/API calls from next. If you want to close barterDEX, issue `pkill -15 marketmaker` first.
+barterDEX is now installed in your system.
+
+#### Running barterDEX
+Every time you want to run **barterDEX** open a new terminal window and type the following:
+```shell
+cd ~/SuperNET/iguana/dexscripts
+./client &
+./setpassphrase
+./setpassphrase
+ and don't close it. Open a new terminal window to issue all other scripts/API calls from next. If you want to close barterDEX, issue `pkill -15 marketmaker` first.
 
 Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir.
 
