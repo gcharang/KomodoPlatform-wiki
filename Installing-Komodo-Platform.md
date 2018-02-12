@@ -98,8 +98,8 @@ cd ~/SuperNET/iguana/dexscripts
 ./client &
 ./setpassphrase
 ./setpassphrase
- and don't close it. Open a new terminal window to issue all other scripts/API calls from next. If you want to close barterDEX, issue `pkill -15 marketmaker` first.
+```
+And don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
 
-Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir.
-
-You also need native coin daemon of your choice running in order to test native mode. Or use electrum mode if you don't want to download blockchain.
+#### Adding coins
+You can run barterDEX and add coins without downloading any blockchain data using Electrum mode. Edit the `electrum` script with the list of servers you want to use.You need to use
