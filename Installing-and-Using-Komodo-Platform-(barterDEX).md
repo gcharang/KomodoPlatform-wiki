@@ -1,5 +1,4 @@
-**This guide is intended for Unix based systems (Linux & MacOS) only using command line interface (CLI). For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.8/assets/bin/win64)**
-**GUI users, get [BarterDEX GUI](https://github.com/KomodoPlatform/BarterDEX).**
+**This guide is intended for Unix based systems (Linux & MacOS) only using command line interface (CLI). For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.8/assets/bin/win64). GUI users, get [BarterDEX GUI](https://github.com/KomodoPlatform/BarterDEX).**
 
 Komodo Platform (barterDEX) is capable of working with Electrum servers. This means it is not necessary to download blockchain data in your computer. As a matter of fact, you don't need even download and run native coin wallet or daemon.
 Check the list of current Electrum servers here: [Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list).
