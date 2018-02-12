@@ -138,6 +138,7 @@ Sample Output:
 
 #### getcoin
 
+This method will show coin data including smartaddress, balance etc.
 
 Sample File Contents:
 ```shell
@@ -147,6 +148,27 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ```
 
 Sample Output:
+```JSON
+{
+  "result": "success",
+  "enabled": 5,
+  "disabled": 88,
+  "coin": {
+    "coin": "BTCH",
+    "installed": true,
+    "height": 17914,
+    "balance": 1890.26497637,
+    "KMDvalue": 1060.52748251,
+    "status": "active",
+    "smartaddress": "RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ",
+    "rpc": "127.0.0.1:8800",
+    "pubtype": 60,
+    "p2shtype": 85,
+    "wiftype": 188,
+    "txfee": 1000
+  }
+}
+```
 
 #### getcoins
 This will display the list of all coins that barterDEX supports. It will list both disabled and enabled coins. Along with the status of the coin, this function will also display your smartaddress for that given coin. This method does not need user defined inputs and will just display all the coins.
