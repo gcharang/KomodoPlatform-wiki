@@ -1,4 +1,5 @@
-**This guide is intended for Unix based systems (Linux & MacOS) only. For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.8/assets/bin/win64)**
+**This guide is intended for Unix based systems (Linux & MacOS) only using command line interface (CLI). For Windows installations please refer to this [guide](https://github.com/DeckerSU/SuperNET/blob/dev-decker-dev/iguana/dexscripts.win32/how_to_use.md) and use this [link for the binaries](https://github.com/KomodoPlatform/BarterDEX/tree/v0.8/assets/bin/win64)**
+**GUI users, get BarterDEX GUI from [here](https://github.com/KomodoPlatform/BarterDEX).**
 
 Komodo Platform (barterDEX) is capable of working with Electrum servers. This means it is not necessary to download blockchain data in your computer. As a matter of fact, you don't need even download and run native coin wallet or daemon.
 Check the list of current Electrum servers here: [Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list).
@@ -32,9 +33,10 @@ sudo make install
 sudo ldconfig
 ```
 
-##### For MacOS you'll need to install `homebrew` (Google how to do it)
+##### MacOS
+You'll need to install `homebrew` (Google how to do it)
 
-```shell
+```
 brew install nanomsg
 ```
 
@@ -49,6 +51,7 @@ git checkout dev
 ```
 
 #### Copy the `passphrase` file & using seed passphrase
+
 From the same dir in terminal type the following commands to copy the `passphrase` file to `~/SuperNET/iguana/dexscripts` dir and add a strong 24 words seed passphrase in between `""`. Save your passphrase properly without changing any word or space. Same seed **passphrase** will always show you the same **smartaddress**.
 
 ```shell
@@ -63,6 +66,7 @@ Enter your passphrase:
 Press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
 #### Getting the `userpass` value
+
 All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of u`serpass`. To find out, just run the `client` script first (as instructed below) and then run `./setpassphrase` script 2 times. 2nd call will display your `userpass` field and you can copy that value and put it into `~/SuperNET/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
 
 Open a new terminal and type the following:
@@ -100,7 +104,9 @@ cd ~/SuperNET/iguana/dexscripts
 And, don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. You can see all scripts available for you to modify, test and use. Just run them in this terminal.
 
 #### Stopping `killing marketmaker` / Close the app
+
 If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
 
 #### Adding coins
+
 You can run barterDEX and add coins without downloading any blockchain data using Electrum mode. Edit the `electrum` script with the list of servers you want to use. Native mode is faster and you need to use native wallet running with fully synced blockchain data and your barterDEX seed passphrase imported into the wallet. Edit the `enable` script and run it for adding coins native mode.
