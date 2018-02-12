@@ -26,7 +26,7 @@ Make sure you are in your home directory:
 
 `cd ~`
 
-##### For Ubuntu 14.04:
+##### Linux:
 
 ```shell
 git clone https://github.com/nanomsg/nanomsg
@@ -37,18 +37,7 @@ sudo make install
 sudo ldconfig
 ```
 
-##### For Ubuntu 16.04:
-
-```shell
-git clone https://github.com/nanomsg/nanomsg
-cd nanomsg
-cmake .
-make
-sudo make install
-sudo ldconfig
-```
-
-##### For MacOS you'll need to install homebrew (Google how to do it)
+##### For MacOS you'll need to install `homebrew` (Google how to do it)
 
 ```shell
 brew install nanomsg
@@ -63,7 +52,7 @@ git checkout dev
 ./install
 ```
 
-From the same dir in terminal type the following commands to copy the `passphrase` file to `~/SuperNET/iguana/dexscripts` dir and add a strong 24 words seed passphrase in between `""`. Save your passphrase properly without changing any word or space. Same passphrase will always show you the same smartaddress.
+From the same dir in terminal type the following commands to copy the `passphrase` file to `~/SuperNET/iguana/dexscripts` dir and add a strong 24 words seed passphrase in between `""`. Save your passphrase properly without changing any word or space. Same seed **passphrase** will always show you the same **smartaddress**.
 
 ```shell
 cp passphrase ../dexscripts/passphrase
@@ -98,8 +87,8 @@ nano userpass
 
 Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
-You should be running the terminal window that you run `./client &` script and don't close it. Open a new terminal window to issue all other scripts/API calls from next. If you want to close barterDEX, issue `pkill -15 marketmaker` first.
+Open a new terminal window and type the following: and don't close it. Open a new terminal window to issue all other scripts/API calls from next. If you want to close barterDEX, issue `pkill -15 marketmaker` first.
 
-Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir
+Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir.
 
 You also need native coin daemon of your choice running in order to test native mode. Or use electrum mode if you don't want to download blockchain.
