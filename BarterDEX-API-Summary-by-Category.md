@@ -43,12 +43,15 @@ The first API to run which will start barterDEX in client mode. Next script to r
 
 Sample File Contents:
 ```shell
+#!/bin/bash
+source passphrase
 source coins
-pkill -15 marketmaker; 
+./stop
 git pull;
 cd ..; 
 ./m_mm;
-./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+pkill -15 marketmaker; 
+ ./marketmaker "{\"gui\":\"nogui\",\"client\":1,\"netid\":0, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}"  &
 ```
 
 Fields that can be used:
@@ -530,7 +533,10 @@ This method helps the GUI build to take input of the passphrase and generate `us
 
 Sample File Content:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"method\":\"passphrase\",\"passphrase\":\"$passphrase\",\"gui\":\"nogui\"}"
+#!/bin/bash
+source userpass
+source passphrase
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"method\":\"passphrase\",\"passphrase\":\"$passphrase\",\"netid\":0,\"gui\":\"nogui\"}"
 
 ```
 
