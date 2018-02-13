@@ -1782,7 +1782,7 @@ Sample Output:
 ```
 
 #### calcaddress
-Useful to get your private key for specific seed passphrase. This API will display the `passprhase`, `smartaddress` & `priavate key` of the given passprhase. Edit the passphrase section and change the word `default` with your own seed passphrase.
+Useful to get your private key for specific seed passphrase. This API will display the `passphrase`, `smartaddress` & `private key` of the given passphrase. Edit the passphrase section and change the word `default` with your own seed passphrase.
 
 Sample File Content:
 ```shell
