@@ -1792,6 +1792,7 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ```
 
 Sample Output:
+This output is based on the passphrase `default`. Change that to your seed passphrase to get your desired private key.
 ```JSON
 {
   "passphrase": "default",
