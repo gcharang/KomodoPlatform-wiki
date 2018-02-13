@@ -39,7 +39,7 @@ docker run -e PASSPHRASE="secure passphrase" -p 127.0.0.1:7783:7783 lukechilds/b
 ### barterDEX Operation
 
 #### client
-The first API to run which will start barterDEX in client mode. Next script to run is `setpassphrase` twice. Run `pkill -15 marketmaker` each time before you stop `client`. 
+The first API to run which will start barterDEX in client mode. Next script to run is `setpassphrase` twice. If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
 
 Sample File Contents:
 ```shell
