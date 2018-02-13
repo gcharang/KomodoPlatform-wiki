@@ -12,7 +12,7 @@
 [bot_buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_buy), [bot_list](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_list), [bot_pause](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_pause), [bot_resume](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_resume), [bot_sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_sell), [bot_settings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_settings), [bot_status](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_status), [bot_stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_stop)
 
 #### Coin Wallet Features
-[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw)
+[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [calcaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#calcaddress), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw)
 
 #### Statistics
 [guistats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#guistats), [pricearray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pricearray), [statsdisp](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#statsdisp), [ticker](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#ticker), [tradesarray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#tradesarray)
@@ -1780,6 +1780,26 @@ Sample Output:
 ```JSON
 [{"coin":"BTC","balance":0.00400000}, {"coin":"KMD","balance":360.33996021}, {"coin":"MNZ","balance":55.70756040}, {"coin":"REVS","balance":39.10219798}, {"coin":"JUMBLR","balance":1.12038776}, {"coin":"SUPERNET","balance":0.91430900}, {"coin":"PANGEA","balance":1}, {"coin":"DEX","balance":1}, {"coin":"BET","balance":1}, {"coin":"CRYPTO","balance":1}, {"coin":"HODL","balance":1}, {"coin":"BOTS","balance":1}, {"coin":"COQUI","balance":10.85596031}]
 ```
+
+#### calcaddress
+Useful to get your private key for specific seed passphrase. This API will display the `passprhase`, smartaddress` & `priavate key` of the given passprhase. Edit the passphrase section and change the word `default` with your own seed passphrase.
+
+Sample File Content:
+```shell
+#!/bin/bash
+source userpass
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"calcaddress\",\"passphrase\":\"default\"}"
+```
+
+Sample Output:
+```JSON
+{
+  "passphrase": "default",
+  "coinaddr": "RPZVpjptzfZnFZZoLnuSbfLexjtkhe6uvn",
+  "privkey": "30a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0684f"
+}
+```
+
 
 #### fundvalue
 `fundvalue` will process `"holdings":[]` array and also do an internal balances api call if `address` is specified. This will only work for watchonly addresses that have been rescanned and with active coins. In order for external addresses to work, you need to have `importaddress` and `rescan` done, for obvious reasons, in native mode. SPV mode should just work without that.
