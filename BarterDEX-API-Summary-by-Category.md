@@ -1,3 +1,5 @@
+**[barterDEX CLI installation guide](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))**
+
 ## Summary info for each API by Category
 
 #### barterDEX Operation
@@ -39,7 +41,7 @@ docker run -e PASSPHRASE="secure passphrase" -p 127.0.0.1:7783:7783 lukechilds/b
 ### barterDEX Operation
 
 #### client
-The first API to run which will start barterDEX in client mode. Next script to run is `setpassphrase` twice. If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
+The first API to run which will start barterDEX in client mode. Next script to run is `setpassphrase`. If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all barterDEX process is killed safely.
 
 Sample File Contents:
 ```shell
@@ -590,7 +592,7 @@ $1 ./marketmaker "{\"gui\":\"nogui\", \"profitmargin\":0.01, \"userhome\":\"/${H
 ```
 
 #### setpassphrase
-This method helps the GUI build to take input of the passphrase and generate `userpass`. This is the second API to run in BarterDEX. On the first call it will display the `default` seed passphrase for smartaddresses of all supported coin. Second call will show users own passphrase & smartaddress and logs in to BarterDEX.
+This method helps the GUI build to take input of the passphrase and generate `userpass`. This is the second API to run in BarterDEX. On the first call it will display the `userpass` value at the top of output.
 
 Sample File Content:
 ```shell
