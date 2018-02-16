@@ -99,11 +99,7 @@ cd ~/SuperNET/iguana/dexscripts
 ./client &
 ./setpassphrase
 ```
-And, don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. You can see all scripts available for you to modify, test and use. Check the [barterDEX API Summary](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category) for more info. Just run them in this 2nd terminal.
-
-#### Stopping `killing marketmaker` / Close the app
-
-If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
+And, don't close it. Open a new terminal window to issue all other scripts/API calls from next. Get all available api list by typing `./help` inside `~/SuperNET/iguana/dexscripts` dir. You can see all scripts available for you to modify, test and use.
 
 #### Activating coins
 
@@ -111,3 +107,9 @@ You can run barterDEX and activate coins for trading without downloading any blo
 To activate your list of electrum servers from the script, in terminal use `./electrum`.
 
 Native mode is faster and you need to use native wallet running with fully synced blockchain data and your barterDEX seed passphrase imported into the wallet. Edit the `enable` script with coin names and run `./enable` in terminal window to activate native coins for trading in barterDEX.
+
+#### Stopping `killing marketmaker` / Close the app
+
+If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
+
+**Check the [barterDEX API Summary](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category) for more info on different API calls that barterDEX supports. e.g.: `buy`, `sell`, `orderbook`, `balance` etc. Just edit them for your liking and run them in 2nd terminal.**
