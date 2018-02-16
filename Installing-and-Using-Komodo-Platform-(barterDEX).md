@@ -67,7 +67,7 @@ Press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
 #### Getting the `userpass` value
 
-All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you wont know the value of u`serpass`. To find out, just run the `client` script first (as instructed below) and then run `./setpassphrase` script 2 times. 2nd call will display your `userpass` field and you can copy that value and put it into `~/SuperNET/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
+All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you may not know the value of `userpass`. To find out, just run the `client` script first (as instructed below) and then run `./setpassphrase`. You will notice your `userpass` value at the top of output and you can copy that value and put it into `~/SuperNET/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
 
 Open a new terminal and type the following:
 
@@ -75,11 +75,10 @@ Open a new terminal and type the following:
 cd ~/SuperNET/iguana/dexscripts
 ./client &
 ./setpassphrase
-./setpassphrase
 pkill -15 marketmaker
 ```
 #### Edit the `userpass` file
-Now copy the `userpass` example file to `~/SuperNET/iguana/dexscripts` dir and edit the file to save the `userpass` you got from the 2nd call of `./setpassphrase`
+Now copy the `userpass` example file to `~/SuperNET/iguana/dexscripts` dir and edit the file to save the `userpass` you got from the `./setpassphrase` script output.
 
 ```shell
 cd ~/SuperNET/iguana/exchanges
