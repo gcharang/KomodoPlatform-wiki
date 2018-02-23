@@ -1,4 +1,4 @@
-**This guide will set you up with ETH swaps in BarterDEX. If you are not looking for non ETH based token swap, please follow [this installation guide](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX)). The project is still in development, this guide may change accordingly in th future. Make sure you are following the latest guide before reporting anything is broken.**
+**This guide will set you up with ETH swaps in BarterDEX. If you are not looking for non ETH based token swap, please follow [this installation guide](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX)). The project is still in development and highly experimental, this guide may change accordingly in the future. Make sure you are following the latest guide before reporting anything is broken.**
 
 # Installation steps
 Please follow all the steps by their order of appearance in this guide. If you get any error for any step and skip to the next, things will not work for you. If you have any questions or need help, head over to `#etomic` channel in Komodo Platform Slack and ask there.
