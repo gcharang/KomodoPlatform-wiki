@@ -48,7 +48,7 @@ sudo ldconfig
 cd ~
 git clone https://github.com/jl777/SuperNET
 cd ~/SuperNET
-git checkout etomic
+git checkout dev
 git submodule update --init --recursive
 mkdir build
 cd build
