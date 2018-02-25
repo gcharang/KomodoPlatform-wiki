@@ -59,6 +59,11 @@ Sample File Contents:
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"instantdex_claim\"}"
 ```
 
+Output:
+```JSON
+{"result":"success","claimed":0,"txids":[{"txid":"d5705d948a5a4e0171acec3eb718ca1421ef998b37d0af5c37ac3b440898aef5","deposit":1000,"interest":10.78139269,"waittime":25702320}]}
+```
+
 #### Manually Enable 0conf deposits to work with the GUI
 
 You need to put the `txid` of the 0conf / instantdex deposit in an `instantdex.json` and/or `instantdex_address.json` file inside `DB` dir. If the file is not preset in the DB folder, create the file manually. The `DB` dir is located `C:/Users/<username>/AppData/Roaming/BarterDEX/DB` in Windows and `~/.BarterDEX/DB` in Linux. The content inside the JSON file should look like following:
