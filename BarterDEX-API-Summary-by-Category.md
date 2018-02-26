@@ -14,7 +14,7 @@
 [bot_buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_buy), [bot_list](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_list), [bot_pause](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_pause), [bot_resume](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_resume), [bot_sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_sell), [bot_settings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_settings), [bot_status](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_status), [bot_stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_stop)
 
 #### Coin Wallet Features
-[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [calcaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#calcaddress), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw)
+[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [calcaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#calcaddress), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [timelock and unlockedspend](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#timelock-and-unlockedspend) [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw)
 
 #### Statistics
 [guistats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#guistats), [pricearray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pricearray), [statsdisp](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#statsdisp), [ticker](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#ticker), [tradesarray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#tradesarray)
@@ -1916,6 +1916,24 @@ Sample Output:
 ```JSON
 [{"coin":"KMD","balance":6000000}, {"coin":"REVS","balance":6335.95500000}, {"coin":"JUMBLR","balance":239022.38900000}, {"coin":"SUPERNET","balance":6335.95500000}, {"coin":"PANGEA","balance":602828.14640000}, {"coin":"DEX","balance":257733}, {"coin":"BET","balance":2688}, {"coin":"CRYPTO","balance":320754.73700000}, {"coin":"HODL","balance":70000}, {"coin":"MSHARK","balance":385403.90000000}, {"coin":"BOTS","balance":288157}]
 ```
+
+#### `timelock` and `unlockedspend`
+
+BarterDEX now have a coin agnostic timelock/unlock mechanism. Of course the coin will need to support CLTV or it wont work. The timelock will work partially, but the unlockspend will NOT. Test with small amount. Don't confuse these APIs with 0conf deposit and claim.
+
+Sample file content:
+`timelock`
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"timelock\",\"coin\":\"KMD\",\"duration\":1000,\"amount\":1}"
+```
+`unlockedspend`
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"unlockedspend\",\"coin\":\"KMD\",\"txid\":\"e858e382a816b4cab22e3fd3e29901c7ef497cd1fdad7683314cc9187eca34fd\"}"
+```
+
+`timelock` API is pretty simple, just specify coin, duration in seconds and the amount. An extra txfee will be added to amount so the unlockspend can send the specified amount. there is an optional `destaddr` field that will allow you to send to any address. Like `withdraw`, `timelock` will not actually broadcast the tx, so you need to use `sendrawtransaction` to actually broadcast it.
+
+Once its broadcast, and the time lock expires, you can do an `unlockedspend` using just the coin and the txid. The requirement is that it must be sent to your smartaddress that you are logged into and it will only just unlock and send to yourself.
 
 #### withdraw
 To withdraw, you just need to specify the array of outputs and the coin. It returns the `rawtx`, the signed transaction in `hex` the `txid` and if it was complete or not. All inputs are assumed to be standard pay to `pubkeyhash`, having other non-standard `utxo` will make it create invalid rawtx.
