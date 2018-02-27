@@ -3,12 +3,15 @@
 ## Summary info for each API by Category
 
 #### barterDEX Operation
-[client](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client), [client_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client_osx), [debug](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#debug), [disable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#disable), [enable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#enable), [getcoin](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoin), [getcoins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoins), [getpeers](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeers), [getpeersIP](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeersip), [help](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#help), [jpg](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#jpg), [millis](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#millis), [notarizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#notarizations), [parselog](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#parselog), [run](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run), [run_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run_osx), [setpassphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setpassphrase), [stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#stop), [trust](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trust), [trusted](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trusted)
+[client](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client), [client_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client_osx), [convaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#convaddress),, [debug](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#debug), [disable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#disable), [enable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#enable), [getcoin](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoin), [getcoins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoins), [getpeers](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeers), [getpeersIP](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeersip), [help](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#help), [jpg](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#jpg), [millis](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#millis), [notarizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#notarizations), [parselog](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#parselog), [run](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run), [run_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run_osx), [setpassphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setpassphrase), [stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#stop), [trust](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trust), [trusted](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trusted)
 
 #### barterDEX Trading
-[autoprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#autoprice), [baserelswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#baserelswaps), [buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#buy), [coinswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#coinswaps), [electrum](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum), [getprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getprices), [goal](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goal), [goals](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goals), [myprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprice), [myprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprices), [orderbook](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#orderbook), [pendings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendings), [pendingswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendingswaps), [portfolio](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#portfolio), [pubkeystats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pubkeystats), [recentswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#recentswaps), [sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sell), [setconfirms](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setconfirms), [setprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setprice), [swapstatus](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatus)
+[autoprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#autoprice), [baserelswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#baserelswaps), [buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#buy), [electrum](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum), [getprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getprices), [goal](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goal), [goals](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goals), [myprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprice), [myprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprices), [orderbook](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#orderbook), [pubkeystats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pubkeystats), [sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sell), [setconfirms](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setconfirms), [setprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setprice)
 
 [> `autoprice` the value of a fund, ie. using the `fundvalue` api](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category#autoprice-the-value-of-a-fund-ie-using-the-fundvalue-api)
+
+#### Status / Info
+[pendings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendings), [swapstatus](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatus), [pendingswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendingswaps), [coinswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#coinswaps), [recentswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#recentswaps)
 
 #### TradeBots
 [bot_buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_buy), [bot_list](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_list), [bot_pause](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_pause), [bot_resume](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_resume), [bot_sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_sell), [bot_settings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_settings), [bot_status](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_status), [bot_stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_stop)
@@ -83,6 +86,24 @@ git pull;
 cd ..; 
 ./m_mm;
 ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}/Library/Application\ Support\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+```
+
+#### convaddress
+
+This script should work with p2sh addresses and also with normal addresses to convert. You just have to specify the `coin`, `address` & `destcoin` parameter and run.
+
+Sample file contents:
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"convaddress\",\"coin\":\"BTC\",\"address\":\"1KPctPk4Zs4Qbe1x32A5bC1roAnmpvi9Fy\",\"destcoin\":\"KMD\"}"
+```
+
+Sample Output 1:
+```JSON
+{"result":"success","coin":"BTC","address":"1KPctPk4Zs4Qbe1x32A5bC1roAnmpvi9Fy","destcoin":"KMD","destaddress":"RTfoxudMAgryfeP9WC9CgiM4ZSFNVM2VvK"}
+```
+Sample Output 2:
+```JSON
+{"result":"success","coin":"BTC","address":"1KPctPk4Zs4Qbe1x32A5bC1roAnmpvi9Fy","destcoin":"DGB","destaddress":"DPXiReghsGxh8eCYmc9e8xBTgJX5CdnALu"}
 ```
 
 #### debug
@@ -775,17 +796,6 @@ Sample Output:
 }
 ```
 
-#### coinswaps
-
-This method uses `swapstatus` for a spcific coin.
-
-Sample File Content:
-```shell
-#!/bin/bash
-source userpass
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"coin\":\"CHIPS\"}"
-```
-
 #### electrum
 This method enables a coin by connecting to the specified electrumx server. For this method running a native node and blockchain download is not necessary. You need to edit the file with coin name and IP address and port for the coin. For a list of electrumx server check this link `http://pad.supernet.org/electrum-servers`
 
@@ -1152,129 +1162,6 @@ Sample Output:
 }
 ```
 
-#### pendings
-`./pendings` is a special case of `statsdisp` and will display all the pending swaps. You can set a starttime and endtime to query your pending swaps.
-
-Sample File Contents:
-```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"statsdisp\",\"starttime\":2000000000,\"endtime\":2000000000}"
-```
-
-Sample Output:
-```JSON
-{
-  "result": "success",
-  "newlines": 0,
-  "swaps": [
-    {
-      "aliceid": "7276253190735921153",
-      "src": "30eb3d952f66eba2df0100b97d6707257cf91dc8c8b0237cfb7c3aa70dc52d4d",
-      "base": "REVS",
-      "basevol": 0.13338748,
-      "dest": "1282417c4e7d5bb870067f5c05ffe87a0d8c8ce9956befff560e92b7c8d23741",
-      "rel": "KMD",
-      "relvol": 0.1505,
-      "price": 1.12913831,
-      "requestid": 2339417255,
-      "quoteid": 1177391651,
-      "line": "2017-10-30T16:16:00Z (nogui).(nogui) 0    connected    7276253190735921153: (0.13338748  REVS) -> (0.15050000   KMD) 1.12913831 finished.0 expired.0"
-    }
-  ],
-  "volumes": [
-    {
-      "coin": "KMD",
-      "srcvol": 0,
-      "destvol": 0.1505,
-      "numtrades": 1,
-      "total": 0.1505
-    },
-    {
-      "coin": "REVS",
-      "srcvol": 0.13338748,
-      "destvol": 0,
-      "numtrades": 1,
-      "total": 0.13338748
-    }
-  ],
-  "request": 4,
-  "reserved": 2,
-  "connect": 4,
-  "connected": 1,
-  "duplicates": 4,
-  "parse_errors": 0,
-  "uniques": 1,
-  "tradestatus": 0,
-  "unknown": 0
-}
-
-```
-
-#### pendingswaps
-This way you can see what swaps are still pending. This uses `pending=1` arg to `swapstatus` method.
-
-Sample File Contents:
-```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"pending\":1}"
-```
-
-Sample Output:
-```JSON
-{
-
-"result":"success",
-"swaps":[
-{
-"expiration":1512738286,
-"tradeid":4038861795,
-"requestid":1887485571,
-"quoteid":2755902417,
-"iambob":0,
-"Bgui":"",
-"Agui":"nogui",
-"gui":"nogui",
-"bob":"BTC",
-"srcamount":0.02555775,
-"bobtxfee":0.00212221,
-"alice":"KMD",
-"destamount":95,
-"alicetxfee":0.0001,
-"aliceid":"9807693779256541185",
-"sentflags":[
-"bobspend",
-"bobpayment",
-"alicepayment",
-"bobdeposit",
-"myfee",
-"bobrefund"
-],
-"values":[
-0.02343554,
-0,
-0.02555775,
-95.0002,
-0.02875246,
-0,
-0.12226512,
-0.0279102,
-0,
-0,
-0
-],
-"result":"success",
-"status":"finished",
-"finishtime":1512839121,
-"bobdeposit":"ec1e73395a7bd855bcf3afe58b0b1d478532ef398f2df68d2d10424e9d36743f",
-"alicepayment":"d3edb95bb9f3bd898f8b655398c5ab0ae86bc90d14176068096b6111eb201a05",
-"bobpayment":"9ff00880871d1474474378a4b9fc445ec13367be51a7b797a3cc76c1c4da52b6",
-"paymentspent":"0000000000000000000000000000000000000000000000000000000000000000",
-"Apaymentspent":"1fd16aaf9a41e44efe30bf01087470b9db3cf287b0b7a2634b25b97601e2acda",
-"depositspent":"27d774b0765eee97f7423785a4c80d3cea36adaccb5fa9f4fa5fe0e8fa68bfbe",
-"method":"tradestatus"
-}
-]
-}
-```
-
 #### portfolio
 Shows all active coin information and value. Such as, smartaddress, balance, current price per coin in barterDEX, KMD equivalent balance, percentage of your portfolio goal. You don’t need to edit or change the script for it work. It will get information from your active wallets and display them.
 
@@ -1410,54 +1297,77 @@ Sample File Content:
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"statsdisp\",\"starttime\":0,\"endtime\":0,\"pubkey\":\"a2593155464e37fcc88245780240a412a38cf3d316809445aad73f4e7789187d\"}"
 ```
 
+### Status / Info
 
-#### recentswaps
-
-This api returns up to "limit" in reverse order the swaps on the node and the current pending swap (if any) so you can see what trade might happen.
-
-'limit' = the number of latest swaps to be visible in output.
+#### pendings
+`./pendings` is a special case of `statsdisp` and will display all the pending swaps. You can set a starttime and endtime to query your pending swaps.
 
 Sample File Contents:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"recentswaps\",\"limit\":1}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"statsdisp\",\"starttime\":2000000000,\"endtime\":2000000000}"
 ```
 
 Sample Output:
 ```JSON
 {
   "result": "success",
+  "newlines": 0,
   "swaps": [
-    [
-      2779577435,
-      2461904533
-    ],
-    [
-      932852928,
-      3189912026
-    ]
+    {
+      "aliceid": "7276253190735921153",
+      "src": "30eb3d952f66eba2df0100b97d6707257cf91dc8c8b0237cfb7c3aa70dc52d4d",
+      "base": "REVS",
+      "basevol": 0.13338748,
+      "dest": "1282417c4e7d5bb870067f5c05ffe87a0d8c8ce9956befff560e92b7c8d23741",
+      "rel": "KMD",
+      "relvol": 0.1505,
+      "price": 1.12913831,
+      "requestid": 2339417255,
+      "quoteid": 1177391651,
+      "line": "2017-10-30T16:16:00Z (nogui).(nogui) 0    connected    7276253190735921153: (0.13338748  REVS) -> (0.15050000   KMD) 1.12913831 finished.0 expired.0"
+    }
   ],
-  "pending": {
-    "expiration": 1508343494,
-    "timeleft": 5,
-    "base": "",
-    "basevalue": 0,
-    "rel": "",
-    "relvalue": 0
-  }
+  "volumes": [
+    {
+      "coin": "KMD",
+      "srcvol": 0,
+      "destvol": 0.1505,
+      "numtrades": 1,
+      "total": 0.1505
+    },
+    {
+      "coin": "REVS",
+      "srcvol": 0.13338748,
+      "destvol": 0,
+      "numtrades": 1,
+      "total": 0.13338748
+    }
+  ],
+  "request": 4,
+  "reserved": 2,
+  "connect": 4,
+  "connected": 1,
+  "duplicates": 4,
+  "parse_errors": 0,
+  "uniques": 1,
+  "tradestatus": 0,
+  "unknown": 0
 }
+
 ```
 
 #### swapstatus
 
 This will display the swap status for your trades along with requestid and quoteid. This API also helps unstuck swaps and help claim funds if the swap wasn't successfully completed. In order to claim stuck funds, remove all `.finished` file, start barterDEX, add coins and issue this script.
 
-Available API options:
+These available API options are described below:
 ```
 swapstatus(pending=0)
 swapstatus(coin, limit=10)
 swapstatus(base, rel, limit=10)
 swapstatus(requestid, quoteid, pending=0)
 ```
+
 
 Sample File Contents:
 ```shell
@@ -1481,6 +1391,83 @@ Sample Output:
     }
   ]
 }
+```
+#### pendingswaps
+
+This way you can see what swaps are still pending. This uses `pending=1` arg to `swapstatus` method.
+
+Sample File Contents:
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"pending\":1}"
+```
+
+Sample Output:
+```JSON
+{
+
+"result":"success",
+"swaps":[
+{
+"expiration":1512738286,
+"tradeid":4038861795,
+"requestid":1887485571,
+"quoteid":2755902417,
+"iambob":0,
+"Bgui":"",
+"Agui":"nogui",
+"gui":"nogui",
+"bob":"BTC",
+"srcamount":0.02555775,
+"bobtxfee":0.00212221,
+"alice":"KMD",
+"destamount":95,
+"alicetxfee":0.0001,
+"aliceid":"9807693779256541185",
+"sentflags":[
+"bobspend",
+"bobpayment",
+"alicepayment",
+"bobdeposit",
+"myfee",
+"bobrefund"
+],
+"values":[
+0.02343554,
+0,
+0.02555775,
+95.0002,
+0.02875246,
+0,
+0.12226512,
+0.0279102,
+0,
+0,
+0
+],
+"result":"success",
+"status":"finished",
+"finishtime":1512839121,
+"bobdeposit":"ec1e73395a7bd855bcf3afe58b0b1d478532ef398f2df68d2d10424e9d36743f",
+"alicepayment":"d3edb95bb9f3bd898f8b655398c5ab0ae86bc90d14176068096b6111eb201a05",
+"bobpayment":"9ff00880871d1474474378a4b9fc445ec13367be51a7b797a3cc76c1c4da52b6",
+"paymentspent":"0000000000000000000000000000000000000000000000000000000000000000",
+"Apaymentspent":"1fd16aaf9a41e44efe30bf01087470b9db3cf287b0b7a2634b25b97601e2acda",
+"depositspent":"27d774b0765eee97f7423785a4c80d3cea36adaccb5fa9f4fa5fe0e8fa68bfbe",
+"method":"tradestatus"
+}
+]
+}
+```
+
+#### coinswaps
+
+This method uses `swapstatus` for a spcific coin.
+
+Sample File Content:
+```shell
+#!/bin/bash
+source userpass
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"coin\":\"CHIPS\"}"
 ```
 
 ##### `swapstatus(requestid, quoteid, pending=0)`
@@ -1529,6 +1516,42 @@ The sample result is below:
   "paymentspent": "9a541250257346de1b7d5b4ca11814b2df7098b750af23d0fad5b245c5435110",
   "Apaymentspent": "0000000000000000000000000000000000000000000000000000000000000000",
   "depositspent": "0000000000000000000000000000000000000000000000000000000000000000"
+}
+```
+
+#### recentswaps
+
+This api returns up to "limit" in reverse order the swaps on the node and the current pending swap (if any) so you can see what trade might happen.
+
+'limit' = the number of latest swaps to be visible in output.
+
+Sample File Contents:
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"recentswaps\",\"limit\":1}"
+```
+
+Sample Output:
+```JSON
+{
+  "result": "success",
+  "swaps": [
+    [
+      2779577435,
+      2461904533
+    ],
+    [
+      932852928,
+      3189912026
+    ]
+  ],
+  "pending": {
+    "expiration": 1508343494,
+    "timeleft": 5,
+    "base": "",
+    "basevalue": 0,
+    "rel": "",
+    "relvalue": 0
+  }
 }
 ```
 
@@ -1924,10 +1947,12 @@ Sample Output:
 BarterDEX now have a coin agnostic timelock/unlock mechanism. Of course the coin will need to support CLTV or it wont work. The timelock will work partially, but the unlockspend will NOT. Test with small amount. Don't confuse these APIs with 0conf deposit and claim.
 
 Sample file content:
+
 `timelock`
 ```shell
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"timelock\",\"coin\":\"KMD\",\"duration\":1000,\"amount\":1}"
 ```
+
 `unlockedspend`
 ```shell
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"unlockedspend\",\"coin\":\"KMD\",\"txid\":\"e858e382a816b4cab22e3fd3e29901c7ef497cd1fdad7683314cc9187eca34fd\"}"
