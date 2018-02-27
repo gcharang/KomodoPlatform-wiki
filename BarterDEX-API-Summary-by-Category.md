@@ -1367,7 +1367,7 @@ swapstatus(coin, limit=10)
 swapstatus(base, rel, limit=10)
 swapstatus(requestid, quoteid, pending=0)
 ```
-
+The base/rel swapstatus will scan ALL your historical swaps and that could take a very long time. 
 
 Sample File Contents:
 ```shell
