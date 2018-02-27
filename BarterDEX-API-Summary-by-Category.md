@@ -6,7 +6,7 @@
 [client](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client), [client_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client_osx), [debug](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#debug), [disable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#disable), [enable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#enable), [getcoin](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoin), [getcoins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoins), [getpeers](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeers), [getpeersIP](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeersip), [help](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#help), [jpg](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#jpg), [millis](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#millis), [notarizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#notarizations), [parselog](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#parselog), [run](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run), [run_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run_osx), [setpassphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setpassphrase), [stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#stop), [trust](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trust), [trusted](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trusted)
 
 #### barterDEX Trading
-[autoprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#autoprice), [baserelswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#baserelswaps), [buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#buy), [coinswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#coinswaps), [electrum](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum), [getprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getprices), [goal](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goal), [goals](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goals), [myprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprice), [myprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprices), [orderbook](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#orderbook), [pendings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendings), [pendingswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendingswaps), [portfolio](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#portfolio), [pubkeystats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pubkeystats), [recentswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#recentswaps), [sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sell), [setconfirms](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setconfirms), [setprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setprice), [status](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#status)
+[autoprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#autoprice), [baserelswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#baserelswaps), [buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#buy), [coinswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#coinswaps), [electrum](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum), [getprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getprices), [goal](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goal), [goals](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goals), [myprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprice), [myprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprices), [orderbook](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#orderbook), [pendings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendings), [pendingswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendingswaps), [portfolio](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#portfolio), [pubkeystats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pubkeystats), [recentswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#recentswaps), [sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sell), [setconfirms](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setconfirms), [setprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setprice), [swapstatus](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatus)
 
 [> `autoprice` the value of a fund, ie. using the `fundvalue` api](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category#autoprice-the-value-of-a-fund-ie-using-the-fundvalue-api)
 
@@ -1371,6 +1371,7 @@ Sample Output:
 ```
 
 #### setconfirms
+
 This will allow each node to set the number of required confirms on a coin by coin basis. During the atomic swap, each side sends to the other the required confirms and the "protocol" is that both sides use the bigger value.
 
 Sample File Contents:
@@ -1402,20 +1403,12 @@ Sample Output:
 }
 ```
 
-### (`swapstatus` / Statistics)
-Supports `swapstatus(coin)` and `swapstatus(base,rel)` which will return all swaps that match, ie if coin, then either base or rel matching coin, if base rel, then exact match. **Note that:** base, rel will NOT match rel, base.
-
-`swapstatus(coin,limit)` and `swapstatus(base,rel,limit)` will internally query `swapstatus(0,0)` and also `recentswaps(limit)` and iterate through all the `recentswaps` and the full `swapstatus(0,0)` list and return the ones that match.
-
 #### pubkeystats
 
 Sample File Content:
 ```shell
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"statsdisp\",\"starttime\":0,\"endtime\":0,\"pubkey\":\"a2593155464e37fcc88245780240a412a38cf3d316809445aad73f4e7789187d\"}"
 ```
-
-Sample Output:
-
 
 
 #### recentswaps
@@ -1454,8 +1447,17 @@ Sample Output:
 }
 ```
 
-#### status
-This will display the swap status for your trades along with requestid and quoteid. If want to get detailed `swapstatus` check the 2nd sample and the output.
+#### swapstatus
+
+This will display the swap status for your trades along with requestid and quoteid. This API also helps unstuck swaps and help claim funds if the swap wasn't successfully completed. In order to claim stuck funds, remove all `.finished` file, start barterDEX, add coins and issue this script.
+
+Available API options:
+```
+swapstatus(pending=0)
+swapstatus(coin, limit=10)
+swapstatus(base, rel, limit=10)
+swapstatus(requestid, quoteid, pending=0)
+```
 
 Sample File Contents:
 ```shell
@@ -1481,8 +1483,8 @@ Sample Output:
 }
 ```
 
-#### 2nd Sample:
-You can get more information about the swaps by quering with requestid and quoteid. The sample file looks like below:
+##### `swapstatus(requestid, quoteid, pending=0)`
+You can get more information about the swaps by quering with `requestid` and `quoteid`. This API helps query about stuck swap and helps them unstuck. The sample file looks like below. `pending=0` is optional.
 ```shell
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"requestid\":157581336,\"quoteid\":2717912442}"
 ```
