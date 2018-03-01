@@ -1300,7 +1300,7 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ### Status / Info
 
 #### pendings
-`./pendings` is a special case of `statsdisp` and will display all the pending swaps. You can set a starttime and endtime to query your pending swaps.
+`./pendings` is a special case of `statsdisp` and will display all the pending swaps. Using `recentswaps` API is better suitable for most usecases.
 
 Sample File Contents:
 ```shell
@@ -1353,12 +1353,11 @@ Sample Output:
   "tradestatus": 0,
   "unknown": 0
 }
-
 ```
 
 #### swapstatus
 
-This will display the swap status for your trades along with requestid and quoteid. This API also helps unstuck swaps and help claim funds if the swap wasn't successfully completed. In order to claim stuck funds, remove all `.finished` file, start barterDEX, add coins and issue this script.
+This will display the swap status for your trades along with `requestid` and `quoteid`. This API also helps unstuck swaps and help claim funds if the swap wasn't successfully completed. In order to claim stuck funds, remove all `.finished` file, start barterDEX, add coins and issue this script.
 
 These available API options are described below:
 ```
@@ -1367,7 +1366,15 @@ swapstatus(coin, limit=10)
 swapstatus(base, rel, limit=10)
 swapstatus(requestid, quoteid, pending=0)
 ```
-The base/rel swapstatus will scan ALL your historical swaps and that could take a very long time. 
+The base/rel swapstatus will scan ALL your historical swaps and that could take a very long time. There is a new parameter for the `swapstatus` API, `fast:1`. You can use this flag with swapstatus for `base/rel`, `requestid/quoteid` for faster and optimised performance while getting the response.
+2 different example scripts:
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"pending\":1,\"userpass\":\"$userpass\",\"method\":\"swapstatus\", \"base\":\"CHIPS\", \"rel\":\"KMD\", \"fast\":1}"
+```
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"swapstatus\",\"requestid\":2291973695,\"quoteid\":3387529385}, \"fast\":1}"
+```
+This is very helpful when you have so many swap files in DB/SWAPS dir.
 
 Sample File Contents:
 ```shell
