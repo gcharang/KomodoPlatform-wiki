@@ -2,7 +2,7 @@
 
 [dPoW Whitepaper](https://github.com/SuperNETorg/komodo/wiki/Delayed-Proof-of-Work-(dPoW)-Whitepaper)
 
-[barterDEX Whitepaper v2](https://github.com/SuperNETorg/komodo/wiki/barterDEX-Whitepaper-v2)
+[barterDEX Whitepaper v2](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-Whitepaper-v2)
 
 [JUMBLR Whitepaper](https://github.com/SuperNETorg/komodo/wiki/JUMBLR-Whitepaper)
 
