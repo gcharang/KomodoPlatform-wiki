@@ -10,6 +10,7 @@ Please follow all the steps by their order of appearance in this guide. If you g
 Install all the following dependencies. Without installing these, your `marketmaker` binary may crash and not work.
 
 ### Install gcc-7.2 & g++-7.2 and symlink them as gcc & g++
+The following are steps to install them in Ubuntu. If you are using Debian or other forks, please search on Google how to get them in your OS.
 ```shell
 sudo add-apt-repository ppa:jonathonf/gcc-7.2
 sudo apt-get update
