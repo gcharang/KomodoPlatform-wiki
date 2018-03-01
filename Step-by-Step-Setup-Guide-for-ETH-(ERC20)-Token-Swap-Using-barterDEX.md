@@ -54,6 +54,7 @@ mkdir build
 cd build
 cmake ..
 cmake --build . --target marketmaker
+strip marketmaker
 ```
 
 ### Copy `marketmaker` binary to `iguana` dir
