@@ -22,6 +22,10 @@
 
 **Developers**
 
+[Install BarterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
+
+[Install ETOMIC BarterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Step-by-Step-Setup-Guide-for-ETH-(ERC20)-Token-Swap-Using-barterDEX)
+
 [barterDEX API](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category)
 
 [Create Assetchain](https://github.com/KomodoPlatform/komodo/wiki/Creating-New-Assetchain)
