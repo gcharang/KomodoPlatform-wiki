@@ -1,28 +1,43 @@
 **Whitepapers**
 
 [dPoW Whitepaper](https://github.com/KomodoPlatform/komodo/wiki/Delayed-Proof-of-Work-(dPoW)-Whitepaper)
+
 [barterDEX Whitepaper v2](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-Whitepaper-v2)
+
 [JUMBLR Whitepaper](https://github.com/KomodoPlatform/komodo/wiki/JUMBLR-Whitepaper)
+
 [dICO Whitepaper](https://github.com/KomodoPlatform/KomodoPlatform/wiki/dICO-Whitepaper)
 
 **Install and build**
 
 [Installing Komodo](https://github.com/KomodoPlatform/komodo/wiki/Installing-Komodo-Manually)
+
 [Install BarterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
+
 [Install ETOMIC BarterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Step-by-Step-Setup-Guide-for-ETH-(ERC20)-Token-Swap-Using-barterDEX)
+
 [Komodo Notary Node](https://github.com/KomodoPlatform/komodo/wiki/Setup-Komodo-Notary-Node)
+
 [Notary Node security](https://github.com/SuperNETorg/komodo/wiki/Standard-Security-Setup-for-Nodes)
+
 [Updating Notary Node](https://github.com/KomodoPlatform/komodo/wiki/Updating-notary-node-in-few-lessons)
+
 [ElectrumX guide for barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)
 
 **Developers**
 
 [barterDEX API](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category)
+
 [Create Assetchain](https://github.com/KomodoPlatform/komodo/wiki/Creating-New-Assetchain)
+
 [iguana API](http://docs.supernet.org/)
+
 [Doing PAX deposits](https://github.com/KomodoPlatform/komodo/wiki/Doing-PAX-deposits)
+
 [Using JUMBLR](https://github.com/KomodoPlatform/komodo/wiki/Using-JUMBLR)
+
 [Using Key/Value](https://github.com/KomodoPlatform/komodo/wiki/Using-Key-Value)
+
 [0conf Swaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Processing-InstantDEX-swap-on-barterDEX)
 
 **Testers**
