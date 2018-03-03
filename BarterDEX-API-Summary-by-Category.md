@@ -11,7 +11,7 @@
 [> `autoprice` the value of a fund, ie. using the `fundvalue` api](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category#autoprice-the-value-of-a-fund-ie-using-the-fundvalue-api)
 
 #### Status / Info
-[pendings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendings), [swapstatus](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatus), [pendingswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendingswaps), [coinswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#coinswaps), [swapstatus(requestid, quoteid, pending=0)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatusrequestid-quoteid-pending0), [recentswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#recentswaps)
+[getendpoint](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getendpoint),[pendings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendings), [swapstatus](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatus), [pendingswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendingswaps), [coinswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#coinswaps), [swapstatus(requestid, quoteid, pending=0)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatusrequestid-quoteid-pending0), [recentswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#recentswaps)
 
 #### TradeBots
 [bot_buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_buy), [bot_list](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_list), [bot_pause](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_pause), [bot_resume](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_resume), [bot_sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_sell), [bot_settings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_settings), [bot_status](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_status), [bot_stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_stop)
@@ -442,10 +442,10 @@ buy(base, rel, price, relvolume, timeout=10, duration=3600, nonce)
 sell(base, rel, price, basevolume, timeout=10, duration=3600, nonce)
 withdraw(coin, outputs[])
 sendrawtransaction(coin, signedtx)
-swapstatus(pending=0)
+swapstatus(pending=0, fast=0)
 swapstatus(coin, limit=10)
 swapstatus(base, rel, limit=10)
-swapstatus(requestid, quoteid, pending=0)
+swapstatus(requestid, quoteid, pending=0, fast=0)
 recentswaps(limit=3)
 notarizations(coin)
 public API:
@@ -462,6 +462,7 @@ balances(address)
 fundvalue(address=, holdings=[], divisor=0)
 orderbook(base, rel, duration=3600)
 getprices()
+inuse()
 getmyprice(base, rel)
 getprice(base, rel)
 //sendmessage(base=coin, rel=, pubkey=zero, <argjson method2>)
@@ -481,8 +482,13 @@ bot_settings(botid, newprice, newvolume)
 bot_status(botid)
 bot_stop(botid)
 bot_pause(botid)
+calcaddress(passphrase)
+convaddress(coin, address, destcoin)
 instantdex_deposit(weeks, amount, broadcast=1)
 instantdex_claim()
+timelock(coin, duration, destaddr=(tradeaddr), amount)
+unlockedspend(coin, txid)
+getendpoint()
 jpg(srcfile, destfile, power2=7, password, data=, required, ind=0)
 "}
 ```
@@ -1298,6 +1304,19 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ```
 
 ### Status / Info
+
+#### getendpoint
+There is a new websockets realtime events to the barterDEX API family, `getendpoint`. It returns a nanomsg NN_PAIR endpoint that if you connect to it. You get an event stream, with hopefully all the relevant events, especially about the change in state of swap. The even stream is started as soon as the getendpoint api is called. There is also a new mode for marketmaker: `./marketmaker events`. This will simply launch a new process and printout all the events. It will be like the console spew of printouts so you might want to `nohup` it and then `grep` to find things. This allows GUI to be done in an event driven way. Any command can add a `"queueid":nn` with a non-zero `nn` and it will queue the command. Its completion will arrive in the nanomsg event stream with the `queueid` and the result.
+
+Sample File Content:
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"getendpoint\"}"
+```
+
+Sample Output:
+```JSON
+{"result":"success","endpoint":"ws://127.0.0.1:5555","socket":20,"sockopt":0}
+```
 
 #### pendings
 `./pendings` is a special case of `statsdisp` and will display all the pending swaps. Using `recentswaps` API is better suitable for most usecases.
