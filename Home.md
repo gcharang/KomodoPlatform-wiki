@@ -20,8 +20,16 @@ Here you should find a list of important topics related to installing and using 
 
 [Trade](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Trade)
 
+[0conf Deposit & Claim](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Processing-InstantDEX-swap-on-barterDEX)
+
+[Manually Claim Legacy 0conf Deposits](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Manually-Claim-0conf-Deposits-Using-Linux)
+
+[Extracting WIF/Private Key from Passphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Extracting-WIF-privkey-from-Komodo-Platform)
+
 **Setup Guide**
 
 [Setup LP Node using barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
 
 [Setup ElectrumX server](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)
+
+[barterDEX Network Optimizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-Network-Optimisations-&-Handle-BarterDEX-on-Very-FAST-Computer)
