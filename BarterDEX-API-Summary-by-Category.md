@@ -729,7 +729,7 @@ The margin is usually set to 0.01 for 1% profit margin. using factor and offset 
 
 There is also a minprice field which sets the absolute minimum (post calculation) price that is accepted.
 
-Example `autoprice` script using coinmarketcap prices.
+**Example `autoprice` script using coinmarketcap prices.**
 
 ```shell
 curl --url "http://127.0.0.1:7783" --data "{\"minprice\":0.00002,\"maxprice\":0.0001,\"userpass\":\"$userpass\",\"method\":\"autoprice\",\"base\":\"CHIPS\",\"rel\":\"BTC\",\"margin\":0.05,\"refbase\":\"chips\",\"refrel\":\"coinmarketcap\"}"
