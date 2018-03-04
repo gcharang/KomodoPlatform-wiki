@@ -20,4 +20,8 @@ Here you should find a list of important topics related to installing and using 
 
 [Trade](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Trade)
 
+**Setup Guide**
+
 [Setup LP Node using barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
+
+[Setup ElectrumX server](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)
