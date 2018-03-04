@@ -12,17 +12,21 @@
 
 [Installing Komodo](https://github.com/KomodoPlatform/komodo/wiki/Installing-Komodo-Manually)
 
-[Install BarterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
+[Install barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
 
-[Install ETOMIC BarterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Step-by-Step-Setup-Guide-for-ETH-(ERC20)-Token-Swap-Using-barterDEX)
+[Install ETOMIC barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Step-by-Step-Setup-Guide-for-ETH-(ERC20)-Token-Swap-Using-barterDEX)
 
-[Komodo Notary Node](https://github.com/KomodoPlatform/komodo/wiki/Setup-Komodo-Notary-Node)
+[ElectrumX guide for barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)
+
+**Notary Node**
+
+[Setup Komodo Notary Node](https://github.com/KomodoPlatform/komodo/wiki/Setup-Komodo-Notary-Node)
 
 [Notary Node security](https://github.com/SuperNETorg/komodo/wiki/Standard-Security-Setup-for-Nodes)
 
 [Updating Notary Node](https://github.com/KomodoPlatform/komodo/wiki/Updating-notary-node-in-few-lessons)
 
-[ElectrumX guide for barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)
+[Monitor Notary Node](https://github.com/KomodoPlatform/komodo/wiki/Monitor-your-Komodo-Notary-Node)
 
 **Developers**
 
@@ -37,6 +41,8 @@
 [Using JUMBLR](https://github.com/KomodoPlatform/komodo/wiki/Using-JUMBLR)
 
 [Using Key/Value](https://github.com/KomodoPlatform/komodo/wiki/Using-Key-Value)
+
+[BarterDEX CLI guide](https://github.com/KomodoPlatform/komodo/wiki/BarterDEX-API-Summary-by-Category)
 
 [0conf Swaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Processing-InstantDEX-swap-on-barterDEX)
 
