@@ -692,7 +692,7 @@ Using the `buy`/`sell` api is a fill or kill (except partial fills are allowed) 
 Note: To fully cancel an autotrade, `setprice 0` needs to be called twice, once with `base/rel` and then with `rel/base`, since there are actually 2 prices (bid and ask).
 
 #### autoprice
-`autoprice` is a very powerful API and it allows you to specify the price for a specific trading pair that is automatically updated as the market price of it changes. barterDEX uses external price sources (Bittrex, Cryptopia, Coinmarketcap) to get up to date prices. You can use `fixed` price instead of `margin` or use autoprice based on coinmarketcap. For now, it is a relatively simple set of things you can do with the following fields. 
+`autoprice` is a very powerful API and it allows you to specify the price for a specific trading pair that is automatically updated as the market price of it changes. barterDEX uses external price sources (Bittrex, Cryptopia, Coinmarketcap) to get up to date prices. You can use `fixed` price instead of `margin` or use autoprice based on coinmarketcap. For now, it is a relatively simple set of things you can do with the following fields (`base, rel, fixed, minprice, maxprice, margin, refbase, refrel, factor, offset`).
 
 Sample File Contents:
 ```shell
