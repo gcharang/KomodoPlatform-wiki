@@ -692,7 +692,7 @@ Using the `buy`/`sell` api is a fill or kill (except partial fills are allowed) 
 Note: To fully cancel an autotrade, `setprice 0` needs to be called twice, once with `base/rel` and then with `rel/base`, since there are actually 2 prices (bid and ask).
 
 #### autoprice
-`autoprice` is a very powerful API and it allows you to specify the price for a specific trading pair that is automatically updated as the marketprice of it changes. barterDEX uses external price sources (Bittrex, Cryptopia) to get up to date prices. For now, it is a relatively simple set of things you can do with the following fields:
+`autoprice` is a very powerful API and it allows you to specify the price for a specific trading pair that is automatically updated as the market price of it changes. barterDEX uses external price sources (Bittrex, Cryptopia, Coinmarketcap) to get up to date prices. You can use `fixed` price instead of `margin` or use autoprice based on coinmarketcap. For now, it is a relatively simple set of things you can do with the following fields. 
 
 Sample File Contents:
 ```shell
@@ -728,6 +728,16 @@ setprice of (1. + margin) * ((price * factor) + offset)
 The margin is usually set to 0.01 for 1% profit margin. using factor and offset it is possible to map a starting price to a standard multiple.
 
 There is also a minprice field which sets the absolute minimum (post calculation) price that is accepted.
+
+Example `autoprice` script using coinmarketcap prices.
+
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"minprice\":0.00002,\"maxprice\":0.0001,\"userpass\":\"$userpass\",\"method\":\"autoprice\",\"base\":\"CHIPS\",\"rel\":\"BTC\",\"margin\":0.05,\"refbase\":\"chips\",\"refrel\":\"coinmarketcap\"}"
+```
+or
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"minprice\":0.04,\"maxprice\":0.1,\"userpass\":\"$userpass\",\"method\":\"autoprice\",\"base\":\"CHIPS\",\"rel\":\"KMD\",\"margin\":0.05,\"refbase\":\"chips\",\"refrel\":\"coinmarketcap\"}"
+```
 
 #### baserelswaps
 This method uses the `swapstatus` API and displays base/rel swapstatus.
