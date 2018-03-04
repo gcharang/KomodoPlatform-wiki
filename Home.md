@@ -20,4 +20,4 @@ Here you should find a list of important topics related to installing and using 
 
 [Trade](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Trade)
 
-[Setup LP Node](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
+[Setup LP Node using barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
