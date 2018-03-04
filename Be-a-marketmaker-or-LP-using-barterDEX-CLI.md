@@ -21,7 +21,7 @@ Use `./run &` to start barterDEX as LP mode. You can use `./client &` but, bette
 This API will set your passphrase and let you use the userpass value in every script. This is the second API/script you need to run.
 
 #### enable or electrum
-If you are planning to use native mode, coin daemons need to be installed, blockchain fully synced and passphrase imported if using native. Native is recommended for faster performance and reliability. Alternatively, you can use electrum which does not require blockchain to be downloaded.
+If you are planning to use native mode, coin daemons need to be installed, blockchain fully synced if using native. Native is recommended for faster performance and reliability. Alternatively, you can use electrum which does not require blockchain to be downloaded.
 
 Edit the `enable` script with the coin names you want to activate for trading. Or, edit the `electrum` script with list of electrum servers to activate coins in electrum mode.
 
