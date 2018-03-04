@@ -2,14 +2,22 @@ Welcome to the KomodoPlatform wiki!
 
 Here you should find a list of important topics related to installing and using Komodo Platform.
 
-[1. Installing Komodo Platform (barterDEX)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
+**Install**
 
-[2. Enabling Native Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Native-Wallet-Coins-for-Trading)
+[Installing Komodo Platform (barterDEX)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
 
-[3. Enabling Electrum Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Electrum-Wallet-Coins)
+[Installing BarterDEX for ETH/ERC20 Token swaps (Experimental)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Step-by-Step-Setup-Guide-for-ETH-(ERC20)-Token-Swap-Using-barterDEX)
+
+**Use**
+
+[Enabling Native Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Native-Wallet-Coins-for-Trading)
+
+[Enabling Electrum Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Electrum-Wallet-Coins)
 
 [- Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list)
 
-[4. Funding the Smart Adress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Funding-the-Smart-Address)
+[Funding the Smart Adress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Funding-the-Smart-Address)
 
-[5. Trade](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Trade)
+[Trade](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Trade)
+
+[Setup LP Node](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
