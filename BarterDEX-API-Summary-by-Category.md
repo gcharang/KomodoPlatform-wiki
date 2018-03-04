@@ -1306,7 +1306,9 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ### Status / Info
 
 #### getendpoint
-There is a new websockets realtime events to the barterDEX API family, `getendpoint`. It returns a nanomsg NN_PAIR endpoint that if you connect to it. You get an event stream, with hopefully all the relevant events, especially about the change in state of swap. The even stream is started as soon as the getendpoint api is called. There is also a new mode for marketmaker: `./marketmaker events`. This will simply launch a new process and printout all the events. It will be like the console spew of printouts so you might want to `nohup` it and then `grep` to find things. This allows GUI to be done in an event driven way. Any command can add a `"queueid":nn` with a non-zero `nn` and it will queue the command. Its completion will arrive in the nanomsg event stream with the `queueid` and the result.
+There is a new websockets realtime events to the barterDEX API family, `getendpoint`. It returns a nanomsg NN_PAIR endpoint that if you connect to it. You get an event stream, with hopefully all the relevant events, especially about the change in state of swap. The even stream is started as soon as the `getendpoint` API is called.
+
+There is also a new mode for marketmaker: `./marketmaker events` which we should run in a new terminal. This should connect to the endpoint created by `getendpoint` API call. This will simply launch a new process and printout all the events. It will be like the console spew of printouts so you might want to `nohup` it and then `grep` to find things. This allows GUI to be done in an event driven way. Any command can add a `"queueid":nn` with a non-zero `nn` and it will queue the command. Its completion will arrive in the nanomsg event stream with the `queueid` and the result.
 
 Sample File Content:
 ```shell
