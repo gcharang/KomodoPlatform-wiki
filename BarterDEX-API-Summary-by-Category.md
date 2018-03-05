@@ -1889,11 +1889,27 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 ```
 
 #### inuse
-This API will return you all the UTXOs that are locked for swaps. The UTXOs that are locked for swaps are not spendable until they become free.
+This API will return you all the UTXOs that are locked for swaps. The UTXOs that are locked for swaps are not spendable until they become free. The lock is basically for about 2 minutes, after that the UTXOs becomes free.
 
 Sample File Content:
 ```shell
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"inuse\"}"
+```
+
+Sample Output:
+```JSON
+[
+  {
+    "expiration": 1520277125,
+    "txid": "74a9f85dc372c3941bdfa7bc517f209db11c2fbdf7c83df3f4c8ccf15afa9e75",
+    "vout": 1
+  },
+  {
+    "expiration": 1520277125,
+    "txid": "46f021a999b5f62fc42afeb431d09c85a2f2bc113aa23b5142cafb868a877bd0",
+    "vout": 1
+  }
+]
 ```
 
 #### listunspent
