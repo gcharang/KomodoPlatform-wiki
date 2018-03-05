@@ -15,7 +15,7 @@ You may want to back up your system or clone it after everything is synced and r
 
 ```shell
 sudo apt-get update
-sudo apt-get install git libcurl4-openssl-dev build-essential
+sudo apt-get install cmake git libcurl4-openssl-dev build-essential
 ```
 
 #### Install `nanomsg`
