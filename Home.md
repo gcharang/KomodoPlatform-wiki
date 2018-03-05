@@ -1,6 +1,6 @@
 Welcome to the KomodoPlatform wiki!
 
-Here you should find a list of important topics related to installing and using Komodo Platform.
+Here you should find a list of important topics related to installing and using barterDEX (Komodo Platform).
 
 **Install**
 
