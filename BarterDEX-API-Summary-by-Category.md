@@ -170,7 +170,7 @@ Sample Output:
 
 #### getcoin
 
-This method will show coin data including smartaddress, balance etc.
+This method will show coin data including smartaddress, balance etc. Do **NOT** use `getcoin` to get balance in SPV mode, use the `balance` API.
 
 Sample File Contents:
 ```shell
