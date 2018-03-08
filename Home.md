@@ -28,6 +28,10 @@ Here you should find a list of important topics related to installing and using 
 
 [Extracting WIF/Private Key from Passphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Extracting-WIF-privkey-from-Komodo-Platform)
 
+[How to be LP node?](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
+
+[Private swap using barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI#private-trading-using-barterdex)
+
 **Setup Guide**
 
 [Setup LP Node using barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
