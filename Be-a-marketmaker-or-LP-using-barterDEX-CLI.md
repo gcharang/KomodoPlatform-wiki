@@ -32,7 +32,7 @@ This is the most important API for LP or marketmaker. You need to edit this file
 Once you issue the `./autoprice` script, you just need to wait for alice/buyer to buy from your order. All the trade info will be shown in your console as they are happening.
 
 ## Private Trading using BarterDEX
-You can use BarterDEX using 14,000+ [`netid`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category#netid). For private trading, both LP node and client need to use a different `netid` and `seednode`. 
+You can use BarterDEX using 14,000+ [`netid`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category#netid). For private trading, both LP node and client need to use a same `netid` and `seednode`. It is better to choose higher number netid (i.e.: 1000+). 
 
 #### LP Node
 You need to edit your `run` and `setpassphrase` with same `netid` and `seednode` like `\"netid\":999,\"seednode\":\"51.255.10.25\"` and follow the steps above. Your orders will not be visible in the global netid and orderbook. Only users who are connected to that specific netid on that ip can perform swaps. Check the example file below:
