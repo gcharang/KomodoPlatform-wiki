@@ -2029,7 +2029,7 @@ To withdraw, you just need to specify the array of outputs and the coin. It retu
 
 Sample File Contents:
 ```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"withdraw\",\"coin\":\"KMD\",\"outputs\":[{\"RUgW6fLfVsLJ87Ng4zJTqNedJSKYQ9ToAf\":0.001}, {\"RUgW6fLfVsLJ87Ng4zJTqNedJSKYQ9ToAf\":0.002}]}
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"withdraw\",\"coin\":\"KMD\",\"outputs\":[{\"RUgW6fLfVsLJ87Ng4zJTqNedJSKYQ9ToAf\":0.001}, {\"RUgW6fLfVsLJ87Ng4zJTqNedJSKYQ9ToAf\":0.002}]}"
 ```
 
 Sample Output:
