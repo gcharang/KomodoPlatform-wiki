@@ -9,7 +9,7 @@ Please follow all the steps by their order of appearance in this guide. If you g
 ## Install required dependencies
 Install all the following dependencies. Without installing these, your `marketmaker` binary may crash and not work.
 
-**LINUX**
+## Linux
 ### Install gcc-7.2 & g++-7.2 and symlink them as gcc & g++
 The following are steps to install them in Ubuntu. If you are using Debian use `echo "deb http://ftp.us.debian.org/debian testing main contrib non-free" | sudo tee /etc/apt/sources.list.d/forgcc.list` to add the repository and continue from the `sudo apt-get update` command.
 ```shell
@@ -48,7 +48,7 @@ cd ~
 rm -rf nanomsg
 ```
 
-**MacOS**
+## MacOS
 ### To install latest cmake 3.10.2, gcc 7.3.0 and Leveldb 1.20.2
 ```shell
 brew install cmake
