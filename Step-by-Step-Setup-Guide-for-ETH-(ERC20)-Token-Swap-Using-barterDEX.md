@@ -20,6 +20,14 @@ sudo ln -s /usr/bin/gcc-7 /usr/bin/gcc
 sudo ln -s /usr/bin/g++-7 /usr/bin/g++
 ```
 
+### Install `cmake 3.10.2`
+```shell
+wget https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.sh
+sudo ./cmake-3.10.2-Linux-x86_64.sh --prefix=/usr
+```
+`accept license`
+when it ask "Do you want to include the subdirectory cmake-3.10.2-Linux-x86_64" choose `NO`
+
 ### Install `LevelDB`
 ```shell
 cd ~
@@ -32,36 +40,33 @@ sudo scp -r leveldb /usr/local/include/
 sudo ldconfig
 ```
 
-### Install `nanomsg`
+### Delete local `nanomsg` from home directory
 ```shell
 cd ~
-git clone https://github.com/nanomsg/nanomsg
-cd nanomsg
-cmake . -DNN_TESTS=OFF -DNN_ENABLE_DOC=OFF
-make -j2
-sudo make install
-sudo ldconfig
+rm -rf nanomsg
 ```
 
 ## Copy the source repo and compile
 ### Clone `SuperNET` repo and compile `marketmaker` for ETH swaps
 ```shell
 cd ~
-git clone https://github.com/jl777/SuperNET
+git clone https://github.com/artemii235/SuperNET
 cd ~/SuperNET
-git checkout dev
+git checkout etomic
 git submodule update --init --recursive
 mkdir build
 cd build
 cmake ..
-cmake --build . --target marketmaker
-strip marketmaker
+cmake --build . --target marketmaker-mainnet
+cmake --build . --target marketmaker-testnet
+strip marketmaker-mainnet
+strip marketmaker-testnet
 ```
 
 ### Copy `marketmaker` binary to `iguana` dir
 The compiled `marketmaker` binary file can be found in `~/SuperNET/build/iguana/exchanges`. Copy `marketmaker` into `~/SuperNET/iguana/` dir.
 ```shell
-cp ~/SuperNET/build/iguana/exchanges/marketmaker ~/SuperNET/iguana/marketmaker
+cp ~/SuperNET/build/iguana/exchanges/marketmaker-testnet ~/SuperNET/iguana/marketmaker-testnet
 ```
 
 ## Install barterDEX & preparation
@@ -90,7 +95,7 @@ source coins
 cd ..; 
 #./m_mm;
 pkill -15 marketmaker; 
-./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+./marketmaker-testnet "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
 
 ### Run `marketmaker` using `client` script for the first time to get the `userpass` value
@@ -113,6 +118,12 @@ nano userpass
 ```
 Enter the passphrase we got earlier in between "", save the file and close nano editor using `CTRL+X` then `Y` then `ENTER`. All these scripts found in `~/SuperNET/iguana/dexscripts` are expecting a userpass file, which contains the definition of the $userpass variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money.
 
+### Edit `coins` file to add `DEC8` & `JST` token
+Edit the `coins` file in `dexscripts` dir and add the following lines for adding `DEC8` & `JST` ERC20 test tokens. Without these, you will not be able to add these coins and use them.
+```JSON
+{\"coin\":\"ETH\",\"name\":\"ethereum\",\"etomic\":\"0x0000000000000000000000000000000000000000\",\"rpcport\":80}, {\"coin\":\"JST\",\"name\":\"JST\",\"etomic\":\"0x996a8ae0304680f6a69b8a9d7c6e37d65ab5ab56\",\"rpcport\":80}, {\"coin\":\"DEC8\",\"name\":\"DEC8\",\"etomic\":\"0x3ab100442484dc2414aa75b2952a0a6f03f8abfd\",\"rpcport\":80}, {\"coin\":\"EOS\",\"name\":\"EOS\",\"etomic\":\"0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0\",\"rpcport\":80},
+```
+
 ## Run ETOMIC
 
 You need to have ETOMIC running in native mode or electrum mode and KMD or other coins either running native or electrum (native is faster). If running native mode, make sure you have blockchain synced and seed passphrase / WIF key / private key imported into the chain.
@@ -125,10 +136,7 @@ cd ~/SuperNET/iguana/dexscripts
 ./setpassphrase
 ```
 
-Then, we need to enable ETH and other coins to start swapping. Use / add the following line into `enable` script and run in terminal to enable ETH.
-```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"ETH\"}"
-```
+Then, we need to enable ETH and other coins/tokens to start trading. Check the following example script:
 
 Example `enable` script:
 ```shell
@@ -136,10 +144,8 @@ Example `enable` script:
 source userpass
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"BEER\"}"
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"ETOMIC\"}"
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"PIZZA\"}"
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"KMD\"}"
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"BTC\"}"
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"CHIPS\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"DEC8\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"JST\"}"
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"enable\",\"coin\":\"ETH\"}"
 ```
 
