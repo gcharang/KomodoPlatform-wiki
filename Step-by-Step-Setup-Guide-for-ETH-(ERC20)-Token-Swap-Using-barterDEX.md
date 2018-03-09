@@ -23,6 +23,7 @@ sudo ln -s /usr/bin/g++-7 /usr/bin/g++
 ### Install `cmake 3.10.2`
 ```shell
 wget https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.sh
+chmod +x cmake-3.10.2-Linux-x86_64.sh
 sudo ./cmake-3.10.2-Linux-x86_64.sh --prefix=/usr
 ```
 `accept license`
