@@ -17,7 +17,7 @@
 [bot_buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_buy), [bot_list](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_list), [bot_pause](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_pause), [bot_resume](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_resume), [bot_sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_sell), [bot_settings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_settings), [bot_status](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_status), [bot_stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_stop)
 
 #### Coin Wallet Features
-[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [calcaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#calcaddress), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [inuse](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#inuse), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [timelock and unlockedspend](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#timelock-and-unlockedspend), [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw), [opreturn](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturn)
+[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [calcaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#calcaddress), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [inuse](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#inuse), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [timelock and unlockedspend](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#timelock-and-unlockedspend), [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw), [opreturn](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturn), [opreturndecrypt](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturndecrypt)
 
 #### Statistics
 [guistats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#guistats), [pricearray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pricearray), [statsdisp](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#statsdisp), [ticker](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#ticker), [tradesarray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#tradesarray)
@@ -2064,19 +2064,50 @@ LP_withdraw.KMD {"method":"withdraw","coin":"KMD","outputs":[{"RANyPgfZZLhSjQB9j
 ```
 
 #### opreturn
-`OP_RETURN` is just built into the `withdraw` API. If an `"opreturn":"<hex>"` is defined, it will create an `OP_RETURN` with the binary of the hex. In order to generate an `OP_RETURN` output to a tx edit the `opreturn` script file with your coin, address and a hex value and run it in terminal.
-Without `outputs` value, it will return `{"error":"withdraw needs to have outputs"}`.
+`OP_RETURN` is just built into the `withdraw` API. If an `"opreturn":"<hex>"` is defined, it will create an `OP_RETURN` with the binary of the hex. Without `outputs` value, it will return `{"error":"withdraw needs to have outputs"}`.
+There is encryption to the opreturn mode of withdraw. Basically if you specify a non-null passphrase, it encrypts with that passphrase and you will need that passphrase to decode it. The second parameter in the first example script is the passphrase. So, if you don't specify it, it is unencrypted.
 
-Sample file content:
+3 different sample scripts:
+```shell
+curl -X POST --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"withdraw\",\"coin\":\"COQUI\",\"passphrase\":\"$2\", \"opreturn\":\"$(echo -n "$1" | od -A n -t x1 | perl -pe 's/\W+//g')\"}"
+```
+```shell
+curl -X POST --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"withdraw\",\"coin\":\"COQUI\",\"outputs\":[{\"RGCVXhUxepCxh77thy7XgMrQ5XU9u7SWSR\":0.01}], \"opreturn\":\"$(echo -n "$1" | od -A n -t x1 | perl -pe 's/\W+//g')\"}"
+```
 ```shell
 curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"withdraw\",\"coin\":\"KMD\",\"outputs\":[{\"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ\":$1}], \"opreturn\":\"deadbeef\"}"
 ```
 
 Sample Output:
-After issuing `./opreturn 0.01` in terminal we got the following output.
 ```JSON
 {"rawtx":"01000000029059515dd331b448b213c12e607b4f104a025f9461d1c094d98010a06406b62d0100000000ffffffff6843fc7a13218df69cd7e03c64af2cefae7b1121ed55206da21c57d5665c8b640100000000ffffffff02565c1700000000001976a9140c1007fc1f406a0a519886c0e59327e9c43a634088ac0000000000000000066a04deadbeef1a69a05a","hex":"01000000029059515dd331b448b213c12e607b4f104a025f9461d1c094d98010a06406b62d010000006b483045022100d80b9fcf9561c889bcdbab79d2215e1fe66118ad1c1d1e8ec5421ced6b2de2ad02206ef83ed458e974ecc8fa9b667e34ab571b06f5e62dd83bff37c00ab5e372bdef012103fe754763c176e1339a3f62ee6b9484720e17ee4646b65a119e9f6370c7004abcffffffff6843fc7a13218df69cd7e03c64af2cefae7b1121ed55206da21c57d5665c8b64010000006b483045022100ec7c86079d1ce7512a835d81cedd850028e297ce22841ae925d5aceaff6f5e78022045a09dcad77f0bcc6d9d85f27ca9c13ba407c0c7968f85c50887b231067050e3012103fe754763c176e1339a3f62ee6b9484720e17ee4646b65a119e9f6370c7004abcffffffff02565c1700000000001976a9140c1007fc1f406a0a519886c0e59327e9c43a634088ac0000000000000000066a04deadbeef1a69a05a","tx":{"version":1,"locktime":1520462106,"vin":[{"txid":"2db60664a01080d994c0d161945f024a104f7b602ec113b248b431d35d515990","vout":1,"scriptPubKey":{"hex":"76a9140c1007fc1f406a0a519886c0e59327e9c43a634088ac"}}, {"txid":"648b5c66d5571ca26d2055ed21117baeef2caf643ce0d79cf68d21137afc4368","vout":1,"scriptPubKey":{"hex":"76a9140c1007fc1f406a0a519886c0e59327e9c43a634088ac"}}],"vout":[{"satoshis":"1530966","scriptPubKey":{"hex":"76a9140c1007fc1f406a0a519886c0e59327e9c43a634088ac"}}, {"satoshis":"0","scriptPubKey":{"hex":"6a04deadbeef"}}]},"txid":"4e2a338232d13643cdbd6fb0c47d649b9c1842284a78ab6ca9cf03088f3dc0cc","complete":true}
 ```
+
+#### opreturndecrypt
+This method will decrypt the encrypted [`OP_RETURN`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturn) easily.
+
+Sample File Content:
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"opreturndecrypt\",\"coin\":\"KMD\",\"txid\":\"06e59c6e9217ef1e526a1419e231e5f927689765feab9cd48167e089301f6fc2\",\"passphrase\":\"test\"}"
+```
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"opreturndecrypt\",\"coin\":\"KMD\",\"txid\":\"34bf4bc2247e43c0c6a2223b79d3f1a3e9962102fb4a563612e5bbb91fb85348\",\"passphrase\":\"test\"}"
+```
+```shell
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"opreturndecrypt\",\"coin\":\"KMD\",\"txid\":\"a9e94e6890d6998b3c2b89685e8c7c2b9e380a53fb813192701d0966480807eb\",\"passphrase\":\"test\"}"
+```
+
+Sample Output:
+```JSON
+{"coin":"KMD","opreturntxid":"06e59c6e9217ef1e526a1419e231e5f927689765feab9cd48167e089301f6fc2","opreturn":"6a4c4c4c0058501c2c290f7241932a8b4614b844bae28cc3117eeb79d5c0c900000000000000000000000000000000a30dc015ac4e4085f0cdb2c7cc24bca01d771449912d2982d7e9401ef52e5a81","result":"success","decrypted":"68656c6c6f2c20776f726c6474657374","original":"hello, worldtest"}
+```
+```JSON
+{"coin":"KMD","opreturntxid":"34bf4bc2247e43c0c6a2223b79d3f1a3e9962102fb4a563612e5bbb91fb85348","opreturn":"6a4c4d4d00215bb9fee0d7685c5fcf913f4da4fab726104b1b242d5226939b00000000000000000000000000000000cc5eedec8e34b68726ff77cad0558659333fee18e5b63f8ef259444f66f185e62e","result":"success","decrypted":"68656c6c6f2c20776f726c647465737431","original":"hello, worldtest1"}
+```
+```JSON
+{"coin":"KMD","opreturntxid":"a9e94e6890d6998b3c2b89685e8c7c2b9e380a53fb813192701d0966480807eb","opreturn":"6a4b4b0057a7b6c2ac0354f967534060bc3719a687bedc3b4741c3c64b7d00000000000000000000000000000000fe4170681aab23ba044516812bc5fe9dd5adb3a2f05fbc8d46e7be69f02040","result":"success","decrypted":"68656c6c6f2c20776f726c64746573","original":"hello, worldtes"}
+```
+All three recreated the original string passed into the [`opreturn`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturn) script. This functionality should allow apps to easily created and retrieve encrypted OP_RETURN.
 
 ### Statistics
 
