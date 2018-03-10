@@ -20,6 +20,7 @@ git clone https://github.com/jl777/SuperNET
 cd ~/SuperNET/iguana
 git checkout dev
 ./m_mm
+cd ..
 ./osx_deploy.sh
 ```
 Once all done, you should be able to find both `iguana` and `marketmaker` static binaries in user's home directory, under `~/tmp/iguana/`.
