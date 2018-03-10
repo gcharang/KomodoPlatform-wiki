@@ -1,5 +1,11 @@
 This guide will help you to compile your own marketmaker binary in Linux with static nanomsg.
 
+## Install Dependency packages:
+```shell
+sudo apt-get update
+sudo apt-get install cmake git libcurl4-openssl-dev build-essential
+```
+
 ## Install `nanomsg`
 ```shell
 cd ~
