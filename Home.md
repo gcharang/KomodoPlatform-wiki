@@ -2,13 +2,18 @@ Welcome to the KomodoPlatform wiki!
 
 Here you should find a list of important topics related to installing and using barterDEX (Komodo Platform).
 
-**Install**
+## Install
 
 [Installing Komodo Platform (barterDEX)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
 
 [Installing BarterDEX for ETH/ERC20 Token swaps (Experimental)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Step-by-Step-Setup-Guide-for-ETH-(ERC20)-Token-Swap-Using-barterDEX)
 
-**Use**
+## Compile Static `marketmaker` and `iguana`
+[Compile marketmaker Binary with Static nanomsg in Linux](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Compile-marketmaker-Binary-with-Static-nanomsg-in-Linux)
+
+[Compile marketmaker Binary with Static nanomsg in MacOS](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Compile-marketmaker-Binary-with-Static-nanomsg-in-MacOS)
+
+## Use
 
 [barterDEX API Summary](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category)
 
