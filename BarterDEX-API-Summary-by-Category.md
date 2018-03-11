@@ -482,12 +482,13 @@ bot_settings(botid, newprice, newvolume)
 bot_status(botid)
 bot_stop(botid)
 bot_pause(botid)
-calcaddress(passphrase)
+calcaddress(passphrase, coin=KMD)
 convaddress(coin, address, destcoin)
 instantdex_deposit(weeks, amount, broadcast=1)
 instantdex_claim()
 timelock(coin, duration, destaddr=(tradeaddr), amount)
 unlockedspend(coin, txid)
+opreturndecrypt(coin, txid, passphrase)
 getendpoint()
 jpg(srcfile, destfile, power2=7, password, data=, required, ind=0)
 "}
@@ -1847,13 +1848,11 @@ Sample Output:
 ```
 
 #### calcaddress
-Useful to get your private key for specific seed passphrase. This API will display the `passphrase`, `smartaddress` & `private key` of the given passphrase. Edit the passphrase section and change the word `default` with your own seed passphrase.
+Useful to get your private key for specific seed passphrase for any supported coin or asset. Edit the passphrase section and change the word `default` with your own seed passphrase and coin name. We used Digibyte (DGB) as example.
 
 Sample File Content:
 ```shell
-#!/bin/bash
-source userpass
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"calcaddress\",\"passphrase\":\"default\"}"
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"calcaddress\",\"passphrase\":\"default\",\"coin\":\"DGB\"}"
 ```
 
 Sample Output:
@@ -1861,8 +1860,11 @@ This output is based on the passphrase `default`. Change that to your seed passp
 ```JSON
 {
   "passphrase": "default",
-  "coinaddr": "RPZVpjptzfZnFZZoLnuSbfLexjtkhe6uvn",
-  "privkey": "30a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0684f"
+  "pubsecp": "03562035ac51f940b7f6e1e390df91fb0fe7f59f99acf8f6f389d9472a14797b5f",
+  "coinaddr": "DKRQHUtFhFfViZPCcCut3uB45cATTXXBMh",
+  "p2shaddr": "3FyKfmS3wk5bGiu2ziauvmNPLzisePpY3W",
+  "privkey": "30a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0684f",
+  "wif": "KxrJKHQ7phDnVnsbs2XEZUeWxjH3zSG6SzftyQGfojEG7ZkU9Zsn"
 }
 ```
 
