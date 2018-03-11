@@ -1848,7 +1848,7 @@ Sample Output:
 ```
 
 #### calcaddress
-Useful to get your private key for specific seed passphrase for any supported coin or asset. Edit the passphrase section and change the word `default` with your own seed passphrase and coin name. We used Digibyte (DGB) as example.
+Useful to get your private key for specific seed passphrase for any supported coin or asset except ETH & ERC20 tokens for now. Edit the passphrase section and change the word `default` with your own seed passphrase and coin name. We used Digibyte (DGB) as example.
 
 Sample File Content:
 ```shell
