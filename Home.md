@@ -37,7 +37,7 @@ Here you should find a list of important topics related to installing and using 
 
 [Private swap using barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI#private-trading-using-barterdex)
 
-**Setup Guide**
+## Setup Guide
 
 [Setup LP Node using barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)
 
