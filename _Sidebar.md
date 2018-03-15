@@ -18,6 +18,8 @@
 
 [ElectrumX guide for barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)
 
+[BarterDEX Network Optimisation](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-Network-Optimisations-&-Handle-BarterDEX-on-Very-FAST-Computer)
+
 **Notary Node**
 
 [Setup Komodo Notary Node](https://github.com/KomodoPlatform/komodo/wiki/Setup-Komodo-Notary-Node)
