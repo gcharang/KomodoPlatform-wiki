@@ -74,9 +74,9 @@ brew info leveldb
 ### Clone `SuperNET` repo and compile `marketmaker` for ETH swaps
 ```shell
 cd ~
-git clone https://github.com/artemii235/SuperNET
+git clone https://github.com/jl777/SuperNET
 cd ~/SuperNET
-git checkout etomic
+git checkout dev
 git submodule update --init --recursive
 mkdir build
 cd build
@@ -90,7 +90,7 @@ strip marketmaker-testnet
 ### Copy `marketmaker` binary to `iguana` dir
 The compiled `marketmaker` binary file can be found in `~/SuperNET/build/iguana/exchanges`. Copy `marketmaker` into `~/SuperNET/iguana/` dir.
 ```shell
-cp ~/SuperNET/build/iguana/exchanges/marketmaker-testnet ~/SuperNET/iguana/marketmaker-testnet
+cp ~/SuperNET/build/iguana/exchanges/marketmaker-mainnet ~/SuperNET/iguana/marketmaker-mainnet
 ```
 
 ## Install barterDEX & preparation
