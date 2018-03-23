@@ -77,6 +77,8 @@ You need to put the `txid` of the 0conf / instantdex deposit in an `instantdex.j
 ["d5705d948a5a4e0171acec3eb718ca1421ef998b37d0af5c37ac3b440898aef5","bd2087d431bb9af6213e73efc58e3384227edcf4827e1cf83f3c153e512a9e1f"]
 ```
 
+**[Note: If you are using Windows, please use 1 txid at a time. Claim for multiple txid may not work together. Claim single txid each time.]**
+
 Then delete any deposit.address binary file for your address i.e.: `deposits.RPZVpjptzfZnFZZoLnuSbfLexjtkhe6uvn`, all this is in `DB` dir. **Don't delete any dir in here.**
 
 Next time you start BarterDEX, it should then generate a `deposits.<address>` with the binary of the txid and necessary files. If Electrum mode does not work for you, try with native KMD wallet.
