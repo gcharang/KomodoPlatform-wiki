@@ -2027,7 +2027,7 @@ curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\
 Once its broadcast, and the time lock expires, you can do an `unlockedspend` using just the coin and the txid. The requirement is that it must be sent to your smartaddress that you are logged into and it will only just unlock and send to yourself.
 
 #### withdraw
-To withdraw, you just need to specify the array of outputs and the coin. It returns the `rawtx`, the signed transaction in `hex` the `txid` and if it was complete or not. All inputs are assumed to be standard pay to `pubkeyhash`, having other non-standard `utxo` will make it create invalid rawtx.
+To withdraw, you just need to specify the array of outputs and the coin. It returns the `rawtx`, the signed transaction in `hex` the `txid` and if it was complete or not. All inputs are assumed to be standard pay to `pubkeyhash`, having other non-standard `utxo` will make it create invalid rawtx. You need to use `./sendrawtransaction hex_value` to broadcast the tx or `"broadcast":1` inside `withdraw` script to do the same.
 
 Sample File Contents:
 ```shell
