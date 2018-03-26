@@ -5,7 +5,7 @@
   / ____ \ (_| | (_| | | | | | | (_| |   |_|   | |_) | (_| | |  | ||  __/ |  | |__| | |____ / . \ 
  /_/    \_\__, |\__,_|_| |_| |_|\__,_|         |____/ \__,_|_|   \__\___|_|  |_____/|______/_/ \_\
            __/ |                                                                                  
-          |___/   [ Oracle VM VirtualBox Image ]
+          |___/   [ Oracle VM VirtualBox Image by Decker]
 ```
 
 Agama + BarterDEX Linux VirtualBox Image
