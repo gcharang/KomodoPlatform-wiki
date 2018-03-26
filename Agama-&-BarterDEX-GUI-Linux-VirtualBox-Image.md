@@ -19,7 +19,7 @@
 ## Min Requirements:
 VM used 4 Cores CPU and 8 GB of RAM. Make sure you have good PC before use.
 
-Just import .ova image in your VirtualBox under any OS (Windows, Linux, MacOS) and start use.
+Just import `.ova` image in your VirtualBox under any OS (Windows, Linux, MacOS) and start use.
 
 ## Download Instructions:
 ---
@@ -27,7 +27,7 @@ Just import .ova image in your VirtualBox under any OS (Windows, Linux, MacOS) a
 1. Download all parts of RAR archive.
 2. Extract and import in your VirtualBox. 
 
-.ova image (Open Virtualization Format Archive) is splitted in 700 Mb (CD700) parts with rar archivator.
+`.ova` image (Open Virtualization Format Archive) is splitted in 700 Mb (CD700) parts with rar archivator.
 
 
 **[Folder Link](https://yadi.sk/d/ZzPbp7YQ3TezHX)**
