@@ -8,7 +8,7 @@
           |___/   [ Oracle VM VirtualBox Image by Decker]
 ```
 
-Agama + BarterDEX Linux VirtualBox Image
+## Agama + BarterDEX Linux VirtualBox Image
 
 - Ubuntu Linux Desktop 16.04.4
 - Agama Desktop v0.2.30c-beta 
@@ -17,7 +17,7 @@ Agama + BarterDEX Linux VirtualBox Image
 - Windows users can now test real perfomance of Linux native applications
 
 ## Min Requirements:
-VM used 4 Cores CPU and 8 Gb of RAM. Make sure you have good PC before use.
+VM used 4 Cores CPU and 8 GB of RAM. Make sure you have good PC before use.
 
 Just import .ova image in your VirtualBox under any OS (Windows, Linux, MacOS) and start use.
 
