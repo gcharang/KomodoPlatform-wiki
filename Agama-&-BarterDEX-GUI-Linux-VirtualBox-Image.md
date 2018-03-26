@@ -10,11 +10,11 @@
 
 Agama + BarterDEX Linux VirtualBox Image
 
-[+] Ubuntu Linux Desktop 16.04.4
-[+] Agama Desktop v0.2.30c-beta 
-[+] BarterDEX v0.8.13-rc
-[+] Fully synced Komodo (KMD) blockchain included for use in Native Mode (you still need to download some latest blocks)
-[+] Windows users can now test real perfomance of Linux native applications
+- Ubuntu Linux Desktop 16.04.4
+- Agama Desktop v0.2.30c-beta 
+- BarterDEX v0.8.13-rc
+- Fully synced Komodo (KMD) blockchain included for use in Native Mode (you still need to download some latest blocks)
+- Windows users can now test real perfomance of Linux native applications
 
 ## Min Requirements:
 VM used 4 Cores CPU and 8 Gb of RAM. Make sure you have good PC before use.
