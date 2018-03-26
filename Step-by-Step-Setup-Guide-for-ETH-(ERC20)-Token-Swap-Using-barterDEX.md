@@ -83,6 +83,7 @@ cd build
 cmake ..
 cmake --build . --target marketmaker-mainnet
 cmake --build . --target marketmaker-testnet
+cd ~/SuperNET/build/iguana/exchanges/
 strip marketmaker-mainnet
 strip marketmaker-testnet
 ```
@@ -90,7 +91,7 @@ strip marketmaker-testnet
 ### Copy `marketmaker` binary to `iguana` dir
 The compiled `marketmaker` binary file can be found in `~/SuperNET/build/iguana/exchanges`. Copy `marketmaker` into `~/SuperNET/iguana/` dir.
 ```shell
-cp ~/SuperNET/build/iguana/exchanges/marketmaker-mainnet ~/SuperNET/iguana/marketmaker-mainnet
+cp ~/SuperNET/build/iguana/exchanges/marketmaker-mainnet ~/SuperNET/iguana/marketmaker
 ```
 
 ## Install barterDEX & preparation
@@ -119,7 +120,7 @@ source coins
 cd ..; 
 #./m_mm;
 pkill -15 marketmaker; 
-./marketmaker-testnet "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
 
 ### Run `marketmaker` using `client` script for the first time to get the `userpass` value
