@@ -1301,7 +1301,7 @@ Sample Output:
 ```
 
 #### fomo
-`fomo` Fear of missing out API will allow you buy for your specified relvol at the best current orderbook price. Orderbook has to be visible for this API to work. When using `fomo` you won't get the best price. No need to `fomo` if you are able to do normal ordermatch.
+`fomo` Fear of missing out API will allow you buy for your specified relvol at the best current orderbook price. Orderbook has to be visible for this API to work. When using `fomo` you won't get the best price. No need to `fomo` if you are able to do normal ordermatch. It adds 5% to the orderbook entry that is the biggest that fits.
 
 Sample file content:
 ```shell
