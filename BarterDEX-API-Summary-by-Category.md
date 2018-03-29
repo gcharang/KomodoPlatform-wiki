@@ -601,7 +601,7 @@ git pull;
 cd ..; 
 ./m_mm;
 pkill -15 marketmaker; 
- $1 ./marketmaker "{\"gui\":\"nogui\", \"profitmargin\":0.01, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+ $1 ./marketmaker "{\"gui\":\"nogui\", \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
 
 #### setpassphrase
