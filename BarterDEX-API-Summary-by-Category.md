@@ -10,6 +10,8 @@
 
 [> `autoprice` the value of a fund, ie. using the `fundvalue` api](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category#autoprice-the-value-of-a-fund-ie-using-the-fundvalue-api)
 
+[> `autoprice` using usdpeg](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category#autoprice-using-usdpeg)
+
 #### Status / Info
 [getendpoint](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getendpoint), [pendings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendings), [swapstatus](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatus), [baserelswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#baserelswaps), [pendingswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pendingswaps), [coinswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#coinswaps), [swapstatus(requestid, quoteid, pending=0)](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#swapstatusrequestid-quoteid-pending0), [recentswaps](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#recentswaps)
 
@@ -17,7 +19,7 @@
 [bot_buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_buy), [bot_list](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_list), [bot_pause](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_pause), [bot_resume](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_resume), [bot_sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_sell), [bot_settings](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_settings), [bot_status](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_status), [bot_stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#bot_stop)
 
 #### Coin Wallet Features
-[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [calcaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#calcaddress), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [inuse](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#inuse), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [timelock and unlockedspend](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#timelock-and-unlockedspend), [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw), [eth_withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#eth_withdraw), [opreturn](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturn), [opreturndecrypt](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturndecrypt)
+[balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balance), [balances](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#balances), [calcaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#calcaddress), [fundvalue](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fundvalue), [getrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getrawtransaction), [inuse](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#inuse), [listtransactions](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listtransactions), [listunspent](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#listunspent), [secretaddresses](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#secreaddresses), [sendrawtransaction](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sendrawtransaction), [supernet](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#supernet), [timelock and unlockedspend](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#timelock-and-unlockedspend), [withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#withdraw), [eth_withdraw](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#eth_withdraw), [opreturn](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturn), [opreturndecrypt](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#opreturndecrypt)
 
 #### Statistics
 [guistats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#guistats), [pricearray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pricearray), [statsdisp](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#statsdisp), [ticker](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#ticker), [tradesarray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#tradesarray)
@@ -1934,6 +1936,147 @@ Sample Output:
     "vout": 1
   }
 ]
+```
+
+#### listtransactions
+
+This API just passes through the call to native mode and filters out any with a different address. For spv it just returns the SPV history.
+
+> Sample File Content:
+
+```shell
+#!/bin/bash
+source userpass
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"listtransactions\",\"coin\":\"JUMBLR\",\"address\":\"RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ\"}"
+```
+
+> Sample output using Native mode:
+
+```json
+[
+  {
+    "account": "",
+    "address": "RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ",
+    "category": "receive",
+    "amount": 0.26042583,
+    "vout": 0,
+    "confirmations": 8904,
+    "blockhash": "00009eeaa7458a5d781830c166158481fda6ae039450607f90e239d839694050",
+    "blockindex": 2,
+    "blocktime": 1521983789,
+    "txid": "2ff201697e8486865638d35f4de796ce025ec72734c4053a6b835dfb50340ca9",
+    "walletconflicts": [],
+    "time": 1521983789,
+    "timereceived": 1522155873,
+    "vjoinsplit": [],
+    "size": 300
+  },
+  {
+    "account": "",
+    "address": "RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ",
+    "category": "receive",
+    "amount": 0.00203615,
+    "vout": 1,
+    "confirmations": 5955,
+    "blockhash": "00000e1d26d1e13cb9c9456f2f2112fd2c3079fbdf66a88dbbf96db6114aecfe",
+    "blockindex": 1,
+    "blocktime": 1522161804,
+    "txid": "2235aa0b2beed7b2a79619df044912af3baec026cda6a4eb00c9de5b6a1f6788",
+    "walletconflicts": [],
+    "time": 1522161801,
+    "timereceived": 1522161801,
+    "vjoinsplit": [],
+    "size": 223
+  },
+  {
+    "account": "",
+    "address": "RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ",
+    "category": "send",
+    "amount": -0.00203615,
+    "vout": 1,
+    "fee": -1e-05,
+    "confirmations": 5955,
+    "blockhash": "00000e1d26d1e13cb9c9456f2f2112fd2c3079fbdf66a88dbbf96db6114aecfe",
+    "blockindex": 1,
+    "blocktime": 1522161804,
+    "txid": "2235aa0b2beed7b2a79619df044912af3baec026cda6a4eb00c9de5b6a1f6788",
+    "walletconflicts": [],
+    "time": 1522161801,
+    "timereceived": 1522161801,
+    "vjoinsplit": [],
+    "size": 223
+  },
+  {
+    "involvesWatchonly": true,
+    "account": "",
+    "address": "RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ",
+    "category": "receive",
+    "amount": 14.4499848,
+    "vout": 0,
+    "confirmations": 4278,
+    "blockhash": "0000f759c96b9c866e6417bb3c653e323feea999ce1dabcc27c007f72543f14c",
+    "blockindex": 1,
+    "blocktime": 1522261902,
+    "txid": "6b2b506cffe3423e25d3519c64a5279213993e0d235ff89cbb3bf53be7a727fb",
+    "walletconflicts": [],
+    "time": 1522261807,
+    "timereceived": 1522261807,
+    "vjoinsplit": [],
+    "size": 300
+  },
+  {
+    "involvesWatchonly": true,
+    "account": "",
+    "address": "RANyPgfZZLhSjQB9jrzztSw66zMMYDZuxQ",
+    "category": "send",
+    "amount": -14.4499848,
+    "vout": 0,
+    "fee": -1e-05,
+    "confirmations": 4278,
+    "blockhash": "0000f759c96b9c866e6417bb3c653e323feea999ce1dabcc27c007f72543f14c",
+    "blockindex": 1,
+    "blocktime": 1522261902,
+    "txid": "6b2b506cffe3423e25d3519c64a5279213993e0d235ff89cbb3bf53be7a727fb",
+    "walletconflicts": [],
+    "time": 1522261807,
+    "timereceived": 1522261807,
+    "vjoinsplit": [],
+    "size": 300
+  }
+]
+```
+
+> Sample output using SPV mode:
+
+```json
+  {
+    "tx_hash": "7c536b8f3d1e33f110ae62399f181b4c5af9a16938b1ecef59f48c226dd2a9be",
+    "height": 8285
+  },
+  {
+    "tx_hash": "f3169db98c3b7263130d8d0d91aa17df361b76737f8df8363e3b4caeb1afaa55",
+    "height": 8288
+  },
+  {
+    "tx_hash": "24874d70f3cfa5ae3a1c31916af7bdc6cb6d6fe5d428a12873c373db703bd101",
+    "height": 8833
+  },
+  {
+    "tx_hash": "9281bcfc9c3262cb3e6d8440fd0250357a8660a24aa22abeca8ce7512c0cf111",
+    "height": 9012
+  },
+  {
+    "tx_hash": "c3561504f2ce0af8f5c63fa01424d6acb5576caddfa543dc3e16301d51f744f6",
+    "height": 9013
+  },
+  {
+    "tx_hash": "dce11261eaae611347a5967ea727f0bc0a3ee87e11250ad2ef0758a999d7e920",
+    "height": 9602
+  },
+  {
+    "tx_hash": "afc2fd0991bdef89da2cd1018c86ab56a5989c6f2b1d4e40861e88bc6125cbec",
+    "height": 10076
+  }
 ```
 
 #### listunspent
