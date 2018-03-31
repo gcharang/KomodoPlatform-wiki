@@ -739,6 +739,27 @@ Sample Output:
 {"result":"success"}
 ```
 
+#### autoprice using usdpeg
+There is a way for autoprice coinmarketcap to do USD pegs for orderbooks denominated in any coin. The syntax is pretty arbitrary but it works.
+
+Make sure the `usdpeg` is set to non-zero. In that case put in the orderbook BACKWARDS (dont ask me why, it just works only in this way) for the coin that is the coinmarketcap refbase. Based on the example it is KMD so base KMD and rel OOT, will create OOT/KMD orderbooks using factor 0.15 (fifteen cents) denominated in KMD. The example script used different margins for buymargin and sellmargin, so it works for dICO scenario (allow people to sell back but at a steep loss) and also it is backwards (dont ask me why).
+
+What this means is if you do a base DOGE rel OOT and refbase dogecoin, it should maintain an orderbook in DOGE pegged to the 15 cents price. Any CMC coin can be used. If you want to change the price, change the value of `factor` accordingly.
+
+> Sample File Content:
+
+```shell
+#!/bin/bash
+source userpass
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"autoprice\",\"base\":\"KMD\",\"rel\":\"OOT\",\"factor\":0.15,\"buymargin\":0.0001,\"sellmargin\":0.2,\"refbase\":\"komodo\",\"refrel\":\"coinmarketcap\",\"usdpeg\":1}"
+```
+
+> Sample Output:
+
+```json
+{"result":"success"}
+```
+
 #### buy
 In simple terms, this command will post a buy order. If there is a matching order in the orderbooks, then this will automatically start a trade. If a match is not found, a bid order will be added in the orderbook. Buy fills asks from the orderbook using relvolume. Trade request will last as long as defined in the 'timeout' field.
 
