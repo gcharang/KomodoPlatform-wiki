@@ -38,16 +38,16 @@ Needs an update after the final version is publicly available
 * macOS: https://artifacts.supernet.org/latest/osx/
 * Windows: https://artifacts.supernet.org/latest/windows/
 
-## Marketmaker-cli
-* Source code: https://github.com/KomodoPlatform/marketmaker-cli
-* Release binary: https://github.com/eliezio/marketmaker-cli/releases
-
 ## Komodo-Qt (KomodoOcean)
 ### Source code
 * https://github.com/ip-gpu/KomodoOcean 
 * https://github.com/DeckerSU/KomodoOcean
 ### Release package
 * https://github.com/DeckerSU/KomodoOcean/releases
+
+## Marketmaker-cli
+* Source code: https://github.com/KomodoPlatform/marketmaker-cli
+* Release binary: https://github.com/eliezio/marketmaker-cli/releases
 
 ## SuperNET, Iguana `source code`
 Please refer to individual installation process
