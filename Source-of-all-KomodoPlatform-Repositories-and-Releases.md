@@ -1,6 +1,6 @@
 **This page will link all related Komodo and SuperNET project source repositories and builds. Please let us know in Slack if any information needs to be updated.**
 
-### Agama (Desktop)
+## Agama (Desktop)
 #### Source code
 * Backend: https://github.com/KomodoPlatform/Agama/
 * UI: https://github.com/KomodoPlatform/EasyDEX-GUI/
@@ -9,11 +9,11 @@
 * macOS: https://artifacts.supernet.org/latest/installer_osx.html
 * Windows: https://artifacts.supernet.org/latest/installer_windows.html
 
-### Agama Mobile
+## Agama Mobile
 * Source code: https://github.com/KomodoPlatform/agama-mobile
 * Release: https://github.com/KomodoPlatform/agama-mobile/releases
 
-### Agama Web Wallet
+## Agama Web Wallet
 * Link: https://www.atomicexplorer.com/wallet/
 
 ## barterDEX CLI (normal)
