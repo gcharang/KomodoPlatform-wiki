@@ -1,10 +1,10 @@
 **This page will link all related Komodo and SuperNET project source repositories and builds. Please let us know in Slack if any information needs to be updated.**
 
 ## Agama (Desktop)
-### Source code
+#### Source code
 * Backend: https://github.com/KomodoPlatform/Agama/
 * UI: https://github.com/KomodoPlatform/EasyDEX-GUI/
-### Latest installer
+#### Latest installer
 * Linux: https://artifacts.supernet.org/latest/installer_linux.html
 * macOS: https://artifacts.supernet.org/latest/installer_osx.html
 * Windows: https://artifacts.supernet.org/latest/installer_windows.html
@@ -31,18 +31,18 @@ Needs an update after the final version is publicly available
 * Source code: https://github.com/ca333/atomicDEX
 
 ## Komodo
-### Source code
+#### Source code
 * https://github.com/jl777/komodo
-### Binary
+#### Binary
 * Linux: https://artifacts.supernet.org/latest/linux/
 * macOS: https://artifacts.supernet.org/latest/osx/
 * Windows: https://artifacts.supernet.org/latest/windows/
 
 ## Komodo-Qt (KomodoOcean)
-### Source code
+#### Source code
 * https://github.com/ip-gpu/KomodoOcean 
 * https://github.com/DeckerSU/KomodoOcean
-### Release package
+#### Release package
 * https://github.com/DeckerSU/KomodoOcean/releases
 
 ## Marketmaker-cli
