@@ -42,9 +42,12 @@ Needs an update after the final version is publicly available
 * Source code: https://github.com/KomodoPlatform/marketmaker-cli
 * Release binary: https://github.com/eliezio/marketmaker-cli/releases
 
-## Ocean-QT
-* Source code: https://github.com/DeckerSU/KomodoOcean
-* Release package: https://github.com/DeckerSU/KomodoOcean/releases
+## Komodo-Qt (KomodoOcean)
+### Source code
+* https://github.com/ip-gpu/KomodoOcean 
+* https://github.com/DeckerSU/KomodoOcean
+### Release package
+* https://github.com/DeckerSU/KomodoOcean/releases
 
 ## SuperNET, Iguana `source code`
 Please refer to individual installation process
