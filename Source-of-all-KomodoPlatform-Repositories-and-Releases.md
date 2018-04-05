@@ -36,7 +36,7 @@ Needs an update after the final version is publicly available
 ## Komodo
 #### Source code
 * https://github.com/jl777/komodo
-#### Binary
+#### Latest Binary
 * Linux: https://artifacts.supernet.org/latest/linux/
 * macOS: https://artifacts.supernet.org/latest/osx/
 * Windows: https://artifacts.supernet.org/latest/windows/
