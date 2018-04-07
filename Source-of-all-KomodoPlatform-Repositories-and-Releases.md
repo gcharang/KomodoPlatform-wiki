@@ -34,7 +34,7 @@
 * Source code: https://github.com/jl777/chips3
 
 ## CHIPSln
-* Source code: https://github.com/jl777/chipln
+* Source code: https://github.com/jl777/chipsln
 
 ## dICO App
 Needs an update after the final version is publicly available
