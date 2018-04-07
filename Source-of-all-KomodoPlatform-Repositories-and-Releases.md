@@ -29,6 +29,12 @@
 * Source code: https://github.com/KomodoPlatform/BarterDEX
 * Release package: https://github.com/KomodoPlatform/BarterDEX/releases
 
+## CHIPS
+* Source code: https://github.com/jl777/chips3
+
+## CHIPSln
+* Source code: https://github.com/jl777/chipln
+
 ## dICO App
 Needs an update after the final version is publicly available
 * Source code: https://github.com/ca333/atomicDEX
