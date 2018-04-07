@@ -14,7 +14,8 @@
 * Release: https://github.com/KomodoPlatform/agama-mobile/releases
 
 ## Agama Web Wallet
-* Link: https://www.atomicexplorer.com/wallet/
+* Source: https://github.com/pbca26/agama-web
+* Hosted: https://www.atomicexplorer.com/wallet/
 
 ## barterDEX CLI (normal)
 * Source code: https://github.com/jl777/SuperNET
