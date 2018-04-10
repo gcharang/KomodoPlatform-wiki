@@ -15,6 +15,8 @@
 ---
 ## Agama Web Wallet
 * Source: https://github.com/pbca26/agama-web
+* Dependencies 1: https://github.com/pbca26/agama-wallet-lib
+* Dependencies 2: https://github.com/pbca26/electrum-proxy
 * Hosted: https://www.atomicexplorer.com/wallet/
 ---
 ## barterDEX CLI (normal)
