@@ -9,14 +9,13 @@ It is very easy to be a marketmaker or Liquidity Provider (LP) in barterDEX. Any
 1. barterDEX CLI installed - [guide](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX))
 2. Native coin wallet(s) or Electrum server list (see below)
 
-
 ### APIs needed
-You will need [`run`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run), [`setpassprhase`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setpassphrase), [`enable`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#enable) or [`electrum`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum) & [`autoprice`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#autoprice) only to be a marketmaker or LP in barterDEX. All the API usage explained below as steps.
+You will need [`client`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client), [`setpassprhase`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setpassphrase), [`enable`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#enable) or [`electrum`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum) & [`autoprice`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#autoprice) only to be a marketmaker or LP in barterDEX. All the API usage explained below as steps.
 
 ### Steps:
 
-#### run
-Use `./run &` to start barterDEX as LP mode. You can use `./client &` but, better to use `run`, which is specifically to start as marketmaker or LP. Don't change the file contents unless you know what you are doing.
+#### client
+Use `./client &` to start barterDEX. Do NOT use `./run` unless you have liable connection from a datacenter or VPS. Don't change the file contents unless you know what you are doing.
 
 #### setpassphrase
 This API will set your passphrase and let you use the userpass value in every script. This is the second API/script you need to run.
@@ -37,17 +36,18 @@ You can use BarterDEX using 14,000+ [`netid`](https://github.com/KomodoPlatform/
 #### LP Node
 You need to edit your `run` and `setpassphrase` with same `netid` and `seednode` like `\"netid\":999,\"seednode\":\"51.255.10.25\"` and follow the steps above. Your orders will not be visible in the global netid and orderbook. Only users who are connected to that specific netid on that ip can perform swaps. Check the example file below:
 
-**run**
+**client**
 ```shell
 #!/bin/bash
 source passphrase
 source coins
 ./stop
 git pull;
+cp ../exchanges/updateprices .;./updateprices
 cd ..; 
 ./m_mm;
 pkill -15 marketmaker; 
-stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\", \"profitmargin\":0.01, \"netid\":999,\"seednode\":\"51.255.10.25\",\"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
 
 **setpassphrase**
