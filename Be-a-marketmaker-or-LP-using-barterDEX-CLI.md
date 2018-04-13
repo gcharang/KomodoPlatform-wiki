@@ -15,13 +15,15 @@ You will need [`client`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/b
 ### Steps:
 
 #### client
-Use `./client &` to start barterDEX. Do NOT use `./run` unless you have liable connection from a datacenter or VPS. Don't change the file contents unless you know what you are doing.
+Use `./client &` to start barterDEX. Do **NOT** use `./run` unless you have liable connection from a datacenter or VPS. Don't change the file contents unless you know what you are doing.
 
 #### setpassphrase
 This API will set your passphrase and let you use the userpass value in every script. This is the second API/script you need to run.
 
 #### enable or electrum
 If you are planning to use native mode, coin daemons need to be installed, blockchain fully synced if using native. Native is recommended for faster performance and reliability. Alternatively, you can use electrum which does not require blockchain to be downloaded.
+
+**[Note: `electrum` is not recommended to setup an LP node. It will create connectivity issues and you may run into troubles.]**
 
 Edit the `enable` script with the coin names you want to activate for trading. Or, edit the `electrum` script with [list of electrum servers](http://pad.supernet.org/electrum-servers) to activate coins in electrum mode.
 
