@@ -49,7 +49,7 @@ cp ../exchanges/updateprices .;./updateprices
 cd ..; 
 ./m_mm;
 pkill -15 marketmaker; 
-stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\",\"client\":1,\"netid\":999,\"seednode\":\"51.255.10.25\", \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
 
 **setpassphrase**
@@ -74,7 +74,7 @@ cp ../exchanges/updateprices .;./updateprices
 cd ..; 
 ./m_mm;
 pkill -15 marketmaker; 
-stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\",\"client\":1,\"netid\":999,\"seednode\":\"51.255.10.25\", \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
 ```
 
 **setpassphrase**
