@@ -15,7 +15,7 @@ You will need [`client`](https://github.com/KomodoPlatform/KomodoPlatform/wiki/b
 ### Steps:
 
 #### client
-Use `./client &` to start barterDEX. Do **NOT** use `./run` unless you have liable connection from a datacenter or VPS. Don't change the file contents unless you know what you are doing.
+Use `./client &` to start barterDEX. Do **NOT** use `./run` unless you have reliable fast connection from a datacenter or VPS. Don't change the file contents unless you know what you are doing.
 
 #### setpassphrase
 This API will set your passphrase and let you use the userpass value in every script. This is the second API/script you need to run.
