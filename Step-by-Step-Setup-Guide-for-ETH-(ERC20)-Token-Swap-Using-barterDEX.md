@@ -26,6 +26,11 @@ sudo ln -s /usr/bin/g++-7 /usr/bin/g++
 wget https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.sh
 chmod +x cmake-3.10.2-Linux-x86_64.sh
 sudo ./cmake-3.10.2-Linux-x86_64.sh --prefix=/usr
+
+# OR on Ubuntu 16.04 you can use repository:
+sudo add-apt-repository ppa:nschloe/cmake-nightly
+sudo apt-get update
+sudo apt install cmake
 ```
 `accept license`
 when it ask "Do you want to include the subdirectory cmake-3.10.2-Linux-x86_64" choose `NO`
