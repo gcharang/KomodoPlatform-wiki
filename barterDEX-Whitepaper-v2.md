@@ -14,7 +14,7 @@ A decentralized trading environment was created in 2014 by a service called Mult
 
 One problem with this type of solution, however, is that it loses the speed of a centralized exchange. And another problem is that the storage of external cryptocurrencies is not decentralized, but only distributed at best, which maintains a degree of counterparty risk for the users. This, combined with the need to use a set of gateways to convert the external, native coins to and from the proxy tokens has made it an impractical solution.
 
-The conclusion is that a decentralized alternative that lacks speed cannot compete with the convenience of existing centralized exchanges, and that simply reducing the counterparty risks it is not enough to attract liquidity.
+The conclusion is that a decentralized alternative that lacks speed cannot compete with the convenience of existing centralized exchanges, and that simply reducing the counterparty risks is not enough to attract liquidity.
 
 ## The complete Solution
 BarterDEX combines three key components: order matching, trade clearing and liquidity provision into a single integrated system that allows users to make a coin conversion request, find a suitable match and complete the trade using an atomic cross-chain protocol. Additionally, there is a privacy layer in the order matching so that two nodes can do a peer-to-peer atomic swap without any direct IP contact between them.
@@ -26,7 +26,7 @@ After execution comes trade clearing, which is the process from the promise of p
 A liquidity provider (LP) is a trading party that acts as a market maker buying and selling assets. They provide liquidity to the exchange, and make their profit from the spread between bid and ask orders. LP’s bring price stability and make easier for traders to execute trades.
 
 ## Improvements implemented in barterDEX
-barterDEX is the result of years of development and iterated versions, with each iteration adding the next layer of required functionality to achieve the goal of large-scale adoption.
+BarterDEX is the result of years of development and iterated versions, with each iteration adding the next layer of required functionality to achieve the goal of large-scale adoption.
 
 With this incarnation, barterDEX adds support for [SPV](https://en.bitcoin.it/w/index.php?title=Scalability&redirect=no#Simplified_payment_verification) [Electrum](https://en.bitcoin.it/wiki/Electrum) based coins in addition to dozens of normal bitcoin protocol coins running native coin daemons. Internally the “SPV”-ness of a coin is abstracted so that most of the API calls work transparently for SPV mode coins and native coin daemons. It also implements Liquidity Multiplication that allows the same funds to be used for asks in multiple "orderbooks", where the first to fill gets the trade. This allows 100 BTC worth of funds to create thousands of BTC worth of liquidity and provides a special advantage for traders that like to wait for below market dumps. While this feature is something that any other exchange could implement, very few if any do. All orderbook entries are 100% backed by real funds, yet the same funds can be part of 25 different "orderbooks".
 
@@ -120,9 +120,9 @@ People will notice that there is a small `dexfee` as part of the barterDEX proto
 
 The 1/777 ends up be 0.1287%, this is less than almost all the centralized exchanges, in many cases by a significant margin. Please note that the central exchanges charge both sides of the trade, so even if they charge 0.2%, it is actually 0.4% total fees.
 
-The `dexfee` helps secure the barterDEX network and it is set at a level that is less than the central exchanges. It is possible that some trades can start without completing and since the `dexfee` is charged first in the protocol. In this sense, there would be a `dexfee` charged for these failed atomic swaps. While the proxy DEX charge for every bid and every ask, even if a trade doesn't happen at all, this is a big negative for trading on the proxy DEX systems. 
+The `dexfee` helps secure the barterDEX network and it is set at a level that is less than the central exchanges. It is possible that some trades can start without completing and since the `dexfee` is charged first in the protocol, it may be lost. In this sense, there would be a `dexfee` charged for these failed atomic swaps. In comparision a proxy DEX charges for every bid and every ask, even if a trade doesn't start at all. This is a big negative for trading on proxy DEX systems. 
 
-However, it should not be looked upon in isolation. The barterDEX protocol is based on statistics and statistically, there will be some percentage of atomic swaps that are started that won't complete. Let us say this is a 15% failure rate (really this is much higher than we are seeing in testing, where 95%+ of atomic swaps that are started complete, at least to the `bobdeposit` phase), then the effective `dexfee` cost is still 0.15%
+However, the case of a `dexfee` lost by Alice in a failed trade should not be looked upon in isolation. The barterDEX protocol is based on statistics and statistically, there will be some percentage of atomic swaps that are started that won't complete. Let us say this is a 15% failure rate (in reality, this is much higher than we are seeing in testing, where 95%+ of atomic swaps that are started complete, at least to the `bobdeposit` phase), then the effective `dexfee` cost is still 0.15%
 
 So, if you see a `dexfee` transaction for an atomic swap that doesn't complete, know that it is all part of the statistical process. If you end up paying more than 0.15% of completed trades in `dexfee`, please let us know, this is not an expected outcome and we will want to find and fix the cause.
 
@@ -133,7 +133,7 @@ Fees are collected and distributed to DEX asset holders, which is an assetchain.
 
 ## Transaction Confirmations
 
-Since barterDEX is trading real coins and not just updating an internal database (or a proxy tokens account balance for proxy DEX), both sides need to wait for coin confirmations to the level they are comfortable. Since the payments sent on one chain won't be reorganized if the other chain does, it is important to have enough confirmations for the size of the trade being done. In order to enable this, there is a `setconfirms` API call that can be called for each coin. This needs to be done before the atomic swap is started as the current `numconfirms` for the coin will be sent to the other side and the larger of alice or bob's `numconfirms` will be used. There is also a `maxconfirms` value to prevent one side from specifying something crazy like 100 BTC confirms!
+Since barterDEX is trading real coins and not just updating an internal database (or a proxy tokens account balance for a proxy DEX), both sides need to wait for coin confirmations to the level they are comfortable. Since the payments sent on one chain won't be reorganized if the other chain does, it is important to have enough confirmations for the size of the trade being done. In order to enable this, there is a `setconfirms` API call that can be called for each coin. This needs to be done before the atomic swap is started as the current `numconfirms` for the coin will be sent to the other side and the larger of alice or bob's `numconfirms` will be used. There is also a `maxconfirms` value to prevent one side from specifying something crazy like 100 BTC confirms!
 
 ## Zero Transaction Confirmations
 
