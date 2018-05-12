@@ -15,7 +15,8 @@ Here you should find a list of important topics related to installing and using 
 
 ## Use
 
-[barterDEX API Summary](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category)
+[barterDEX API Summary](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category)  
+[BarterDEX Documentation by @jorian](https://media.readthedocs.org/pdf/barterdex/latest/barterdex.pdf)
 
 [Enabling Native Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Native-Wallet-Coins-for-Trading)
 
