@@ -18,4 +18,5 @@ To understand the process, see https://gist.github.com/larrybotha/10650410 and h
 + `git fetch edited_repo master`
 + Compare the latest commit from origin with the latest commit from edited_repo
 + git merge or rebase
++ Remove this `README.md` file and `commit`
 + `git push -u origin master` to commit to the official repository  
