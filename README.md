@@ -1,6 +1,6 @@
 # KomodoPlatform-wiki
 
-his is a cloned wiki of the repository https://github.com/KomodoPlatform/KomodoPlatform for easy contribution of edits.
+This is a cloned wiki of the repository https://github.com/KomodoPlatform/KomodoPlatform for easy contribution of edits.
 To understand the process, see https://gist.github.com/larrybotha/10650410 and https://stackoverflow.com/a/11481887/9551761
 
 #The process for a person suggesting an edit
