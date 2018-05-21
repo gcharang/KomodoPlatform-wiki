@@ -12,7 +12,7 @@ sudo apt-get install python3-setuptools python3-multidict python3.6 python3.6-de
 git clone https://github.com/cipig/electrumx -b kmdassets
 cd electrumx
 vi setup.py
-    install_requires=['plyvel', 'pylru', 'aiohttp >= 1', 'x11_hash', 'uvloop', 'scrypt'],
+    install_requires=['aiorpcX >= 0.5.5', 'plyvel', 'pylru', 'aiohttp >= 1', 'x11_hash', 'uvloop', 'scrypt'],
 sudo python3.6 setup.py install
 ```
 
