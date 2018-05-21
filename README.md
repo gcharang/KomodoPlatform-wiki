@@ -5,17 +5,17 @@ To understand the process, see https://gist.github.com/larrybotha/10650410 and h
 
 #The process for a person suggesting an edit
 -------------------------------------------
-+Fork this repo
-+Make edits in your forked copy
-+Submit pull request to this repo
-+I will review and merge the edits.
-+Later, maintainer of the KomodoPlatform's official wiki will merge changes from this repo to the official wiki i.e., https://github.com/KomodoPlatform/KomodoPlatform/wiki
++ Fork this repo
++ Make edits in your forked copy
++ Submit pull request to this repo
++ I will review and merge the edits.
++ Later, maintainer of the KomodoPlatform's official wiki will merge changes from this repo to the official wiki i.e., https://github.com/KomodoPlatform/KomodoPlatform/wiki
 
 #The process for maintainer of KomodoPlatform's official wiki:
 -------------------------------------------------------------
-+Clone the official wiki
-+Add a new remote: `git remote add edited_repo https://github.com/gcharang/KomodoPlatform-wiki.git`
-+`git fetch edited_repo master`
-+Compare the latest commit from origin with the latest commit from edited_repo
-+git merge or rebase
-+`git push -u origin master` to commit to the official repository  
++ Clone the official wiki
++ Add a new remote: `git remote add edited_repo https://github.com/gcharang/KomodoPlatform-wiki.git`
++ `git fetch edited_repo master`
++ Compare the latest commit from origin with the latest commit from edited_repo
++ git merge or rebase
++ `git push -u origin master` to commit to the official repository  
