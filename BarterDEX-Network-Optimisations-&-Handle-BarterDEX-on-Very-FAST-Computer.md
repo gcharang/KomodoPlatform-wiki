@@ -9,24 +9,26 @@ To create the conf file use `sudo nano /etc/sysctl.d/01-barterdex.conf` and past
 Contents of `01-barterdex.conf` file:
 
 ```JSON
-net.core.rmem_max = 33554432
-net.core.wmem_max = 33554432
-net.ipv4.tcp_rmem = 4096 87380 33554432
-net.ipv4.tcp_wmem = 4096 65536 33554432
+net.core.rmem_default = 1048576
+net.core.wmem_default = 1048576
+net.core.rmem_max = 16777216
+net.core.wmem_max = 16777216
+net.ipv4.tcp_rmem = 4096 87380 16777216
+net.ipv4.tcp_wmem = 4096 65536 16777216
+net.ipv4.udp_rmem_min = 16384
+net.ipv4.udp_wmem_min = 16384
 net.core.netdev_max_backlog = 262144
-net.ipv4.tcp_no_metrics_save = 1
-net.ipv4.tcp_tw_reuse = 1
 net.ipv4.tcp_max_orphans = 262144
 net.ipv4.tcp_max_syn_backlog = 262144
-net.ipv4.tcp_fin_timeout = 10
-net.ipv4.tcp_keepalive_time = 60
-net.ipv4.tcp_keepalive_intvl = 10
-net.ipv4.tcp_keepalive_probes = 3
-net.ipv4.tcp_synack_retries = 2
-net.ipv4.tcp_syn_retries = 2
+net.ipv4.tcp_tw_reuse = 1
+net.ipv4.tcp_max_tw_buckets = 2000000
 net.ipv4.ip_local_port_range = 16001 65530
 net.core.somaxconn = 20480
-net.ipv4.tcp_max_tw_buckets = 2000000
+net.ipv4.tcp_low_latency = 1
+net.ipv4.tcp_slow_start_after_idle = 0
+net.ipv4.tcp_mtu_probing = 1
+net.ipv4.tcp_fastopen = 3
+net.ipv4.tcp_limit_output_bytes = 131072
 ```
 
 You can also use a kernel module dealing with network congestion. But, there is not enough data on how much it helps. For this you need to add the following 2 lines into the previous file. Try to load the module with `sudo modprobe tcp_bbr` to see if you have it. If the terminal shows nothing, that is good. It means it could load the module.
