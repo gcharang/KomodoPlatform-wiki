@@ -15,7 +15,7 @@ Here you should find a list of important topics related to installing and using 
 
 [barterDEX API Summary](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-API-Summary-by-Category)  
 [BarterDEX Documentation by @jorian (will be updated when he gets free time)](https://media.readthedocs.org/pdf/barterdex/latest/barterdex.pdf)  
-[Enabling Native Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Native-Wallet-Coins-for-Trading)  
+[Enabling Native Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Native-Wallet-Coins)  
 [Enabling Electrum Wallet Coins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Enabling-Electrum-Wallet-Coins)  
 [Electrum Servers List](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Electrum-servers-list)  
 [Funding the Smart Adress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Funding-the-Smart-Address)  
