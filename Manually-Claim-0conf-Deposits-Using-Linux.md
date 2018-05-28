@@ -5,7 +5,7 @@ Note: Linux is needed to follow this guide and claim deposits using terminal win
 Requirements:
 1. Komodo (KMD) running in native mode, blockchain fully synced and passphrase imported - https://artifacts.supernet.org/latest/
 2. Deposit txid / deposit files
-3. Latest barterDEX CLI - https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-Komodo-Platform
+3. Latest barterDEX CLI - https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX)
 
 ### Prepare the 0conf deposit files
 
