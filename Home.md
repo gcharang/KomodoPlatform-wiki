@@ -30,7 +30,8 @@ Here you should find a list of important topics related to installing and using 
 
 [Setup LP Node using barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI)  
 [Setup ElectrumX server](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)  
-[barterDEX Network Optimizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-Network-Optimisations-&-Handle-BarterDEX-on-Very-FAST-Computer)
+[barterDEX Network Optimizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-Network-Optimisations-&-Handle-BarterDEX-on-Very-FAST-Computer)  
+[Setup Bob/Marketmaker nodes using easy scripts](https://github.com/blackjok3rtt/BOB_scripts)
 
 ## List of all KomodoPlatform projects
 
