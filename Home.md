@@ -23,7 +23,7 @@ Here you should find a list of important topics related to installing and using 
 [0conf Deposit & Claim](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Processing-InstantDEX-swap-on-barterDEX)  
 [Manually Claim Legacy 0conf Deposits](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Manually-Claim-0conf-Deposits-Using-Linux)  
 [Extracting WIF/Private Key from Passphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Extracting-WIF-privkey-from-Komodo-Platform)  
-[Private swap using barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-LP-using-barterDEX-CLI#private-trading-using-barterdex)  
+[Private swap using barterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-bob-using-barterDEX-CLI#private-trading-using-barterdex)  
 [Using Remote marketmaker binary with GUI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Using-Remote-marketmaker-binary-with-GUI)
 
 ## Setup Guide
