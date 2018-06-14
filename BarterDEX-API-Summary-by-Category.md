@@ -3,7 +3,7 @@
 ## Summary info for each API by Category
 
 #### barterDEX Operation
-[client](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client), [client_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client_osx), [convaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#convaddress), [debug](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#debug), [disable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#disable), [electrum](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum), [enable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#enable), [getcoin](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoin), [getcoins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoins), [getpeers](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeers), [getpeersIP](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeersip), [help](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#help), [jpg](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#jpg), [millis](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#millis), [notarizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#notarizations), [parselog](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#parselog), [run](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#run), [setpassphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setpassphrase), [sleep](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sleep), [stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#stop), [trust](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trust), [trusted](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trusted)
+[client](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client), [client_osx](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#client_osx), [convaddress](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#convaddress), [debug](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#debug), [disable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#disable), [electrum](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#electrum), [enable](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#enable), [getcoin](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoin), [getcoins](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getcoins), [getpeers](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeers), [getpeersIP](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getpeersip), [help](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#help), [jpg](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#jpg), [millis](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#millis), [notarizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#notarizations), [parselog](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#parselog), [setpassphrase](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setpassphrase), [sleep](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sleep), [stop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#stop), [trust](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trust), [trusted](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#trusted)
 
 #### barterDEX Trading
 [autoprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#autoprice), [buy](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#buy), [getfee](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getfee), [getprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getprices), [goal](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goal), [goals](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#goals), [myprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprice), [myprices](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#myprices), [orderbook](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#orderbook), [pubkeystats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pubkeystats), [sell](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#sell), [setconfirms](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setconfirms), [setprice](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#setprice), [fomo](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#fomo), [dump](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#dump)
@@ -23,9 +23,6 @@
 
 #### Statistics
 [guistats](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#guistats), [pricearray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#pricearray), [statsdisp](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#statsdisp), [ticker](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#ticker), [tradesarray](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#tradesarray)
-
-#### Communication
-[deletemessages](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#deletemessages), [getmessages](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#getmessages), [message](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#message)
 
 #### Revenue Sharing/Operations
 [dividends](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#dividends), [snapshot](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#snapshot), [snapshot_balance](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#snapshot_balance), [snapshot_loop](https://github.com/KomodoPlatform/KomodoPlatform/wiki/barterDEX-API-Summary-by-Category#snapshot_loop)
@@ -592,22 +589,6 @@ Sample Output:
 }
 ```
 
-#### run
-`./run` starts barterDEX in LP (Liquid Provider) mode while `./client` is for client mode. After it starts (takes a tiny bit time to complete) execute your API calls from the `dexscripts` directory. Don't use this API unless you have reliable internet connection from datacenter or vps.
-
-Sample File Contents:
-```shell
-#!/bin/bash
-source passphrase
-source coins
-./stop
-git pull;
-cd ..; 
-./m_mm;
-pkill -15 marketmaker; 
-stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\", \"profitmargin\":0.01, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
-```
-
 #### setpassphrase
 This method helps the GUI build to take input of the passphrase and generate `userpass`. This is the second API to run in BarterDEX. On the first call it will display the `userpass` value at the top of output.
 
@@ -675,7 +656,7 @@ Sample Output:
 ### barterDEX Trading
 Default timeout for a trade is 10 seconds, which means if no response, must wait 10 seconds between trade requests. It will generate an error if Alice tries to submit a trade while a previous request is pending.
 
-However if the other side responds, you can do another trade and we are seeing virtually instant responses from the live LP nodes.
+However if the other side responds, you can do another trade and we are seeing virtually instant responses from the live FR (Full Relay) nodes.
 
 _**Trade Negotiation Sequence:**_
 ```
@@ -2456,55 +2437,6 @@ Sample output:
  [1511481840, 1.63195519, 1.55147942, 1.63195519, 1.55147942, 0.09980000, 0.06273967, 1.59070011, 2],
  [1511481960, 1.82528276, 1.82528276, 1.82528276, 1.82528276, 0.04990000, 0.02733823, 1.82528276, 1],
  [1511482680, 1.77777461, 1.77777461, 1.77777461, 1.77777461, 0.04990000, 0.02806880, 1.77777461, 1]]
-```
-
-### Communication
-
-#### deletemessages
-As the name suggests this API will let you delete messages received from other nodes.
-
-Sample File Contents:
-```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"deletemessages\",\"firsti\":0,\"num\":10}"
-```
-
-Sample Output:
-```JSON
-{
-  "result": "success"
-}
-```
-
-#### getmessages
-This API will allow to retrieve messages sent from other nodes.
-
-Sample File Contents:
-```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"method\":\"getmessages\",\"firsti\":0,\"num\":10}"
-```
-
-Sample Output:
-```JSON
-{
-  "messages": []
-}
-```
-
-#### message
-The `./message` script let nodes communicate with each other with end to end encryption. It is recommended to message a node first before doing an actual trade to make sure they can communicate. 
-
-To send a message you need to have the recipients public key. The public key can be found when launching the `./client` or running any other script the first time after launching  `./client`.  Edit the `./message` script to write your custom message. Execute `./message  <pubkey of recipient>` to send the message.
-
-Sample File Contents:
-```shell
-curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"$userpass\",\"pubkey\":\"$1\",\"method\":\"sendmessage\",\"message\":\"some sort of message\"}"
-```
-
-Sample Output:
-```JSON
-{
-  "result": "success"
-}
 ```
 
 ### Revenue Sharing/Operations
