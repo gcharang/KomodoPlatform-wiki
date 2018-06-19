@@ -1,5 +1,3 @@
-# Writing in progress!!! (WIP)!!! Please don't use yet.
-
 ### What is Full Relay (FR) node?
 
 Full Relay node (FR) creates the p2p network & only relays packets for BarterDEX and allows ordermatch to happen. They don't trade. FR nodes never touch any funds of any sort and are just a bulletin board. 0 balance needed to run an FR node. Bob and Alice connect to the FR network. Bob places orders and Alice fills the orders. It is ideal to have at least 3 FR nodes in each netid.
@@ -51,9 +49,26 @@ Enter your passphrase:
 
 Press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Nano editor.
 
+#### Edit the `client` script
+The client script should look like below to be running an FR node.
+
+```shell
+#!/bin/bash
+source passphrase
+source coins
+./stop
+git pull;
+cp ../exchanges/updateprices .;./updateprices
+cd ..; 
+./m_mm;
+pkill -15 marketmaker; 
+stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\",\"client\":0, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+
+```
+
 #### Getting the `userpass` value
 
-All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. This avoids evil webpages that try to issue port 7783 calls to steal your money. At first you may not know the value of `userpass`. To find out, just run the `client` script first (as instructed below) and then run `./setpassphrase`. You will notice your `userpass` value at the top of output and you can copy that value and put it into `~/SuperNET/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
+All these scripts are expecting a `userpass` file, which contains the definition of the `$userpass` variable (found inside scripts) to authenticate API access. At first you may not know the value of `userpass`. To find out, just run the `client` script first (as instructed below) and then run `./setpassphrase`. You will notice your `userpass` value at the top of output and you can copy that value and put it into `~/SuperNET/iguana/dexscripts/userpass` file. If you don't, all subsequent API calls will get authorisation error.
 
 Open a new terminal and type the following:
 
@@ -77,11 +92,45 @@ Once done press `CTRL+X` then `Y` then `ENTER` to save the file and exit from Na
 
 barterDEX is now installed in your system.
 
-#### Running barterDEX
+#### Starting FR node
 
-Every time you want to run **barterDEX** open a new terminal window and type the following:
+Every time you want to run Full Relay (FR) open a new terminal window and type the following:
 ```shell
 cd ~/SuperNET/iguana/dexscripts
 ./client &
 ./setpassphrase
+```
+
+#### Stopping FR node
+Just use the  command to stop marketmaker. This will stop the running FR node.
+
+```shell
+pkill -15 marketmaker
+```
+
+### How to setup FR nodes for different netid?
+You need to edit the `netid` section of the `client` script and `setpassphrase` script along with `client:0` param.
+
+##### client
+
+```shell
+#!/bin/bash
+source passphrase
+source coins
+./stop
+git pull;
+cp ../exchanges/updateprices .;./updateprices
+cd ..; 
+./m_mm;
+pkill -15 marketmaker; 
+stdbuf -oL $1 ./marketmaker "{\"gui\":\"nogui\",\"client\":0,\"netid\":1024, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$passphrase\", \"coins\":$coins}" &
+```
+
+##### setpassphrase
+
+```shell
+#!/bin/bash
+source userpass
+source passphrase
+curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"method\":\"passphrase\",\"passphrase\":\"$passphrase\",\"netid\":1024,\"gui\":\"nogui\"}"
 ```
