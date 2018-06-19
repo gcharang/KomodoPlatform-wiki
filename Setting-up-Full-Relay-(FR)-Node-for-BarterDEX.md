@@ -4,7 +4,7 @@ Full Relay node (FR) creates the p2p network & only relays packets for BarterDEX
 
 ### How to setup an FR node?
 
-It is just `marketmaker` launched with `client:0` parameter. 
+It is just `marketmaker` launched with `client:0` parameter. Very easy to setup, just follow along without skipping any step.
 
 #### Install the following dependency packages:
 
