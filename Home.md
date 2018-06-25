@@ -29,7 +29,7 @@ Here you should find a list of important topics related to installing and using 
 ## Setup Guide
 
 [Setup bob/marketmaker Node using barterDEX CLI](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Be-a-marketmaker-or-bob-using-barterDEX-CLI)  
-[Setup ElectrumX server](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX) 
+[Setup ElectrumX server](https://github.com/KomodoPlatform/KomodoPlatform/wiki/ElectrumX-guide-for-barterDEX)  
 [Setup Full Relay (FR) Node for BarterDEX](https://github.com/KomodoPlatform/KomodoPlatform/wiki/Setting-up-Full-Relay-(FR)-Node-for-BarterDEX) 
 [barterDEX Network Optimizations](https://github.com/KomodoPlatform/KomodoPlatform/wiki/BarterDEX-Network-Optimisations-&-Handle-BarterDEX-on-Very-FAST-Computer)  
 [Setup Bob/Marketmaker nodes using easy scripts](https://github.com/blackjok3rtt/BOB_scripts)
