@@ -33,6 +33,7 @@ git clone https://github.com/jl777/SuperNET
 cd ~/SuperNET/iguana/exchanges
 git checkout dev
 ./install
+cp passphrase ../dexscripts/passphrase
 ```
 
 #### Edit the `client` script
