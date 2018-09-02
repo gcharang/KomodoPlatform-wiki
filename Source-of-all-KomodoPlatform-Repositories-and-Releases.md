@@ -46,6 +46,7 @@
 ## dICO App
 Needs an update after the final version is publicly available
 * Source code: https://github.com/ca333/atomicDEX
+---
 ## Insight Explorer 
 * All-in-one Insight explorer setup for Komodo and all assetchains: https://github.com/DeckerSU/komodo-explorers-install
 ---
