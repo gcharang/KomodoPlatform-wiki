@@ -108,7 +108,7 @@ To activate your list of electrum servers from the script, in terminal use `./el
 
 Native mode is faster and you need to use native wallet running with fully synced blockchain data and your barterDEX seed passphrase imported into the wallet. Edit the `enable` script with coin names and run `./enable` in terminal window to activate native coins for trading in barterDEX.
 
-#### Stopping `killing marketmaker` / Close the app
+#### Stopping `kill marketmaker` / Close the app
 
 If you want to close barterDEX, issue `pkill -15 marketmaker` every time. This ensures all BarterDEX process is killed safely.
 
