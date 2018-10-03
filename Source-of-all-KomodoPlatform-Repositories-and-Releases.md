@@ -74,7 +74,8 @@ Needs an update after the final version is publicly available
 * MM2 Doc: https://github.com/artemii235/SuperNET/blob/master/iguana/exchanges/mm2.md
 ---
 ## Scaling Test
-* Source code: https://github.com/blackjok3rtt/scaletest
+* Source code: https://github.com/blackjok3rtt/ScaleTestV2
+* Scaletest Containers: https://github.com/patchkez/scaletest_containers
 * Transaction Visualization: https://github.com/smk762/txscl_vis
 * Tx Blaster: https://github.com/Meshbits/TxBlaster
 * Speedtest: https://github.com/dwygit/komodotools/tree/master/dwy/speedtest
