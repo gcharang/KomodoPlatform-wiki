@@ -4,12 +4,12 @@
 #### Source code
 * Backend: https://github.com/KomodoPlatform/Agama/
 * UI: https://github.com/KomodoPlatform/EasyDEX-GUI/
-#### Latest installer
-* Linux: https://artifacts.supernet.org/latest/installer_linux.html  
-* macOS: https://artifacts.supernet.org/latest/installer_osx.html  
-* Windows: https://artifacts.supernet.org/latest/installer_windows.html  
+#### Latest Release
+* https://github.com/KomodoPlatform/Agama/releases
 ---
 ## Agama Mobile
+* Android: https://play.google.com/store/apps/details?id=com.supernet.agama
+* iOS: https://testflight.apple.com/join/AQkscRcq
 * Source code: https://github.com/KomodoPlatform/agama-mobile
 * Release: https://github.com/KomodoPlatform/agama-mobile/releases
 ---
