@@ -49,6 +49,10 @@
 Needs an update after the final version is publicly available
 * Source code: https://github.com/ca333/atomicDEX
 ---
+## Documentation
+* Source code: https://github.com/KomodoPlatform/Documentation
+* Website: https://docs.komodoplatform.com
+---
 ## Insight Explorer 
 * All-in-one Insight explorer setup for Komodo and all assetchains: https://github.com/DeckerSU/komodo-explorers-install
 ---
