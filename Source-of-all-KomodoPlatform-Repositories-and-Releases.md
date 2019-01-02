@@ -49,6 +49,10 @@
 Needs an update after the final version is publicly available
 * Source code: https://github.com/ca333/atomicDEX
 ---
+## Developer Docs
+* Source code: https://github.com/KomodoPlatform/developer-docs/
+* Website: https://developers.komodoplatform.com/
+---
 ## Documentation
 * Source code: https://github.com/KomodoPlatform/Documentation
 * Website: https://docs.komodoplatform.com
