@@ -35,7 +35,7 @@
 ## CHIPS
 * Source code: https://github.com/jl777/chips3
 ---
-## CHIPSln
+## CHIPS `ln`
 * Source code: https://github.com/jl777/chipsln
 ---
 ## CHIPS bet
