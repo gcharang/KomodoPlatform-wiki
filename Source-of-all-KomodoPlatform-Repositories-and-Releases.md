@@ -46,8 +46,7 @@
 * Mastering CryptoConditions: https://github.com/KomodoPlatform/Mastering_CryptoConditions
 ---
 ## dICO App
-Needs an update after the final version is publicly available
-* Source code: https://github.com/ca333/atomicDEX
+* Source code: https://github.com/KomodoPlatform/dicoapp-e
 ---
 ## Developer Docs
 * Source code: https://github.com/KomodoPlatform/developer-docs/
