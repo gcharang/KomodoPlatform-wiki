@@ -38,6 +38,9 @@
 ## CHIPSln
 * Source code: https://github.com/jl777/chipsln
 ---
+## CHIPS bet
+* Source code: https://github.com/sg777/bet
+---
 ## Coins
 * Source code: https://github.com/jl777/coins
 ---
