@@ -5,7 +5,7 @@
 * Backend: https://github.com/KomodoPlatform/Agama/
 * UI: https://github.com/KomodoPlatform/EasyDEX-GUI/
 #### Latest Release
-* https://github.com/KomodoPlatform/Agama/releases
+* https://komodoplatform.com/komodo-wallets
 ---
 ## Agama Mobile
 * Android: https://play.google.com/store/apps/details?id=com.supernet.agama
