@@ -19,16 +19,16 @@
 * Dependencies 2: https://github.com/pbca26/electrum-proxy
 * Hosted: https://www.atomicexplorer.com/wallet/
 ---
-## barterDEX CLI (normal)
+## barterDEX CLI (normal) (deprecated)
 * Source code: https://github.com/jl777/SuperNET
 * Setup guide: https://github.com/KomodoPlatform/KomodoPlatform/wiki/Installing-and-Using-Komodo-Platform-(barterDEX)
 * Knowledge base (wiki): https://github.com/KomodoPlatform/KomodoPlatform/wiki
 ---
-## barterDEX CLI (etomic)
+## barterDEX CLI (etomic) (deprecated)
 * Source code: https://github.com/artemii235/SuperNET/tree/etomic
 * Setup guide: https://github.com/KomodoPlatform/KomodoPlatform/wiki/Step-by-Step-Setup-Guide-for-ETH-(ERC20)-Token-Swap-Using-barterDEX
 ---
-## BarterDEX GUI
+## BarterDEX GUI (deprecated)
 * Source code: https://github.com/KomodoPlatform/BarterDEX
 * Release package: https://github.com/KomodoPlatform/BarterDEX/releases
 ---
@@ -67,6 +67,8 @@
 * https://github.com/jl777/komodo
 #### Latest Binary
 * https://github.com/KomodoPlatform/komodo/releases
+#### Docker Image
+* https://github.com/imylomylo/docker-komodod
 ---
 ## Komodo-Qt (KomodoOcean)
 #### Source code
